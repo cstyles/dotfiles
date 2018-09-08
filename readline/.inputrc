@@ -1,0 +1,12 @@
+$include /etc/inputrc
+
+set mark-symlinked-directories on
+set match-hidden-files off
+
+# ALT+LEFT and ALT+RIGHT move back/forward a word
+# CTRL+LEFT and CTRL+RIGHT are in /etc/inputrc
+"\e[1;3C": forward-word
+"\e[1;3D": backward-word
+
+#set editing-mode vi
+
