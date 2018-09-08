@@ -27,5 +27,5 @@ nnoremap <C-w>e <C-w>j|nnoremap <C-w>E <C-w>J
 nnoremap <C-w>u <C-w>k|nnoremap <C-w>U <C-w>K
 nnoremap <C-w>i <C-w>l|nnoremap <C-w>I <C-w>L
 
-nnoremap <silent> <Leader>n :noh
-nnoremap <silent> <C-n> :noh
+nnoremap <silent> <Leader>n :noh<CR>
+nnoremap <silent> <C-n> :noh<CR>
