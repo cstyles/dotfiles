@@ -76,4 +76,4 @@ source ~/.vim/keymaps.vim
 let &grepprg = "ag -i --nogroup --column $*"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
 
-let mapleader = ","
+let mapleader = "\\"
