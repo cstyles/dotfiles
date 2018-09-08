@@ -15,10 +15,9 @@ nnoremap i l|xnoremap i l
 nnoremap h i|xnoremap h i
 " 'e' is the least used of these four commands so assign it to the hardest key to press ('j')
 nnoremap j e|xnoremap j e
-" nnoremap gj ge|xnoremap gj ge
+nnoremap gj ge|xnoremap gj ge
 " 'k' on Colemak is 'n' on QWERTY so just use QWERTY mapping
 nnoremap k n|xnoremap k n
-nnoremap K N|xnoremap K N
 " 'l' on Colemak is 'u' on QWERTY so just use QWERTY mapping
 nnoremap l u|xnoremap l u
 
