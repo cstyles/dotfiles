@@ -13,10 +13,8 @@ nnoremap i l|xnoremap i l
 " Assign the displaced functions to the old keys
 " 'i' is the most important so assign it to the easiest key to press ('h')
 nnoremap h i|xnoremap h i
-nnoremap H I|xnoremap H I
 " 'e' is the least used of these four commands so assign it to the hardest key to press ('j')
 nnoremap j e|xnoremap j e
-nnoremap J E|xnoremap J E
 " nnoremap gj ge|xnoremap gj ge
 " 'k' on Colemak is 'n' on QWERTY so just use QWERTY mapping
 nnoremap k n|xnoremap k n
