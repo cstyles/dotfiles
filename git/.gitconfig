@@ -1,0 +1,28 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Collin Styles
+	email = collingstyles@gmail.com
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
+	unstage = reset HEAD --
+	graph = log --graph --oneline --decorate --all
+	graphme = log --graph --oneline --decorate
+	last = log -1 HEAD
+	discard = checkout --
+	re = remote
+	fp = fetch -p
+[log]
+	date = local
+[push]
+	default = simple
+#[fetch]
+##       prune = true
+[core]
+	quotepath = false
+	editor = vim
