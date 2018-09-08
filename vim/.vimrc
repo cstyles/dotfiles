@@ -75,3 +75,5 @@ source ~/.vim/keymaps.vim
 " Use ag (The Silver Searcher) in place of grep
 let &grepprg = "ag -i --nogroup --column $*"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
+
+let mapleader = ","
