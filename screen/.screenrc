@@ -1,4 +1,5 @@
 shell -$SHELL
+term screen-256color
 termcapinfo * ti@:te@
 defscrollback 10000
 
