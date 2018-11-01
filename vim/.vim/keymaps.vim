@@ -29,3 +29,13 @@ nnoremap <C-w>i <C-w>l|nnoremap <C-w>I <C-w>L
 
 nnoremap <silent> <Leader>n :noh<CR>
 nnoremap <silent> <C-n> :noh<CR>
+
+" Fix keymaps for netrw (File Explorer)
+augroup netrw_mapping
+    autocmd!
+    autocmd filetype netrw call NetrwMapping()
+augroup END
+
+function! NetrwMapping()
+    noremap <buffer> u k
+endfunction
