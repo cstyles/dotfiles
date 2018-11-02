@@ -28,6 +28,10 @@ nnoremap <C-w>n <C-w>h|nnoremap <C-w>N <C-w>H
 nnoremap <C-w>e <C-w>j|nnoremap <C-w>E <C-w>J
 nnoremap <C-w>u <C-w>k|nnoremap <C-w>U <C-w>K
 nnoremap <C-w>i <C-w>l|nnoremap <C-w>I <C-w>L
+nnoremap <C-w><C-n> <C-w>h|nnoremap <C-w><C-N> <C-w>H
+nnoremap <C-w><C-e> <C-w>j|nnoremap <C-w><C-E> <C-w>J
+nnoremap <C-w><C-u> <C-w>k|nnoremap <C-w><C-U> <C-w>K
+nnoremap <C-w><C-i> <C-w>l|nnoremap <C-w><C-I> <C-w>L
 
 nnoremap <silent> <Leader>n :noh<CR>
 nnoremap <silent> <C-n> :noh<CR>
