@@ -6,6 +6,7 @@ noremap <Right> <Nop>
 
 " Use jkil (QWERTY) / neui (Colemak) to navigate
 nnoremap n h|xnoremap n h
+nnoremap N K|xnoremap N K
 nnoremap e j|xnoremap e j
 nnoremap u k|xnoremap u k
 nnoremap i l|xnoremap i l
@@ -18,6 +19,7 @@ nnoremap j e|xnoremap j e
 nnoremap gj ge|xnoremap gj ge
 " 'k' on Colemak is 'n' on QWERTY so just use QWERTY mapping
 nnoremap k n|xnoremap k n
+nnoremap K N|xnoremap K N
 " 'l' on Colemak is 'u' on QWERTY so just use QWERTY mapping
 nnoremap l u|xnoremap l u
 
