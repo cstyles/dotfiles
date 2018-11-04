@@ -8,6 +8,7 @@ https://github.com/tpope/vim-commentary.git
 https://github.com/easymotion/vim-easymotion.git
 https://github.com/tpope/vim-repeat.git
 https://github.com/tpope/vim-surround.git
+https://github.com/tpope/vim-polyglot.git
 '
 
 mkdir -p "$PLUGIN_DIR"
