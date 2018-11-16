@@ -78,3 +78,5 @@ let &grepprg = "ag -i --nogroup --column $*"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
 
 let mapleader = "\\"
+
+let g:python_highlight_space_errors = 0
