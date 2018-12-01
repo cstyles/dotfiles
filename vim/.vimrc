@@ -45,6 +45,7 @@ set smartcase
 set autoread            " Update file if it changes on disk
 set mouse=              " Disable mouse
 set nojoinspaces        " Don't add extra spaces when joining lines ending in '.'
+set breakindent         " Wrapped lines will maintain indentation
 
 " Autocomplete using current buffer, current+included files, and tags
 set complete=.,i,t
