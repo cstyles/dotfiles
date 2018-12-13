@@ -75,7 +75,9 @@ filetype plugin indent on
 source ~/.vim/keymaps.vim
 
 " Use ag (The Silver Searcher) in place of grep
-let &grepprg = "ag -i --nogroup --column $*"
+" let &grepprg = "ag -i --nogroup --column $*"
+" Use rg (ripgrep) in place of grep
+let &grepprg = "rg -i --no-heading --column $*"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
 
 let mapleader = "\\"
