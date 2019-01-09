@@ -16,6 +16,7 @@ set backspace=indent,eol,start
 
 set ruler               " Show line number + line position in bottom right
 set number              " Show line numbers in the gutter
+set relativenumber
 set ignorecase          " Case-insensitive search
 set hlsearch            " Highlight search results
 set incsearch           " Show results of search while typing
