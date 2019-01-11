@@ -29,3 +29,5 @@
 [core]
 	quotepath = false
 	editor = vim
+[rebase]
+	autosquash = true
