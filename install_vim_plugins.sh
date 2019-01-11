@@ -9,6 +9,9 @@ https://github.com/easymotion/vim-easymotion.git
 https://github.com/tpope/vim-repeat.git
 https://github.com/tpope/vim-surround.git
 https://github.com/sheerun/vim-polyglot.git
+https://github.com/neomake/neomake
+https://github.com/tpope/vim-fugitive
+https://github.com/junegunn/fzf.vim
 '
 
 mkdir -p "$PLUGIN_DIR"
