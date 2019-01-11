@@ -84,3 +84,5 @@ let &grepformat = "%f:%l:%c:%m," . &grepformat
 let mapleader = "\\"
 
 let g:python_highlight_space_errors = 0
+
+set runtimepath+=/usr/local/opt/fzf
