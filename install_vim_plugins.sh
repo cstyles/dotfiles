@@ -6,7 +6,7 @@ PLUGINS='
 https://github.com/godlygeek/tabular.git
 https://github.com/tpope/vim-commentary.git
 https://github.com/easymotion/vim-easymotion.git
-https://github.com/tpope/vim-repeat.git
+https://github.com/cstyles/vim-repeat.git
 https://github.com/tpope/vim-surround.git
 https://github.com/sheerun/vim-polyglot.git
 https://github.com/neomake/neomake
