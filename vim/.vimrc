@@ -48,8 +48,8 @@ set mouse=              " Disable mouse
 set nojoinspaces        " Don't add extra spaces when joining lines ending in '.'
 set breakindent         " Wrapped lines will maintain indentation
 
-" Autocomplete using current buffer, current+included files, and tags
-set complete=.,i,t
+" Autocomplete using current and other buffers, current+included files, and tags
+set complete=.,i,t,b
 
 " Do incremental searching when it's possible to timeout.
 if has('reltime')
