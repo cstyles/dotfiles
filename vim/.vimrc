@@ -86,3 +86,8 @@ let mapleader = "\\"
 let g:python_highlight_space_errors = 0
 
 set runtimepath+=/usr/local/opt/fzf
+
+if has("gui_running")
+  colorscheme evening
+  set mouse=a
+endif
