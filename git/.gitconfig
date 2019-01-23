@@ -24,8 +24,8 @@
 	default = simple
 [color]
 	ui = auto
-#[fetch]
-##       prune = true
+[fetch]
+  prune = true
 [core]
 	quotepath = false
 	editor = vim
