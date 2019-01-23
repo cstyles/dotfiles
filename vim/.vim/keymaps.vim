@@ -8,7 +8,9 @@ noremap <Right> <Nop>
 nnoremap n h|xnoremap n h
 nnoremap N K|xnoremap N K
 nnoremap e j|xnoremap e j
+nnoremap ge gj|xnoremap ge gj
 nnoremap u k|xnoremap u k
+nnoremap gu gk|xnoremap gu gk
 nnoremap i l|xnoremap i l
 
 " Assign the displaced functions to the old keys
