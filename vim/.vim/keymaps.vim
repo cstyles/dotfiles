@@ -35,10 +35,19 @@ nnoremap <C-w>E <C-w>J|tnoremap <C-w>E <C-w>J
 nnoremap <C-w>U <C-w>K|tnoremap <C-w>U <C-w>K
 nnoremap <C-w>I <C-w>L|tnoremap <C-w>I <C-w>L
 tnoremap <C-w>[ <C-w>N " Enter scrollback for terminal
-nnoremap <C-w><C-n> <C-w>h
-nnoremap <C-w><C-e> <C-w>j
-nnoremap <C-w><C-u> <C-w>k
-nnoremap <C-w><C-i> <C-w>l
+nnoremap <C-w><C-n> <C-w>h|tnoremap <C-w><C-n> <C-w>h
+nnoremap <C-w><C-e> <C-w>j|tnoremap <C-w><C-e> <C-w>j
+nnoremap <C-w><C-u> <C-w>k|tnoremap <C-w><C-u> <C-w>k
+nnoremap <C-w><C-i> <C-w>l|tnoremap <C-w><C-i> <C-w>l
+
+nnoremap <C-w>h <C-w>i|tnoremap <C-w>h <C-w>i
+nnoremap <C-w>j <C-w>e|tnoremap <C-w>j <C-w>e
+nnoremap <C-w>k <C-w>n|tnoremap <C-w>k <C-w>n
+nnoremap <C-w>l <C-w>u|tnoremap <C-w>l <C-w>u
+nnoremap <C-w><C-h> <C-w>i|tnoremap <C-w><C-h> <C-w>i
+nnoremap <C-w><C-j> <C-w>e|tnoremap <C-w><C-j> <C-w>e
+nnoremap <C-w><C-k> <C-w>n|tnoremap <C-w><C-k> <C-w>n
+nnoremap <C-w><C-l> <C-w>u|tnoremap <C-w><C-l> <C-w>u
 
 nnoremap <silent> <Leader>n :noh<CR>
 nnoremap <silent> <C-n> :noh<CR>
