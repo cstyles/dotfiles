@@ -16,7 +16,6 @@ set backspace=indent,eol,start
 
 set ruler               " Show line number + line position in bottom right
 set number              " Show line numbers in the gutter
-set relativenumber
 set ignorecase          " Case-insensitive search
 set hlsearch            " Highlight search results
 set incsearch           " Show results of search while typing
@@ -87,7 +86,8 @@ let g:python_highlight_space_errors = 0
 
 set runtimepath+=/usr/local/opt/fzf
 
-if has("gui_running")
+if has("gui_macvim")
   colorscheme evening
   set mouse=a
+  set relativenumber
 endif
