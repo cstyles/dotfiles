@@ -90,4 +90,5 @@ if has("gui_macvim")
   colorscheme evening
   set mouse=a
   set relativenumber
+  tnoremap <M-BS> <C-w>.
 endif

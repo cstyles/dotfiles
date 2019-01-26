@@ -56,7 +56,6 @@ nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
 " Alt+Backspace deletes words, <C-w><C-w> switches windows
-tnoremap <M-BS> <C-w><C-w>
 tnoremap <C-w><C-w> <C-w>w
 
 " Fix keymaps for netrw (File Explorer)
