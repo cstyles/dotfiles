@@ -58,6 +58,10 @@ nnoremap <silent> <C-c> :%s///gn<CR>
 " Alt+Backspace deletes words, <C-w><C-w> switches windows
 tnoremap <C-w><C-w> <C-w>w
 
+nnoremap <silent> <Leader>g :GF<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <Leader>f :FZF<CR>
+
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
     autocmd!
