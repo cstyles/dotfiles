@@ -28,7 +28,9 @@ set wildignore+=*.pyc,*.swp
 set display=lastline    " Display as much as possible of the last line
                         " Display @@@ to indicate truncation
 
-set scrolloff=0         " (Don't) Show lines of context around the cursor
+set scrolloff=3         " Show some lines of context around the cursor
+set sidescrolloff=10    " [nowrap] Leave some space to the sides of the cursor
+set sidescroll=10       " [nowrap] Scroll sideways in chunks
 
 set tabstop=4           " Tabs = 4 spaces wide
 set softtabstop=4       " Tabs = 4 spaces wide + delete spaces like tabs
