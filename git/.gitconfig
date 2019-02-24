@@ -18,6 +18,8 @@
     discard = checkout --
     re = remote
     fp = fetch -p
+    d = diff
+    g = graph
 [log]
     date = local
 [push]
