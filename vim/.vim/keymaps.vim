@@ -72,5 +72,8 @@ augroup netrw_mapping
 augroup END
 
 function! NetrwMapping()
+    noremap <buffer> n h
+    noremap <buffer> e j
     noremap <buffer> u k
+    noremap <buffer> i l
 endfunction
