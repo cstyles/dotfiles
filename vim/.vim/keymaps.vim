@@ -61,6 +61,7 @@ tnoremap <C-w><C-w> <C-w>w
 nnoremap <silent> <Leader>g :GF<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
+nnoremap <silent> <Leader>t :tabnew<CR>
 
 nnoremap Y y$
 
