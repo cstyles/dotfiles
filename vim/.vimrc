@@ -84,10 +84,13 @@ let mapleader = "\\"
 
 let g:python_highlight_space_errors = 0
 
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
+
 set runtimepath+=/usr/local/opt/fzf
 
 if has("gui_macvim")
-  colorscheme evening
   set mouse=a
   set relativenumber
   tnoremap <M-BS> <C-w>.
