@@ -62,6 +62,8 @@ nnoremap <silent> <Leader>g :GF<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
 
+nnoremap Y y$
+
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
     autocmd!
