@@ -1,4 +1,4 @@
-set -gx PATH $HOME/.cargo/bin $HOME/.rbenv/shims $PATH
+set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin
 set -gx EDITOR "vim"
 
 # Abbreviations:
