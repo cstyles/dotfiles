@@ -96,4 +96,5 @@ if has("gui_macvim")
   set mouse=a
   set relativenumber
   tnoremap <M-BS> <C-w>.
+  set macmeta
 endif
