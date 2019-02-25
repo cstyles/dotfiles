@@ -12,3 +12,4 @@ abbr --global --add n nvim
 
 # Bindings:
 bind \er __fish_grep_pipe
+bind \cg fzf-git-widget
