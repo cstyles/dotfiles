@@ -90,6 +90,10 @@ let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
 
+" Dark magic that enables italics in vim (don't need this for Neovim)
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+
 set runtimepath+=/usr/local/opt/fzf
 
 if has("gui_macvim")
