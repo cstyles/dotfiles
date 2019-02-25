@@ -64,6 +64,9 @@ nnoremap <silent> <Leader>f :FZF<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
 
 nnoremap Y y$
+xnoremap Y "+y
+nnoremap <M-P> "+P|xnoremap <M-P> "+P
+nnoremap <M-p> "+p|xnoremap <M-p> "+p
 
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
