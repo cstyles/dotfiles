@@ -68,6 +68,8 @@ xnoremap Y "+y
 nnoremap <M-P> "+P|xnoremap <M-P> "+P
 nnoremap <M-p> "+p|xnoremap <M-p> "+p
 
+inoremap <S-Tab> <C-x><C-f>
+
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
     autocmd!
