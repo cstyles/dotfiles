@@ -70,6 +70,10 @@ nnoremap <M-p> "+p|xnoremap <M-p> "+p
 
 inoremap <S-Tab> <C-x><C-f>
 
+inoremap <M-BS> <C-w>
+inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
+inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
+
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
     autocmd!
