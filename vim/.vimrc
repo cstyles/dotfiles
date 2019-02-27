@@ -104,5 +104,7 @@ if has("gui_macvim")
   tnoremap <M-BS> <C-w>.
   tnoremap <M-Left> <Esc>b
   tnoremap <M-Right> <Esc>f
+  nnoremap <M-Tab> gt
+  nnoremap <M-S-Tab> gT
   set macmeta
 endif
