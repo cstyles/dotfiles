@@ -1,4 +1,4 @@
-set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin
+set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin $HOME/dev/scripts
 set -gx EDITOR "vim"
 set -gx PAGER "less"
 set -gx HOMEBREW_EDITOR $EDITOR
