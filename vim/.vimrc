@@ -76,8 +76,6 @@ filetype plugin indent on
 
 source ~/.vim/keymaps.vim
 
-" Use ag (The Silver Searcher) in place of grep
-" let &grepprg = "ag -i --nogroup --column $*"
 " Use rg (ripgrep) in place of grep
 let &grepprg = "rg -i --no-heading --column $* --color=auto"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
@@ -89,6 +87,10 @@ let g:python_highlight_space_errors = 0
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
+
+if has("termguicolors")
+    set termguicolors
+end
 
 " Dark magic that enables italics in vim (don't need this for Neovim)
 let &t_ZH="\e[3m"
