@@ -17,7 +17,7 @@ function __fish_grep_pipe
             commandline --append --current-job " "
         end
 
-        commandline --append --current-job "2>&1 | $cmd "
+        commandline --append --current-job "| $cmd "
 
         # Go to end of line
         commandline --cursor 999999
