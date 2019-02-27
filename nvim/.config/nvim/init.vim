@@ -34,6 +34,9 @@ tnoremap <C-w>w <C-\><C-n><C-w><C-w>
 tnoremap <C-w><c-w> <C-\><C-n><C-w><c-w>
 tnoremap <C-w>. <C-w>
 
+nnoremap <M-Tab> gt
+nnoremap <M-C-Y> gT
+
 nnoremap <silent> <Leader>t :split \| :terminal<CR>
 nnoremap <silent> <Leader>v :vsplit \| :terminal<CR>
 augroup terminal_mapping
