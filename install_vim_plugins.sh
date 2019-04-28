@@ -12,7 +12,7 @@ https://github.com/sheerun/vim-polyglot.git
 https://github.com/neomake/neomake
 https://github.com/tpope/vim-fugitive
 https://github.com/junegunn/fzf.vim
-https://github.com/cstyles/oceanic-next.git
+https://github.com/mhartington/oceanic-next.git
 '
 
 mkdir -p "$PLUGIN_DIR"
