@@ -13,4 +13,5 @@ abbr --global --add n nvim
 # Bindings:
 bind \er __fish_grep_pipe
 bind \cg fzf-git-widget
+bind \cb fzf-git-branch-widget
 bind \eg __fish_git_status_current_token
