@@ -3,7 +3,7 @@
 function __fish_git_status_current_token -d "Show git status of the directory under the cursor if it is a directory, otherwise show git status of the current directory"
     set val (eval echo (commandline -t))
     printf "\n"
-    if test -d $val
+    if test -d $val 2>/dev/null
         cd $val
         git status
         prevd > /dev/null
