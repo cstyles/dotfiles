@@ -48,6 +48,8 @@ set autoread            " Update file if it changes on disk
 set mouse=              " Disable mouse
 set nojoinspaces        " Don't add extra spaces when joining lines ending in '.'
 set breakindent         " Wrapped lines will maintain indentation
+set ttimeout
+set ttimeoutlen=100      " How long to wait after ESC to determine if standalone
 
 " Autocomplete using current and other buffers, current+included files, and tags
 set complete=.,i,t,b
@@ -89,7 +91,7 @@ let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
 
 if has("termguicolors")
-    set termguicolors
+  set termguicolors
 end
 
 " Dark magic that enables italics in vim (don't need this for Neovim)
@@ -108,3 +110,9 @@ if has("gui_macvim")
   nnoremap <M-S-Tab> gT
   set macmeta
 endif
+
+" An attempt to fix slow ruby formatting
+augroup ruby_files
+  autocmd!
+  autocmd filetype ruby setlocal re=1
+augroup END
