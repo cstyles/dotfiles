@@ -24,6 +24,7 @@ nnoremap k n|xnoremap k n
 nnoremap K N|xnoremap K N
 " 'l' on Colemak is 'u' on QWERTY so just use QWERTY mapping
 nnoremap l u|xnoremap l u
+nnoremap gl gu|xnoremap gl gu
 
 " TODO: mappings for <C-w>ARROWS
 nnoremap <C-w>n <C-w>h|tnoremap <C-w>n <C-w>h
@@ -34,11 +35,12 @@ nnoremap <C-w>N <C-w>H|tnoremap <C-w>N <C-w>H
 nnoremap <C-w>E <C-w>J|tnoremap <C-w>E <C-w>J
 nnoremap <C-w>U <C-w>K|tnoremap <C-w>U <C-w>K
 nnoremap <C-w>I <C-w>L|tnoremap <C-w>I <C-w>L
-tnoremap <C-w>[ <C-w>N " Enter scrollback for terminal
 nnoremap <C-w><C-n> <C-w>h|tnoremap <C-w><C-n> <C-w>h
 nnoremap <C-w><C-e> <C-w>j|tnoremap <C-w><C-e> <C-w>j
 nnoremap <C-w><C-u> <C-w>k|tnoremap <C-w><C-u> <C-w>k
 nnoremap <C-w><C-i> <C-w>l|tnoremap <C-w><C-i> <C-w>l
+
+tnoremap <C-w>[ <C-w>N " Enter scrollback for terminal
 
 nnoremap <C-w>h <C-w>i|tnoremap <C-w>h <C-w>i
 nnoremap <C-w>j <C-w>e|tnoremap <C-w>j <C-w>e
@@ -48,31 +50,52 @@ nnoremap <C-w><C-h> <C-w>i|tnoremap <C-w><C-h> <C-w>i
 nnoremap <C-w><C-j> <C-w>e|tnoremap <C-w><C-j> <C-w>e
 nnoremap <C-w><C-k> <C-w>n|tnoremap <C-w><C-k> <C-w>n
 nnoremap <C-w><C-l> <C-w>u|tnoremap <C-w><C-l> <C-w>u
+tnoremap <C-w>H <C-w>I " not anything by default, use for custom function
+tnoremap <C-w>J <C-w>E " not anything by default, use for custom function
+tnoremap <C-w>K <C-w>N
+tnoremap <C-w>L <C-w>U " not anything by default, use for custom function
 
-nnoremap <silent> <Leader>n :noh<CR>
-nnoremap <silent> <C-n> :noh<CR>
-nnoremap <silent> <C-q> :call setqflist([])<Bar>:bufdo vimgrepadd // %<CR>
+nnoremap <silent> <Leader>n :nohlsearch<CR>
+nnoremap <silent> <C-n> :nohlsearch<CR>
+nnoremap <silent> <C-q> :call setqflist([])<Bar>:bufdo vimgrepadd // %<CR>:below copen<CR>
+nnoremap <silent> <C-k> :vimgrep // %<CR>:below copen<CR>
 nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
-" Alt+Backspace deletes words, <C-w><C-w> switches windows
 tnoremap <C-w><C-w> <C-w>w
 
-nnoremap <silent> <Leader>g :GF<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <Leader>B :Gblame<CR>
+nnoremap <silent> <Leader>c :cclose<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
+nnoremap <silent> <Leader>g :GF<CR>
+nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
+nnoremap <silent> <Leader>T :tabnew<CR>:GFiles<CR>
 
 nnoremap Y y$
 xnoremap Y "+y
+xnoremap <M-Y> "+y
 nnoremap <M-P> "+P|xnoremap <M-P> "+P
 nnoremap <M-p> "+p|xnoremap <M-p> "+p
-
-inoremap <S-Tab> <C-x><C-f>
+xnoremap D "+d
 
 inoremap <M-BS> <C-w>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
 inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
+inoremap <S-Tab> <C-x><C-f>
+
+imap <c-x><c-x> <plug>(fzf-complete-path)
+
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+
+command! -bar -bang Q quit<bang>
+command! -bar -bang -nargs=? W write<bang> <args>
+" TODO: same for :Qa, :Wa, :Wq, :Xa
+
+" Always open quickfix list underneath current window
+command! Cw below cw
 
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
@@ -85,4 +108,12 @@ function! NetrwMapping()
     noremap <buffer> e j
     noremap <buffer> u k
     noremap <buffer> i l
+
+    noremap <buffer> h i
+    noremap <buffer> j e
+    noremap <buffer> k n
+    noremap <buffer> l u
 endfunction
+
+" Show highlight rule for word under cursor
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
