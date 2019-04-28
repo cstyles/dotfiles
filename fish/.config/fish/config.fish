@@ -12,6 +12,7 @@ abbr --global --add n nvim
 
 # Bindings:
 bind \er __fish_grep_pipe
+bind \ew __fish_wc_pipe # NOTE: M-w is already used to run `whatis` on a keyword
 bind \cg fzf-git-widget
 bind \cb fzf-git-branch-widget
 bind \eg __fish_git_status_current_token
