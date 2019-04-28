@@ -3,6 +3,9 @@ let &packpath = &runtimepath
 source ~/.vimrc
 
 set relativenumber
+set mouse=a
+set inccommand=nosplit
+set autoread
 
 " A bunch of settings to make Neovim's terminal act more like Vim's
 tnoremap <C-w>[ <C-\><C-n>
@@ -37,12 +40,23 @@ tnoremap <C-w>. <C-w>
 nnoremap <M-Tab> gt
 nnoremap <M-C-Y> gT
 
-nnoremap <silent> <Leader>t :split \| :terminal<CR>
+nnoremap <silent> <M-t> :tabnew<CR>
+nnoremap <M-Tab> gt|tnoremap <M-Tab> <C-\><C-n>gt
+" Meta-Shift-Tab
+nnoremap <M-C-Y> gT|tnoremap <M-C-Y> <C-\><C-n>gT
+nnoremap <M-S-Tab> gT|tnoremap <M-S-Tab> <C-\><C-n>gT
+nnoremap <M-}> gt|tnoremap <M-}> <C-\><C-n>gt
+nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
+nnoremap <silent> <M-w> :quit<CR>
+
+nnoremap <silent> <Leader>s :split \| :terminal<CR>
 nnoremap <silent> <Leader>v :vsplit \| :terminal<CR>
+nnoremap <silent> <Leader>t :split \| :terminal<CR>
+
 augroup terminal_mapping
   autocmd!
-  autocmd BufWinEnter,WinEnter term://* startinsert
-  autocmd BufWinLeave,WinLeave term://* stopinsert
-  autocmd TermOpen term://* startinsert
-  autocmd TermClose term://* quit
+  " autocmd BufWinEnter,WinEnter term://* startinsert
+  " autocmd BufWinLeave,WinLeave term://* stopinsert
+  " autocmd TermOpen term://* startinsert
+  autocmd TermClose term://* close
 augroup END
