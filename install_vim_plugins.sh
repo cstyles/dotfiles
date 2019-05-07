@@ -13,6 +13,7 @@ https://github.com/neomake/neomake
 https://github.com/tpope/vim-fugitive
 https://github.com/junegunn/fzf.vim
 https://github.com/mhartington/oceanic-next.git
+https://github.com/mbbill/undotree.git
 '
 
 mkdir -p "$PLUGIN_DIR"

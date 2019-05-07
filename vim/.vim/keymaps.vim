@@ -72,6 +72,7 @@ nnoremap <silent> <Leader>g :GF<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
 nnoremap <silent> <Leader>T :tabnew<CR>:GFiles<CR>
+nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
 
 nnoremap Y y$
 xnoremap Y "+y
