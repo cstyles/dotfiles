@@ -5,10 +5,8 @@ set -gx HOMEBREW_EDITOR $EDITOR
 set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -gx fish_grep rg
 
-# Abbreviations:
-abbr --global --add g git
-abbr --global --add v vim
-abbr --global --add n nvim
+# Abbreviations
+source (dirname (status --current-filename))/abbreviations.fish
 
 # Bindings:
 bind \er __fish_grep_pipe
