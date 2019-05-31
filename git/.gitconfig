@@ -44,6 +44,7 @@
     wd = diff --word-diff
 [log]
     date = local
+    follow = true
 [push]
     default = simple
 [color]
@@ -55,3 +56,5 @@
     editor = nvim
 [rebase]
     autosquash = true
+[commit]
+    verbose = true
