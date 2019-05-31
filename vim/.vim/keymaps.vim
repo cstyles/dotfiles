@@ -67,9 +67,11 @@ tnoremap <C-w><C-w> <C-w>w
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>B :Gblame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
+nnoremap <silent> <Leader>d :Gdiff<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
 nnoremap <silent> <Leader>g :GF<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
+nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
 nnoremap <silent> <Leader>T :tabnew<CR>:GFiles<CR>
 nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
@@ -88,11 +90,13 @@ inoremap <S-Tab> <C-x><C-f>
 
 imap <c-x><c-x> <plug>(fzf-complete-path)
 
-nnoremap <Tab> >>
-nnoremap <S-Tab> <<
+nnoremap <Tab> >>|xnoremap <Tab> >>gv
+nnoremap <S-Tab> <<|xnoremap <S-Tab> <<gv
 
 command! -bar -bang Q quit<bang>
+command! -bar -bang Qa quitall<bang>
 command! -bar -bang -nargs=? W write<bang> <args>
+command! -bar -bang Xa xall<bang>
 " TODO: same for :Qa, :Wa, :Wq, :Xa
 
 " Always open quickfix list underneath current window

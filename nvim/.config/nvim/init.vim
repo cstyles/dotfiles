@@ -9,6 +9,7 @@ set autoread
 
 " A bunch of settings to make Neovim's terminal act more like Vim's
 tnoremap <C-w>[ <C-\><C-n>
+tnoremap <C-w><C-[> <C-\><C-n>
 
 tnoremap <C-w>n <C-\><C-n><C-w>h
 tnoremap <C-w>e <C-\><C-n><C-w>j
