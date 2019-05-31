@@ -1,5 +1,5 @@
 set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin $HOME/dev/scripts
-set -gx EDITOR "vim"
+set -gx EDITOR "nvim"
 set -gx PAGER "less"
 set -gx HOMEBREW_EDITOR $EDITOR
 set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc

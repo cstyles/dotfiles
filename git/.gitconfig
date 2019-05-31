@@ -43,6 +43,6 @@
     prune = true
 [core]
     quotepath = false
-    editor = vim
+    editor = nvim
 [rebase]
     autosquash = true
