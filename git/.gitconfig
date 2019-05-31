@@ -9,30 +9,39 @@
 [alias]
     br = branch
     ci = commit
-    co = checkout
     st = status
     unstage = reset HEAD --
     graph = log --graph --oneline --decorate --all
     graphme = log --graph --oneline --decorate
     last = log -1 HEAD
     discard = checkout --
-    re = remote
     f = fetch
     fp = fetch --prune
     a = add
     ap = add --patch
     ai = add --interactive
     ca = commit --amend
+    cb = checkout -b
+    cf = commit --fixup
+    co = checkout
     d = diff
     dc = diff --cached
     g = graph
     l = log
+    m = merge
+    ma = merge --abort
+    p = push
     ri = rebase --interactive
     ra = rebase --abort
+    re = remote
+    rv = remote --verbose
     rc = rebase --continue
+    s = show
+    sd = stash drop
     sl = stash list
     sp = stash pop
     ss = stash show --patch
+    wd = diff --word-diff
 [log]
     date = local
 [push]
