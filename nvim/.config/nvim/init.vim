@@ -53,6 +53,8 @@ nnoremap <silent> <M-w> :quit<CR>
 nnoremap <silent> <Leader>s :botright split \| :terminal<CR>a
 nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>a
 
+cnoremap <M-BS> <C-w>
+
 augroup terminal_mapping
   autocmd!
   " autocmd BufWinEnter,WinEnter term://* startinsert
