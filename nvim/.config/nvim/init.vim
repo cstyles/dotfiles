@@ -50,9 +50,8 @@ nnoremap <M-}> gt|tnoremap <M-}> <C-\><C-n>gt
 nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
 nnoremap <silent> <M-w> :quit<CR>
 
-nnoremap <silent> <Leader>s :split \| :terminal<CR>
-nnoremap <silent> <Leader>v :vsplit \| :terminal<CR>
-nnoremap <silent> <Leader>t :split \| :terminal<CR>
+nnoremap <silent> <Leader>s :botright split \| :terminal<CR>a
+nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>a
 
 augroup terminal_mapping
   autocmd!
