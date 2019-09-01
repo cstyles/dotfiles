@@ -111,7 +111,6 @@ command! -bar -bang Q quit<bang>
 command! -bar -bang Qa quitall<bang>
 command! -bar -bang -nargs=? W write<bang> <args>
 command! -bar -bang Xa xall<bang>
-" TODO: same for :Qa, :Wa, :Wq, :Xa
 
 " Always open quickfix list underneath current window
 command! Cw below cw

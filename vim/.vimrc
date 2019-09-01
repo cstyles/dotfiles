@@ -50,9 +50,12 @@ set nojoinspaces        " Don't add extra spaces when joining lines ending in '.
 set breakindent         " Wrapped lines will maintain indentation
 set ttimeout
 set ttimeoutlen=100      " How long to wait after ESC to determine if standalone
+set dictionary=/usr/share/dict/words
 
 " Autocomplete using current and other buffers, current+included files, and tags
 set complete=.,i,t,b
+
+set tags+=.tags
 
 " Do incremental searching when it's possible to timeout.
 if has('reltime')
@@ -79,7 +82,7 @@ filetype plugin indent on
 source ~/.vim/keymaps.vim
 
 " Use rg (ripgrep) in place of grep
-let &grepprg = "rg -i --no-heading --column $* --color=auto"
+let &grepprg = "rg -i --vimgrep --color=auto"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
 
 let mapleader = "\\"
@@ -115,4 +118,10 @@ endif
 augroup ruby_files
   autocmd!
   autocmd filetype ruby setlocal re=1
+  autocmd BufWritePost *.rb :Neomake
+augroup END
+
+augroup spell
+  autocmd!
+  autocmd filetype gitcommit,markdown,text setlocal spell
 augroup END
