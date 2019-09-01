@@ -27,6 +27,7 @@ tnoremap <C-w><C-b> <C-\><C-n><C-w>b
 tnoremap <C-w><C-t> <C-\><C-n><C-w>t
 tnoremap <C-w>b <C-\><C-n><C-w>b
 tnoremap <C-w>t <C-\><C-n><C-w>t
+tnoremap <C-w>x <C-\><C-n><C-w>x
 
 tnoremap <C-w>s <C-\><C-n><C-w>s
 tnoremap <C-w>v <C-\><C-n><C-w>v
@@ -54,6 +55,7 @@ nnoremap <silent> <Leader>s :botright split \| :terminal<CR>a
 nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>a
 
 cnoremap <M-BS> <C-w>
+nnoremap <M-BS> dbx
 
 augroup terminal_mapping
   autocmd!
