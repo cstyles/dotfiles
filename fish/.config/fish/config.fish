@@ -8,6 +8,11 @@ set -gx fish_grep rg
 # Abbreviations
 source (dirname (status --current-filename))/abbreviations.fish
 
+alias cat="bat"
+alias ls="exa"
+alias lltr="exa --long --sort=modified"
+# alias find="fd"
+
 # Bindings:
 bind \er __fish_grep_pipe
 bind \ew __fish_wc_pipe # NOTE: M-w is already used to run `whatis` on a keyword
