@@ -1,3 +1,5 @@
+nnoremap <Space> :
+
 " Turn off arrow keys to force me to use jkil
 noremap <Up> <Nop>
 noremap <Down> <Nop>
