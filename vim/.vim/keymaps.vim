@@ -78,12 +78,24 @@ nnoremap <silent> <Leader>t :tabnew<CR>
 nnoremap <silent> <Leader>T :tabnew<CR>:GFiles<CR>
 nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
 
+" TODO: Figure out what the hell I'm trying to do here
 nnoremap Y y$
 xnoremap Y "+y
+
+nnoremap <M-y> "+y$
+nnoremap <M-Y> ^"+y$
+
+xnoremap <M-y> "+y
 xnoremap <M-Y> "+y
-nnoremap <M-P> "+P|xnoremap <M-P> "+P
+
 nnoremap <M-p> "+p|xnoremap <M-p> "+p
+nnoremap <M-P> "+P|xnoremap <M-P> "+P
+
 xnoremap D "+d
+nnoremap <M-D> "+D
+
+" Paste such that we replace the rest of the line
+nnoremap <M-r> v$<Left>"0p
 
 inoremap <M-BS> <C-w>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
