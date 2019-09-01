@@ -15,6 +15,7 @@ https://github.com/junegunn/fzf.vim
 https://github.com/mhartington/oceanic-next.git
 https://github.com/mbbill/undotree.git
 https://github.com/tpope/vim-rhubarb.git
+https://github.com/tpope/vim-unimpaired.git
 '
 
 mkdir -p "$PLUGIN_DIR"
