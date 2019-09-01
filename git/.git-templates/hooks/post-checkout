@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# TODO: Remove .tags first?
+# Sometimes ctags refuses to overwrite `.tags` because it doesn't recoqnize it as a tags file
+# Maybe something goes wrong, the file is corrupted, and then it's stuck like that?
+git ls-files | ctags -L - -f .tags >/dev/null 2>&1 &

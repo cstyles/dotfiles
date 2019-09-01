@@ -7,7 +7,6 @@
     name = Collin Styles
     email = collingstyles@gmail.com
 [alias]
-    br = branch
     ci = commit
     st = status
     unstage = reset HEAD --
@@ -20,6 +19,8 @@
     a = add
     ap = add --patch
     ai = add --interactive
+    br = branch
+    brav = branch --all --verbose
     ca = commit --amend
     cb = checkout -b
     cf = commit --fixup
@@ -31,15 +32,14 @@
     m = merge
     ma = merge --abort
     p = push
-    ri = rebase --interactive
     ra = rebase --abort
+    rc = rebase --continue
+    ri = rebase --interactive
+    ra = rebase --skip
     re = remote
     rv = remote --verbose
-    rc = rebase --continue
     s = show
-    sd = stash drop
     sl = stash list
-    sp = stash pop
     ss = stash show --patch
     wd = diff --word-diff
 [log]
@@ -58,3 +58,5 @@
     autosquash = true
 [commit]
     verbose = true
+[init]
+    templateDir = ~/.git-templates
