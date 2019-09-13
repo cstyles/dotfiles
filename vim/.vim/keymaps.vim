@@ -104,8 +104,8 @@ inoremap <S-Tab> <C-x><C-f>
 
 imap <c-x><c-x> <plug>(fzf-complete-path)
 
-nnoremap <Tab> >>|xnoremap <Tab> >gv
-nnoremap <S-Tab> <<|xnoremap <S-Tab> <gv
+xnoremap <Tab> >gv
+xnoremap <S-Tab> <gv
 
 command! -bar -bang Q quit<bang>
 command! -bar -bang Qa quitall<bang>
