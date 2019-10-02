@@ -35,7 +35,7 @@
     ra = rebase --abort
     rc = rebase --continue
     ri = rebase --interactive
-    ra = rebase --skip
+    rs = rebase --skip
     re = remote
     rv = remote --verbose
     s = show
