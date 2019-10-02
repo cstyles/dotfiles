@@ -35,6 +35,7 @@
     ra = rebase --abort
     rc = rebase --continue
     ri = rebase --interactive
+    root = rev-parse --show-toplevel
     rs = rebase --skip
     re = remote
     rv = remote --verbose
