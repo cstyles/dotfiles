@@ -29,14 +29,13 @@ tnoremap <C-w>b <C-\><C-n><C-w>b
 tnoremap <C-w>t <C-\><C-n><C-w>t
 tnoremap <C-w>x <C-\><C-n><C-w>x
 
-tnoremap <C-w>s <C-\><C-n><C-w>s
-tnoremap <C-w>v <C-\><C-n><C-w>v
-tnoremap <C-w>= <C-\><C-n><C-w>=
-tnoremap <C-w>_ <C-\><C-n><C-w>_
+tnoremap <C-w>s <C-\><C-n><C-w>s|tnoremap <C-w><C-s> <C-\><C-n><C-w>s
+tnoremap <C-w>v <C-\><C-n><C-w>v|tnoremap <C-w><C-v> <C-\><C-n><C-w>v
+tnoremap <C-w>= <C-\><C-n><C-w>=|tnoremap <C-w><C-=> <C-\><C-n><C-w>=
+tnoremap <C-w>_ <C-\><C-n><C-w>_|tnoremap <C-w><C-_> <C-\><C-n><C-w>_
 tnoremap <C-w><bar> <C-\><C-n><C-w><bar>
 
-tnoremap <C-w>w <C-\><C-n><C-w><C-w>
-tnoremap <C-w><c-w> <C-\><C-n><C-w><c-w>
+tnoremap <C-w>w <C-\><C-n><C-w><C-w>|tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
 tnoremap <C-w>. <C-w>
 
 nnoremap <M-Tab> gt
