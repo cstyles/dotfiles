@@ -62,4 +62,6 @@ augroup terminal_mapping
   " autocmd BufWinLeave,WinLeave term://* stopinsert
   " autocmd TermOpen term://* startinsert
   autocmd TermClose term://* close
+  autocmd TermEnter * setlocal scrolloff=0
+  autocmd TermLeave * setlocal scrolloff=3
 augroup END
