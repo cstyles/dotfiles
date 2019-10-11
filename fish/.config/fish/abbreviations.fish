@@ -1,6 +1,7 @@
 abbr --global --add g git
 abbr --global --add v vim
 abbr --global --add n nvim
+abbr --global --add be bundle exec
 
 # Git:
 abbr --global --add gap git add --patch
@@ -8,15 +9,20 @@ abbr --global --add gb git branch
 abbr --global --add gbr git branch
 abbr --global --add gbrv git branch --verbose
 abbr --global --add gca git commit --amend
+abbr --global --add gcaa git commit --amend --no-edit
 abbr --global --add gci git commit
 abbr --global --add gcb git checkout -b
 abbr --global --add gcf git commit --fixup
+abbr --global --add gcl git clone
 abbr --global --add gco git checkout
 abbr --global --add gd git diff
 abbr --global --add gdc git diff --cached
+abbr --global --add gdhu git diff HEAD "'@{u}'"
+abbr --global --add gduh git diff "'@{u}'" HEAD
 abbr --global --add gf git fetch
 abbr --global --add gg git graph
 abbr --global --add gl git log
+abbr --global --add glpr git log --patch --reverse
 abbr --global --add gm git merge
 abbr --global --add gp git push
 abbr --global --add gra git rebase --abort
