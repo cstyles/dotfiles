@@ -5,6 +5,23 @@ set -gx HOMEBREW_EDITOR $EDITOR
 set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -gx fish_grep rg
 
+# Don't shorten path in prompt
+set -gx fish_prompt_pwd_dir_length 0
+
+# set __fish_git_prompt_showdirtystate true
+# set __fish_git_prompt_showuntrackedfiles true
+# set __fish_git_prompt_showupstream true
+set __fish_git_prompt_showcolorhints true
+set __fish_git_prompt_shorten_branch_len 20
+
+set __fish_git_prompt_char_upstream_ahead ↑
+set __fish_git_prompt_char_upstream_behind ↓
+set __fish_git_prompt_char_upstream_prefix ' '
+
+set __fish_git_prompt_color_branch yellow
+
+set fish_emoji_width 2
+
 # Abbreviations
 source (dirname (status --current-filename))/abbreviations.fish
 
