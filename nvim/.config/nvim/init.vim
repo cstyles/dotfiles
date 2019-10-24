@@ -7,6 +7,19 @@ set mouse=a
 set inccommand=nosplit
 set autoread
 
+" WHen running git-commit from inside an nvim terminal, open a new buffer in
+" the host nvim instead of opening a nested nvim process
+if !empty($NEOVIM_REMOTE_PATH)
+  let $NEOVIM_REMOTE_PYTHON = $NEOVIM_REMOTE_PATH . '/venv/bin/python3'
+  let $NEOVIM_REMOTE_SCRIPT = $NEOVIM_REMOTE_PATH . '/nvr/nvr.py'
+  let $GIT_EDITOR = $NEOVIM_REMOTE_PYTHON . ' ' . $NEOVIM_REMOTE_SCRIPT . ' -cc split --remote-wait'
+end
+
+augroup git
+  autocmd!
+  autocmd filetype gitcommit,gitrebase,gitconfig setlocal bufhidden=delete
+augroup END
+
 " A bunch of settings to make Neovim's terminal act more like Vim's
 tnoremap <C-w>[ <C-\><C-n>
 tnoremap <C-w><C-[> <C-\><C-n>
