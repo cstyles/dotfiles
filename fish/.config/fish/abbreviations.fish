@@ -1,6 +1,7 @@
 abbr --global --add g git
 abbr --global --add v vim
 abbr --global --add n nvim
+abbr --global --add nt nvim-term
 abbr --global --add be bundle exec
 
 # Git:
