@@ -1,6 +1,2 @@
 --smart-case
 --max-columns=300
-
-# Show color when piping (e.g., to `less -R`)
-# When this is undesirable, use `--color=never`
---color=always
