@@ -38,7 +38,6 @@ set shiftwidth=4        " Tabs = 4 spaces (for <<, >>, etc.)
 set expandtab           " Tab inserts spaces instead of tabs
 set autoindent          " Copy indent from current line
 set smartindent         " Increase/decrease indentation intelligently
-set shell=fish
 set magic
 set infercase           " when autocompleting with ignorecase on, infer case
 set smartcase
@@ -56,6 +55,12 @@ set dictionary=/usr/share/dict/words
 set complete=.,i,t,b
 
 set tags+=.tags
+
+if empty($CUSTOM_FISH_PATH)
+  set shell=fish
+else
+  set shell=$CUSTOM_FISH_PATH
+end
 
 " Do incremental searching when it's possible to timeout.
 if has('reltime')
