@@ -31,12 +31,15 @@ tnoremap <C-w>x <C-\><C-n><C-w>x
 
 tnoremap <C-w>s <C-\><C-n><C-w>s|tnoremap <C-w><C-s> <C-\><C-n><C-w>s
 tnoremap <C-w>v <C-\><C-n><C-w>v|tnoremap <C-w><C-v> <C-\><C-n><C-w>v
-tnoremap <C-w>= <C-\><C-n><C-w>=|tnoremap <C-w><C-=> <C-\><C-n><C-w>=
+tnoremap <C-w>= <C-\><C-n><C-w>=:startinsert<CR>|tnoremap <C-w><C-=> <C-\><C-n><C-w>=:startinsert<CR>
 tnoremap <C-w>_ <C-\><C-n><C-w>_|tnoremap <C-w><C-_> <C-\><C-n><C-w>_
-tnoremap <C-w><bar> <C-\><C-n><C-w><bar>
+tnoremap <C-w><bar> <C-\><C-n><C-w><bar>:startinsert<CR>
 
 tnoremap <C-w>w <C-\><C-n><C-w><C-w>|tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
 tnoremap <C-w>. <C-w>
+
+tnoremap <silent> <C-n> <C-\><C-n>:nohlsearch<CR>:startinsert<CR>
+tnoremap <C-w><C--> <C-\><C-n>0:startinsert<CR>
 
 nnoremap <M-Tab> gt
 nnoremap <M-C-Y> gT
@@ -50,8 +53,8 @@ nnoremap <M-}> gt|tnoremap <M-}> <C-\><C-n>gt
 nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
 nnoremap <silent> <M-w> :quit<CR>
 
-nnoremap <silent> <Leader>s :botright split \| :terminal<CR>a
-nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>a
+nnoremap <silent> <Leader>s :botright split \| :terminal<CR>:startinsert<CR>
+nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>:startinsert<CR>
 
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
