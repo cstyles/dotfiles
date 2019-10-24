@@ -15,8 +15,9 @@
     last = log -1 HEAD
     discard = checkout --
     f = fetch
-    fp = fetch --prune
+    fa = fetch --all
     a = add
+    ab = absorb
     ap = add --patch
     ai = add --interactive
     br = branch
@@ -33,12 +34,17 @@
     duh = diff @{u} HEAD
     g = graph
     l = log
+    lo = log --oneline
     lpr = log --patch --reverse
     m = merge
     ma = merge --abort
     p = push
+    pl = pull
+    r = reset
     ra = rebase --abort
+    rb = rebase
     rc = rebase --continue
+    rh = reset --hard
     ri = rebase --interactive
     root = rev-parse --show-toplevel
     rs = rebase --skip
@@ -47,6 +53,8 @@
     s = show
     sl = stash list
     ss = stash show --patch
+    sw = switch
+    swd = show --word-diff
     wd = diff --word-diff
 [log]
     date = local
