@@ -71,7 +71,8 @@ nnoremap <silent> <Leader>B :Gblame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
 nnoremap <silent> <Leader>d :Gdiff<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
-nnoremap <silent> <Leader>g :GF<CR>
+nnoremap <silent> <Leader>h :History:<CR>
+nnoremap <silent> <Leader>g :GFiles<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
