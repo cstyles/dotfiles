@@ -18,6 +18,7 @@
     fa = fetch --all
     a = add
     ab = absorb
+    abn = absorb --verbose --dry-run
     ap = add --patch
     ai = add --interactive
     br = branch
@@ -35,6 +36,7 @@
     g = graph
     l = log
     lo = log --oneline
+    lp = log --patch
     lpr = log --patch --reverse
     m = merge
     ma = merge --abort
@@ -44,11 +46,12 @@
     ra = rebase --abort
     rb = rebase
     rc = rebase --continue
+    re = restore
+    rem = remote
     rh = reset --hard
     ri = rebase --interactive
     root = rev-parse --show-toplevel
     rs = rebase --skip
-    re = remote
     rv = remote --verbose
     s = show
     sl = stash list
@@ -56,6 +59,7 @@
     sw = switch
     swd = show --word-diff
     wd = diff --word-diff
+    wt = worktree
 [log]
     date = local
     follow = true
