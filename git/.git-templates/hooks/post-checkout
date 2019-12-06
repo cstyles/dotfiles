@@ -3,7 +3,7 @@
 MAX_TRIES=10
 
 generate_tags() {
-  git ls-files | ctags -L - -f .tags >/dev/null 2>&1 &
+  git ls-files | ctags -L - -f .tags >/dev/null 2>&1
   rm .tags.lock
 }
 
@@ -23,4 +23,4 @@ acquire_lock() {
 }
 
 acquire_lock
-generate_tags
+generate_tags &
