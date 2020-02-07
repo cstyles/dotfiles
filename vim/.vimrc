@@ -19,7 +19,7 @@ set number              " Show line numbers in the gutter
 set ignorecase          " Case-insensitive search
 set hlsearch            " Highlight search results
 set incsearch           " Show results of search while typing
-set history=200         " Keep 200 lines of command line history
+set history=1000        " Number of lines of command line history to keep
 set showcmd             " Display incomplete commands
 set wildmenu            " Display completion matches in a status line
 set wildmode=longest,full
