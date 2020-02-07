@@ -4,7 +4,10 @@ abbr --global --add n nvim
 abbr --global --add nt nvim-term
 abbr --global --add be bundle exec
 
+abbr --global --add rgh rg --hidden
 abbr --global --add dushcsh 'du -shc * | sort -h'
+
+abbr --global --add cddot cd ~/dev/dotfiles
 
 # Git:
 abbr --global --add ga git add
