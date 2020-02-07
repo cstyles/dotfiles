@@ -80,4 +80,5 @@ augroup terminal_mapping
   autocmd TermClose term://* close
   autocmd TermEnter * setlocal scrolloff=0
   autocmd TermLeave * setlocal scrolloff=3
+  autocmd TermOpen * setlocal nonumber norelativenumber
 augroup END
