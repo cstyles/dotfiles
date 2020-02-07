@@ -5,8 +5,8 @@ set -gx HOMEBREW_EDITOR $EDITOR
 set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -gx fish_grep rg
 
-# Don't shorten path in prompt
-set -gx fish_prompt_pwd_dir_length 0
+# Shorten parent directories in prompt
+set -gx fish_prompt_pwd_dir_length 10
 
 # set __fish_git_prompt_showdirtystate true
 # set __fish_git_prompt_showuntrackedfiles true
