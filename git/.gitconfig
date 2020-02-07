@@ -19,16 +19,19 @@
     a = add
     ab = absorb
     abn = absorb --verbose --dry-run
+    abr = absorb --verbose --and-rebase
     ap = add --patch
     ai = add --interactive
     br = branch
     brav = branch --all --verbose
     ca = commit --amend
-    caa = commit --amend --no-edit
+    can = commit --amend --no-edit
     cb = checkout -b
     cf = commit --fixup
+    cfg = config = --edit
     cl = clone
     co = checkout
+    cp = cherry-pick
     d = diff
     dc = diff --cached
     dhu = diff HEAD @{u}
@@ -46,9 +49,12 @@
     ra = rebase --abort
     rb = rebase
     rc = rebase --continue
+    rd = range-diff
     re = restore
     rem = remote
+    res = restore --staged
     rh = reset --hard
+    rhu = reset --hard '@{u}'
     ri = rebase --interactive
     root = rev-parse --show-toplevel
     rs = rebase --skip
@@ -59,6 +65,7 @@
     sw = switch
     swd = show --word-diff
     wd = diff --word-diff
+    wdc = diff --word-diff --cached
     wt = worktree
 [log]
     date = local
