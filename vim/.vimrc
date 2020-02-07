@@ -37,7 +37,6 @@ set softtabstop=4       " Tabs = 4 spaces wide + delete spaces like tabs
 set shiftwidth=4        " Tabs = 4 spaces (for <<, >>, etc.)
 set expandtab           " Tab inserts spaces instead of tabs
 set autoindent          " Copy indent from current line
-set smartindent         " Increase/decrease indentation intelligently
 set magic
 set infercase           " when autocompleting with ignorecase on, infer case
 set smartcase
