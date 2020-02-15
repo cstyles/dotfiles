@@ -27,6 +27,7 @@ source (dirname (status --current-filename))/abbreviations.fish
 
 alias cat="bat"
 alias ls="exa"
+alias l="ll"
 alias lltr="exa --long --sort=modified"
 # alias find="fd"
 
