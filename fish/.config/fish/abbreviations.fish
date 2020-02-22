@@ -17,6 +17,7 @@ abbr --global --add gabr git absorb --verbose --and-rebase
 abbr --global --add gap git add --patch
 abbr --global --add gb git branch
 abbr --global --add gbr git branch
+abbr --global --add gbrm git branch --move
 abbr --global --add gbrsu git branch --set-upstream-to origin/\(git rev-parse --abbrev-ref HEAD\)
 abbr --global --add gbrv git branch --verbose
 abbr --global --add gca git commit --amend

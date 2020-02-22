@@ -23,6 +23,7 @@
     ap = add --patch
     ai = add --interactive
     br = branch
+    brm = branch --move
     brav = branch --all --verbose
     ca = commit --amend
     can = commit --amend --no-edit
