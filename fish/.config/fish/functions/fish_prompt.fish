@@ -1,4 +1,6 @@
 function fish_prompt --description 'Write out the prompt'
+    set --local saved_status $status
+
     switch "$USER"
         case root toor
             set prompt_symbol '#'
