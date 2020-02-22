@@ -79,7 +79,7 @@ augroup terminal_mapping
   autocmd!
   " autocmd BufWinEnter,WinEnter term://* startinsert
   " autocmd BufWinLeave,WinLeave term://* stopinsert
-  " autocmd TermOpen term://* startinsert
+  autocmd TermOpen term://* startinsert
   autocmd TermClose term://* quit
   autocmd TermEnter * setlocal scrolloff=0
   autocmd TermLeave * setlocal scrolloff=3
