@@ -69,6 +69,9 @@ nnoremap <silent> <M-w> :quit<CR>
 nnoremap <silent> <Leader>s :botright split \| :terminal<CR>:startinsert<CR>
 nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>:startinsert<CR>
 
+nnoremap <silent> <Leader>S :botright split \| Vmux<CR>:startinsert<CR>
+nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>:startinsert<CR>
+
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
 
