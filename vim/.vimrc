@@ -131,3 +131,10 @@ augroup spell
   autocmd!
   autocmd filetype gitcommit,markdown,text setlocal spell
 augroup END
+
+function! s:vmux()
+  let l:uuid = "vmux-" . system('uuidgen')
+  execute "edit term://tmux new-session -A -s " . l:uuid
+endfunction
+
+command! -nargs=0 Vmux :call s:vmux()
