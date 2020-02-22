@@ -15,7 +15,7 @@ if !empty($NEOVIM_REMOTE_PATH)
   let $GIT_EDITOR = $NEOVIM_REMOTE_PYTHON . ' ' . $NEOVIM_REMOTE_SCRIPT . ' -cc split --remote-wait'
 end
 
-augroup git
+augroup git_nvr
   autocmd!
   autocmd filetype gitcommit,gitrebase,gitconfig setlocal bufhidden=delete
 augroup END
