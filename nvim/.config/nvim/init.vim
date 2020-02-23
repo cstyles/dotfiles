@@ -66,11 +66,11 @@ nnoremap <M-}> gt|tnoremap <M-}> <C-\><C-n>gt
 nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
 nnoremap <silent> <M-w> :quit<CR>
 
-nnoremap <silent> <Leader>s :botright split \| :terminal<CR>:startinsert<CR>
-nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>:startinsert<CR>
+nnoremap <silent> <Leader>s :botright split \| :terminal<CR>
+nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>
 
-nnoremap <silent> <Leader>S :botright split \| Vmux<CR>:startinsert<CR>
-nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>:startinsert<CR>
+nnoremap <silent> <Leader>S :botright split \| Vmux<CR>
+nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>
 
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
