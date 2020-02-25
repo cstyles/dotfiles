@@ -41,6 +41,7 @@ abbr --global --add glo git log --oneline
 abbr --global --add glp git log --patch
 abbr --global --add glpr git log --patch --reverse
 abbr --global --add gm git merge
+abbr --global --add gma git merge --abort
 abbr --global --add gp git push
 abbr --global --add gpl git pull
 abbr --global --add gr git reset
