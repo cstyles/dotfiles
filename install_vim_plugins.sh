@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 PLUGIN_DIR="$HOME/.vim/pack/$(whoami)/start"
 
 PLUGINS='

@@ -1,4 +1,7 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-cd $(dirname "$0")
-stow --target "$HOME" $(find . -mindepth 1 -maxdepth 1 -type d -not -path ./.git | cut -b 3-)
+set -e
+
+cd "$(dirname "$0")"
+mapfile -t args < <(find . -mindepth 1 -maxdepth 1 -type d -not -path ./.git | cut -b 3-)
+stow --target "$HOME" "${args[@]}"
