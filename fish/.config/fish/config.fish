@@ -25,6 +25,11 @@ set fish_emoji_width 2
 # Abbreviations
 source (dirname (status --current-filename))/abbreviations.fish
 
+# Vendor-provided completions
+for file in /usr/local/share/fish/vendor_completions.d/*.fish
+  source "$file"
+end
+
 alias cat="bat"
 alias ls="exa"
 alias l="ll"
