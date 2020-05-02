@@ -22,5 +22,9 @@ acquire_lock() {
   touch .tags.lock
 }
 
-acquire_lock
-generate_tags &
+main() {
+  acquire_lock
+  generate_tags
+}
+
+main &
