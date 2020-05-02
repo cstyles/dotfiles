@@ -16,6 +16,7 @@ abbr --global --add gabn git absorb --verbose --dry-run
 abbr --global --add gabr git absorb --verbose --and-rebase
 abbr --global --add gap git add --patch
 abbr --global --add gb git branch
+abbr --global --add gbl git blame
 abbr --global --add gbr git branch
 abbr --global --add gbrm git branch --move
 abbr --global --add gbrsu git branch --set-upstream-to origin/\(git rev-parse --abbrev-ref HEAD\)
@@ -50,8 +51,10 @@ abbr --global --add grb git rebase
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
 abbr --global --add gre git restore
+abbr --global --add gref git reflog
 abbr --global --add grem git remote
 abbr --global --add gres git restore --staged
+abbr --global --add grev git revert
 abbr --global --add grh git reset --hard
 abbr --global --add grhu git reset --hard "'@{u}'"
 abbr --global --add gri git rebase --interactive

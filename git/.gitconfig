@@ -21,6 +21,7 @@
     abn = absorb --verbose --dry-run
     abr = absorb --verbose --and-rebase
     ap = add --patch
+    bl = blame
     br = branch
     brm = branch --move
     brav = branch --all --verbose
@@ -51,8 +52,10 @@
     rc = rebase --continue
     rd = range-diff
     re = restore
+    ref = reflog
     rem = remote
     res = restore --staged
+    rev = revert
     rh = reset --hard
     rhu = reset --hard '@{u}'
     ri = rebase --interactive
