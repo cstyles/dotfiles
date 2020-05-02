@@ -9,9 +9,9 @@ generate_tags() {
 
 acquire_lock() {
   i=0
-  while [ $i -lt $MAX_TRIES -a -f .tags.lock ]; do
+  while [ $i -lt $MAX_TRIES ] && [ -f .tags.lock ]; do
     sleep 1
-    let i=i+1
+    i=$((i+1))
   done
 
   if [ $i -eq $MAX_TRIES ]; then
