@@ -18,6 +18,7 @@ https://github.com/cstyles/oceanic-next.git
 https://github.com/mbbill/undotree.git
 https://github.com/tpope/vim-rhubarb.git
 https://github.com/tpope/vim-unimpaired.git
+https://github.com/majutsushi/tagbar
 '
 
 mkdir -p "$PLUGIN_DIR"
