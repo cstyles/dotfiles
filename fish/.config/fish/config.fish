@@ -38,3 +38,5 @@ bind \cg fzf-git-widget
 bind \cb fzf-git-branch-widget
 bind \eg __fish_git_status_current_token
 bind \ei __fish_rg_iglob_test
+
+bind \ck fzf-git-branch-widget-larose
