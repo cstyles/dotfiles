@@ -1,5 +1,9 @@
 function __fish_rg_iglob_test
-    set --local filter "--iglob !test"
+    for directory in test tests spec
+        if test -d $directory
+            set --append filter "--iglob !$directory"
+        end
+    end
 
     # If command line is empty, populate it with the last command
     if test -z (commandline --current-job)
