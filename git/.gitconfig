@@ -21,7 +21,6 @@
     abn = absorb --verbose --dry-run
     abr = absorb --verbose --and-rebase
     ap = add --patch
-    ai = add --interactive
     br = branch
     brm = branch --move
     brav = branch --all --verbose
