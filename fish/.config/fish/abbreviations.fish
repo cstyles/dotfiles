@@ -32,8 +32,8 @@ abbr --global --add gco git checkout
 abbr --global --add gcp git cherry-pick
 abbr --global --add gd git diff
 abbr --global --add gdc git diff --cached
-abbr --global --add gdhu git diff HEAD "'@{u}'"
-abbr --global --add gduh git diff "'@{u}'" HEAD
+abbr --global --add gdhu git diff HEAD @{u}
+abbr --global --add gduh git diff @{u} HEAD
 abbr --global --add gf git fetch
 abbr --global --add gfa git fetch --all
 abbr --global --add gg git graph
