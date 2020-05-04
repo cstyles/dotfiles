@@ -23,6 +23,11 @@ acquire_lock() {
 }
 
 main() {
+  # Skip if currently rebasing
+  if [ -d .git/rebase-merge ]; then
+    exit 0
+  fi
+
   acquire_lock
   generate_tags
 }
