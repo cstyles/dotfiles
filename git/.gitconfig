@@ -45,6 +45,7 @@
     m = merge
     ma = merge --abort
     p = push
+    pu = push --set-upstream origin HEAD
     pl = pull
     r = reset
     ra = rebase --abort

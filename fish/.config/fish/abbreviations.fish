@@ -44,6 +44,7 @@ abbr --global --add glpr git log --patch --reverse
 abbr --global --add gm git merge
 abbr --global --add gma git merge --abort
 abbr --global --add gp git push
+abbr --global --add gpu git push --set-upstream origin HEAD
 abbr --global --add gpl git pull
 abbr --global --add gr git reset
 abbr --global --add gra git rebase --abort
