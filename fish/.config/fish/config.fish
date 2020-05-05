@@ -26,9 +26,7 @@ set fish_emoji_width 2
 source (dirname (status --current-filename))/abbreviations.fish
 
 # Vendor-provided completions
-for file in /usr/local/share/fish/vendor_completions.d/*.fish
-  source "$file"
-end
+set --append fish_complete_path /usr/local/share/fish/vendor_completions.d # macOS / Homebrew
 
 alias cat="bat"
 alias ls="exa"
