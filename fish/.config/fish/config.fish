@@ -27,6 +27,7 @@ source (dirname (status --current-filename))/abbreviations.fish
 
 # Vendor-provided completions
 set --append fish_complete_path /usr/local/share/fish/vendor_completions.d # macOS / Homebrew
+set --append fish_complete_path /usr/share/fish/vendor_completions.d # arch / pacman
 
 alias cat="bat"
 alias ls="exa"
