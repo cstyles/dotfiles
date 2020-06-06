@@ -23,12 +23,12 @@ function fish_prompt --description 'Write out the prompt'
     # correctly. Without the ""s, it will evaluate to nothing and throw off
     # the alignment of the interpolation (i.e., all the subsequent '%s's will
     # be shifted over by one.
-    printf "[%s%s%s%s] %s%s %s" \
-             (set_color brblue) \
-               (prompt_pwd) \
-                 (set_color normal) \
-                   "$git_prompt" \
-                       (set_color $prompt_color) \
-                         "$prompt_symbol" \
-                            (set_color normal)
+    printf "%s%s%s%s %s%s %s" \
+           (set_color brblue) \
+             (prompt_pwd) \
+               (set_color normal) \
+                 "$git_prompt" \
+                     (set_color $prompt_color) \
+                       "$prompt_symbol" \
+                          (set_color normal)
 end
