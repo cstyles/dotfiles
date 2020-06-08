@@ -4,6 +4,7 @@ set -gx PAGER "less"
 set -gx HOMEBREW_EDITOR $EDITOR
 set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -gx fish_grep rg
+set -gx DOTFILES (git -C (dirname (realpath (status --current-filename))) rev-parse --show-toplevel)
 
 # Shorten parent directories in prompt
 set -gx fish_prompt_pwd_dir_length 10
