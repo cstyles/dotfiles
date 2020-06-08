@@ -5,6 +5,10 @@ function __fish_rg_iglob_test
         end
     end
 
+    if test -z "$filter"
+        set --append filter "--iglob !"
+    end
+
     # If command line is empty, populate it with the last command
     if test -z (commandline --current-job)
         commandline --append $history[1]
