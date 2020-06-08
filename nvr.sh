@@ -10,11 +10,11 @@
 # [x] bufhidden is set on terminal buffer :\
 
 if [ -z ${NVIM_LISTEN_ADDRESS+x} ]; then
-  nvim $@
+  nvim "$@"
 else
-  $NEOVIM_REMOTE_PATH/venv/bin/python3 $NEOVIM_REMOTE_PATH/nvr/nvr.py \
+  "$NEOVIM_REMOTE_PATH/venv/bin/python3" "$NEOVIM_REMOTE_PATH/nvr/nvr.py" \
     -cc split \
     --remote-wait \
     +'set bufhidden=delete' \
-    $@
+    "$@"
 fi
