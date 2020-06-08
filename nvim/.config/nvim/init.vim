@@ -17,7 +17,7 @@ end
 
 augroup git_nvr
   autocmd!
-  autocmd filetype gitcommit,gitrebase,gitconfig setlocal bufhidden=delete
+  autocmd FileType gitcommit,gitrebase,gitconfig setlocal bufhidden=delete
 augroup END
 
 " A bunch of settings to make Neovim's terminal act more like Vim's

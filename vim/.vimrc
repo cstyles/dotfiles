@@ -123,13 +123,13 @@ endif
 " An attempt to fix slow ruby formatting
 augroup ruby_files
   autocmd!
-  autocmd filetype ruby setlocal re=1
+  autocmd FileType ruby setlocal re=1
   autocmd BufWritePost *.rb :Neomake
 augroup END
 
 augroup spell
   autocmd!
-  autocmd filetype gitcommit,markdown,text setlocal spell
+  autocmd FileType gitcommit,markdown,text setlocal spell
 augroup END
 
 function! s:vmux()
