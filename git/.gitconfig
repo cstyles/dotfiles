@@ -52,6 +52,7 @@
     rb = rebase
     rc = rebase --continue
     rd = range-diff
+    rduh = range-diff origin/develop @{u} HEAD
     re = restore
     ref = reflog
     rem = remote

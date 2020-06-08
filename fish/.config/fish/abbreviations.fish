@@ -51,6 +51,7 @@ abbr --global --add gra git rebase --abort
 abbr --global --add grb git rebase
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
+abbr --global --add grduh git range-diff origin/develop @{u} HEAD
 abbr --global --add gre git restore
 abbr --global --add gref git reflog
 abbr --global --add grem git remote
