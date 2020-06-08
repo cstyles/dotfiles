@@ -111,6 +111,8 @@ imap <c-x><c-x> <plug>(fzf-complete-path)
 xnoremap <Tab> >gv
 xnoremap <S-Tab> <gv
 
+nnoremap <C-]> g<C-]>
+
 command! -bar -bang Q quit<bang>
 command! -bar -bang Qa quitall<bang>
 command! -bar -bang -nargs=? W write<bang> <args>
