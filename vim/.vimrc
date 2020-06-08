@@ -54,6 +54,7 @@ set splitright          " Focus on right window after splitting vertically
 
 " Autocomplete using current and other buffers, current+included files, and tags
 set complete=.,i,t,b
+" set completeopt=menu,preview
 
 set tags+=.tags
 
@@ -130,6 +131,12 @@ augroup END
 augroup spell
   autocmd!
   autocmd FileType gitcommit,markdown,text setlocal spell
+augroup END
+
+" Automatically close preview window after completing
+augroup preview
+  autocmd!
+  autocmd CompleteDone * :pclose
 augroup END
 
 function! s:vmux()
