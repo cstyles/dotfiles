@@ -29,7 +29,7 @@
     can = commit --amend --no-edit
     cb = checkout -b
     cf = commit --fixup
-    cfg = config = --edit
+    cfg = config --edit
     cl = clone
     co = checkout
     cp = cherry-pick
