@@ -75,7 +75,7 @@ nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
 nnoremap <silent> <Leader>g :GFiles<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
-nnoremap <silent> <Leader>q gqap
+nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
 nnoremap <silent> <Leader>T :tabnew<CR>:GFiles<CR>
