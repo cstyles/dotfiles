@@ -19,6 +19,7 @@ https://github.com/mbbill/undotree.git
 https://github.com/tpope/vim-rhubarb.git
 https://github.com/tpope/vim-unimpaired.git
 https://github.com/majutsushi/tagbar
+https://github.com/autozimu/LanguageClient-neovim
 '
 
 mkdir -p "$PLUGIN_DIR"
