@@ -66,6 +66,7 @@ nnoremap <silent> <C-c> :%s///gn<CR>
 
 tnoremap <C-w><C-w> <C-w>w
 
+nnoremap <silent> <Leader>` ysiW`
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>B :Gblame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
