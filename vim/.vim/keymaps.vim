@@ -107,6 +107,7 @@ inoremap <M-BS> <C-w>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
 inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
 inoremap <S-Tab> <C-x><C-f>
+inoremap <M-Tab> <C-x><C-o><C-p>
 
 imap <c-x><c-x> <plug>(fzf-complete-path)
 
