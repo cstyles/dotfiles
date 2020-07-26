@@ -77,8 +77,6 @@ nnoremap <M-BS> dbx
 
 augroup terminal_mapping
   autocmd!
-  " autocmd BufWinEnter,WinEnter term://* startinsert
-  " autocmd BufWinLeave,WinLeave term://* stopinsert
   autocmd TermOpen term://* startinsert
   autocmd TermClose term://* quit
   autocmd TermEnter * setlocal scrolloff=0
