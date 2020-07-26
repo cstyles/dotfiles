@@ -50,6 +50,10 @@ tnoremap <C-w>. <C-w>
 tnoremap <silent> <C-n> <C-\><C-n>:nohlsearch<CR>:startinsert<CR>
 tnoremap <C-w><C--> <C-\><C-n>0:startinsert<CR>
 
+" Paste the contents of the yank register without leaving terminal mode
+tnoremap <C-r>" <C-\><C-n>p:startinsert<CR>
+tnoremap <C-r>' <C-\><C-n>p:startinsert<CR>
+
 nnoremap <M-Tab> gt
 nnoremap <M-C-Y> gT
 
