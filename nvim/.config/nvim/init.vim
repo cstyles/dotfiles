@@ -28,10 +28,10 @@ tnoremap <C-w><C-n> <C-\><C-n><C-w>h
 tnoremap <C-w><C-e> <C-\><C-n><C-w>j
 tnoremap <C-w><C-u> <C-\><C-n><C-w>k
 tnoremap <C-w><C-i> <C-\><C-n><C-w>l
-tnoremap <C-w>N <C-\><C-n><C-w>Ha
-tnoremap <C-w>E <C-\><C-n><C-w>Ja
-tnoremap <C-w>U <C-\><C-n><C-w>Ka
-tnoremap <C-w>I <C-\><C-n><C-w>La
+tnoremap <C-w>N <C-\><C-n><C-w>H:startinsert<CR>
+tnoremap <C-w>E <C-\><C-n><C-w>J:startinsert<CR>
+tnoremap <C-w>U <C-\><C-n><C-w>K:startinsert<CR>
+tnoremap <C-w>I <C-\><C-n><C-w>L:startinsert<CR>
 tnoremap <C-w><C-b> <C-\><C-n><C-w>b
 tnoremap <C-w><C-t> <C-\><C-n><C-w>t
 tnoremap <C-w>b <C-\><C-n><C-w>b
