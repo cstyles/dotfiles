@@ -29,6 +29,8 @@ nnoremap l u|xnoremap l u
 nnoremap gl gu|xnoremap gl gu
 
 " TODO: mappings for <C-w>ARROWS
+" nmap ` <C-w>
+nmap w <C-w>
 nnoremap <C-w>n <C-w>h|tnoremap <C-w>n <C-w>h
 nnoremap <C-w>e <C-w>j|tnoremap <C-w>e <C-w>j
 nnoremap <C-w>u <C-w>k|tnoremap <C-w>u <C-w>k
