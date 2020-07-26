@@ -34,7 +34,6 @@ alias cat="bat"
 alias ls="exa"
 alias l="ll"
 alias ltr="exa --long --sort=modified"
-# alias find="fd"
 
 # Bindings:
 bind \er __fish_grep_pipe
