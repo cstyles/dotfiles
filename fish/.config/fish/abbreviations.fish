@@ -58,7 +58,7 @@ abbr --global --add grem git remote
 abbr --global --add gres git restore --staged
 abbr --global --add grev git revert
 abbr --global --add grh git reset --hard
-abbr --global --add grhu git reset --hard "'@{u}'"
+abbr --global --add grhu git reset --hard @{u}
 abbr --global --add gri git rebase --interactive
 abbr --global --add grs git rebase --skip
 abbr --global --add grv git remote --verbose
