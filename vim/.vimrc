@@ -50,6 +50,7 @@ set ttimeoutlen=100      " How long to wait after ESC to determine if standalone
 set dictionary=/usr/share/dict/words
 set splitbelow          " Focus on bottom window after splitting horizontally
 set splitright          " Focus on right window after splitting vertically
+set cursorline          " Highlight the line that the cursor is on
 
 " Autocomplete using current and other buffers, current+included files, and tags
 set complete=.,i,t,b
