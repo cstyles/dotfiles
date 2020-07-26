@@ -145,9 +145,3 @@ function! s:vmux()
 endfunction
 
 command! -nargs=0 Vmux :call s:vmux()
-
-let g:LanguageClient_serverCommands = {
-\ 'rust': ['/Users/collin.styles/dev/rust/rust-analyzer/target/release/rust-analyzer'],
-\ }
-
-nnoremap <Leader>a :call LanguageClient_contextMenu()<CR>
