@@ -3,5 +3,5 @@
 set -e
 
 cd "$(dirname "$0")"
-mapfile -t args < <(find . -mindepth 1 -maxdepth 1 -type d -not -path ./.git | cut -b 3-)
+mapfile -t args < <(fd --type=directory --exact-depth=1 .)
 stow --target "$HOME" "${args[@]}"
