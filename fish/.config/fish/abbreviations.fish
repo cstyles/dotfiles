@@ -72,3 +72,15 @@ abbr --global --add gswd git show --word-diff
 abbr --global --add gwd git diff --word-diff
 abbr --global --add gwdc git diff --word-diff --cached
 abbr --global --add gwt git worktree
+
+# cargo:
+abbr --global --add ca cargo add
+abbr --global --add cb cargo build
+abbr --global --add cbr cargo build --release
+abbr --global --add cc cargo check
+abbr --global --add ccl cargo clippy
+abbr --global --add ce cargo expand
+abbr --global --add cr cargo run
+abbr --global --add crr cargo run --release
+abbr --global --add ct cargo test
+abbr --global --add cw cargo watch
