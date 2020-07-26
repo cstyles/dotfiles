@@ -41,8 +41,7 @@ set magic
 set infercase           " when autocompleting with ignorecase on, infer case
 set smartcase
 " set pastetoggle=<f5>  " <f5> key = toggle paste option (:help paste)
-" TODO: something similar as above but for toggling hlsearch
-set autoread            " Update file if it changes on disk
+set noautoread          " Don't automatically update buffer if the file changes on disk
 set mouse=              " Disable mouse
 set nojoinspaces        " Don't add extra spaces when joining lines ending in '.'
 set breakindent         " Wrapped lines will maintain indentation
