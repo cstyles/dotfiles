@@ -89,6 +89,9 @@
     pager = "diff-so-fancy | less --tabs=4 -RFX"
 [rebase]
     autosquash = true
+[blame]
+    coloring = repeatedLines
+    date = local
 [commit]
     verbose = true
 [init]
