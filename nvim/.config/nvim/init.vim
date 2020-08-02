@@ -1,3 +1,23 @@
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'cstyles/vim-repeat'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+
+Plug 'godlygeek/tabular'
+Plug 'neomake/neomake'
+
+Plug 'cstyles/oceanic-next'
+Plug 'sheerun/vim-polyglot'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
