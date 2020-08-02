@@ -59,7 +59,6 @@ tnoremap <C-w>J <C-w>E " not anything by default, use for custom function
 tnoremap <C-w>K <C-w>N
 tnoremap <C-w>L <C-w>U " not anything by default, use for custom function
 
-nnoremap <silent> <Leader>n :nohlsearch<CR>
 nnoremap <silent> <C-n> :nohlsearch<CR>
 nnoremap <silent> <C-q> :call setqflist([])<Bar>:bufdo vimgrepadd // %<CR>:below copen<CR>
 nnoremap <silent> <C-k> :vimgrep // %<CR>:below copen<CR>
