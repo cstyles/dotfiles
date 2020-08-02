@@ -120,7 +120,6 @@ endif
 " An attempt to fix slow ruby formatting
 augroup ruby_files
   autocmd!
-  autocmd FileType ruby setlocal re=1
   autocmd BufWritePost *.rb :Neomake
 augroup END
 
