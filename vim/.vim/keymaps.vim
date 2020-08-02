@@ -73,6 +73,7 @@ nnoremap <silent> <Leader>B :Gblame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
 nnoremap <silent> <Leader>d :Gdiff<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
+nnoremap <silent> <Leader>F :RustFmt<CR>
 nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
 nnoremap <silent> <Leader>g :GFiles<CR>
