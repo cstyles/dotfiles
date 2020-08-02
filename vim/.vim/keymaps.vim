@@ -116,6 +116,10 @@ xnoremap <S-Tab> <gv
 
 nnoremap <C-]> g<C-]>
 
+" Allow pasting from register without having to hit Shift
+cnoremap <C-r>' <C-r>"
+inoremap <C-r>' <C-r>"
+
 command! -bar -bang Q quit<bang>
 command! -bar -bang Qa quitall<bang>
 command! -bar -bang -nargs=? W write<bang> <args>
