@@ -117,12 +117,6 @@ if has("gui_macvim")
   set macmeta
 endif
 
-" An attempt to fix slow ruby formatting
-augroup ruby_files
-  autocmd!
-  autocmd BufWritePost *.rb :Neomake
-augroup END
-
 augroup spell
   autocmd!
   autocmd FileType gitcommit,markdown,text setlocal spell

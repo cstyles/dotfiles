@@ -105,3 +105,5 @@ augroup terminal_mapping
 augroup END
 
 nnoremap <silent><expr> gd exists('g:coc_status') ? ":call CocActionAsync('jumpDefinition')<CR>" : "gd"
+
+call neomake#configure#automake('nrw', 500)
