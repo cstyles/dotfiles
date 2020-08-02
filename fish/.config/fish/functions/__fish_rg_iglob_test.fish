@@ -6,7 +6,7 @@ function __fish_rg_iglob_test
     end
 
     if test -z "$filter"
-        set --append filter "--iglob !"
+        set filter "--iglob !"
     end
 
     # If command line is empty, populate it with the last command
