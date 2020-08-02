@@ -56,6 +56,7 @@ abbr --global --add grb git rebase
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
 abbr --global --add grduh git range-diff origin/develop @{u} HEAD
+abbr --global --add grdmuh git range-diff origin/master @{u} HEAD
 abbr --global --add gre git restore
 abbr --global --add gref git reflog
 abbr --global --add grem git remote
@@ -66,6 +67,7 @@ abbr --global --add grh git reset --hard
 abbr --global --add grhu git reset --hard @{u}
 abbr --global --add gri git rebase --interactive
 abbr --global --add grid git rebase --interactive develop
+abbr --global --add griod git rebase --interactive origin/develop
 abbr --global --add grs git rebase --skip
 abbr --global --add grv git remote --verbose
 abbr --global --add gs git show
@@ -86,6 +88,7 @@ abbr --global --add cbr cargo build --release
 abbr --global --add cc cargo check
 abbr --global --add ccl cargo clippy
 abbr --global --add ce cargo expand
+abbr --global --add cf cargo fix
 abbr --global --add cr cargo run
 abbr --global --add crr cargo run --release
 abbr --global --add ct cargo test
