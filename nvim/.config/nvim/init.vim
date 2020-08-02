@@ -103,3 +103,5 @@ augroup terminal_mapping
   autocmd TermLeave * setlocal scrolloff=3
   autocmd TermOpen * setlocal nonumber norelativenumber
 augroup END
+
+nnoremap <silent><expr> gd exists('g:coc_status') ? ":call CocActionAsync('jumpDefinition')<CR>" : "gd"
