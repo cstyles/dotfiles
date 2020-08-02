@@ -81,7 +81,7 @@ nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>
-nnoremap <silent> <Leader>T :tabnew<CR>:GFiles<CR>
+nnoremap <silent> <Leader>T :Tags<CR>
 nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
 
 " TODO: Figure out what the hell I'm trying to do here
