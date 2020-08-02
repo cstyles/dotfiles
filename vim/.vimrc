@@ -58,11 +58,7 @@ set complete=.,i,t,b
 
 set tags+=.tags
 
-if empty($CUSTOM_FISH_PATH)
-  set shell=fish
-else
-  set shell=$CUSTOM_FISH_PATH
-end
+set shell=fish
 
 " Do incremental searching when it's possible to timeout.
 if has('reltime')

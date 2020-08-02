@@ -1,4 +1,4 @@
-shell $CUSTOM_FISH_PATH
+shell fish
 term screen-256color
 termcapinfo * ti@:te@
 defscrollback 10000
