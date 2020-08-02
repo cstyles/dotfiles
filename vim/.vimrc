@@ -128,12 +128,6 @@ augroup spell
   autocmd FileType gitcommit,markdown,text setlocal spell
 augroup END
 
-" Automatically close preview window after completing
-augroup preview
-  autocmd!
-  autocmd CompleteDone * :pclose
-augroup END
-
 function! s:vmux()
   let l:uuid = "vmux-" . system('uuidgen')
   execute "edit term://tmux new-session -A -s " . l:uuid
