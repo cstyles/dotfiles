@@ -16,6 +16,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'rhysd/git-messenger.vim'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
