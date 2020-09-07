@@ -32,8 +32,8 @@ abbr --global --add gco git checkout
 abbr --global --add gcp git cherry-pick
 abbr --global --add gd git diff
 abbr --global --add gdc git diff --cached
-abbr --global --add gdhu git diff HEAD @{u}
-abbr --global --add gduh git diff @{u} HEAD
+abbr --global --add gdhu git diff HEAD @{upstream}
+abbr --global --add gduh git diff @{upstream} HEAD
 abbr --global --add gf git fetch
 abbr --global --add gfa git fetch --all
 abbr --global --add gg git graph
@@ -43,8 +43,8 @@ abbr --global --add glp git log --patch
 abbr --global --add glpr git log --patch --reverse
 abbr --global --add glprd git log --patch --reverse develop..
 abbr --global --add glprod git log --patch --reverse origin/develop...
-abbr --global --add glpru git log --patch --reverse @{u}..
-abbr --global --add glu git log @{u}
+abbr --global --add glpru git log --patch --reverse @{upstream}..
+abbr --global --add glu git log @{upstream}
 abbr --global --add gm git merge
 abbr --global --add gma git merge --abort
 abbr --global --add gp git push
@@ -55,8 +55,8 @@ abbr --global --add gra git rebase --abort
 abbr --global --add grb git rebase
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
-abbr --global --add grduh git range-diff origin/develop @{u} HEAD
-abbr --global --add grdmuh git range-diff origin/master @{u} HEAD
+abbr --global --add grduh git range-diff origin/develop @{upstream} HEAD
+abbr --global --add grdmuh git range-diff origin/master @{upstream} HEAD
 abbr --global --add gre git restore
 abbr --global --add gref git reflog
 abbr --global --add grem git remote
@@ -64,7 +64,7 @@ abbr --global --add gres git restore --staged
 abbr --global --add gresp git restore --staged --patch
 abbr --global --add grev git revert
 abbr --global --add grh git reset --hard
-abbr --global --add grhu git reset --hard @{u}
+abbr --global --add grhu git reset --hard @{upstream}
 abbr --global --add gri git rebase --interactive
 abbr --global --add grid git rebase --interactive develop
 abbr --global --add griod git rebase --interactive origin/develop
