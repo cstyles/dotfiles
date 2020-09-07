@@ -113,6 +113,7 @@
     untracked = red
     added = green bold
     changed = yellow
+    unmerged = magenta
 [color "branch"]
     current = yellow bold
     local = white
