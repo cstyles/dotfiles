@@ -1,2 +1,4 @@
+# Config for ripgrep
+
 --smart-case
 --max-columns=300
