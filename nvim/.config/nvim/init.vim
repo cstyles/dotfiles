@@ -100,7 +100,7 @@ nnoremap <M-BS> dbx
 augroup terminal_mapping
   autocmd!
   autocmd TermOpen term://* startinsert
-  autocmd TermClose term://* quit
+  autocmd TermClose term://* call nvim_input('<CR>')
   autocmd TermEnter * setlocal scrolloff=0
   autocmd TermLeave * setlocal scrolloff=3
   autocmd TermOpen * setlocal nonumber norelativenumber
