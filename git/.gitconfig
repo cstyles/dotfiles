@@ -105,6 +105,8 @@
     date = local
 [commit]
     verbose = true
+[diff]
+    mnemonicPrefix = true
 [init]
     defaultBranch = main
     templateDir = ~/.git-templates
