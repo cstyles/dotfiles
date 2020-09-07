@@ -45,6 +45,7 @@ set noautoread          " Don't automatically update buffer if the file changes 
 set mouse=              " Disable mouse
 set nojoinspaces        " Don't add extra spaces when joining lines ending in '.'
 set breakindent         " Wrapped lines will maintain indentation
+let &showbreak = "> "
 set nottimeout
 set ttimeoutlen=100      " How long to wait after ESC to determine if standalone
 set dictionary=/usr/share/dict/words
