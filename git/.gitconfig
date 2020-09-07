@@ -107,6 +107,7 @@
     verbose = true
 [diff]
     mnemonicPrefix = true
+    wordRegex = "[^[:space:],=<>]+"
 [init]
     defaultBranch = main
     templateDir = ~/.git-templates
