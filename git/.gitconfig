@@ -42,6 +42,9 @@
     lo = log --oneline
     lp = log --patch
     lpr = log --patch --reverse
+    lprd = log --patch --reverse develop..
+    lprm = log --patch --reverse master..
+    lprod = log --patch --reverse origin/develop..
     lpru = log --patch --reverse @{upstream}
     lu = log @{upstream}
     m = merge
@@ -52,9 +55,12 @@
     r = reset
     ra = rebase --abort
     rb = rebase
+    rbo = rebase --onto
     rc = rebase --continue
     rd = range-diff
+    rdhu = range-diff origin/develop HEAD @{upstream}
     rduh = range-diff origin/develop @{upstream} HEAD
+    rdmhu = range-diff origin/master HEAD @{upstream}
     rdmuh = range-diff origin/master @{upstream} HEAD
     re = restore
     ref = reflog
@@ -68,6 +74,8 @@
     rs = rebase --skip
     rv = remote --verbose
     s = show
+    sc = switch --create
+    sfc = switch --force-create
     sl = stash list
     ss = stash show --patch
     sw = switch

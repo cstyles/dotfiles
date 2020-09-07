@@ -15,6 +15,7 @@ abbr --global --add gab git absorb
 abbr --global --add gabn git absorb --verbose --dry-run
 abbr --global --add gabr git absorb --verbose --and-rebase
 abbr --global --add gap git add --patch
+# hmmm...
 abbr --global --add gb git branch
 abbr --global --add gbl git blame
 abbr --global --add gbr git branch
@@ -42,7 +43,8 @@ abbr --global --add glo git log --oneline
 abbr --global --add glp git log --patch
 abbr --global --add glpr git log --patch --reverse
 abbr --global --add glprd git log --patch --reverse develop..
-abbr --global --add glprod git log --patch --reverse origin/develop...
+abbr --global --add glprm git log --patch --reverse master..
+abbr --global --add glprod git log --patch --reverse origin/develop..
 abbr --global --add glpru git log --patch --reverse @{upstream}..
 abbr --global --add glu git log @{upstream}
 abbr --global --add gm git merge
@@ -53,9 +55,12 @@ abbr --global --add gpu git push --set-upstream origin HEAD
 abbr --global --add gr git reset
 abbr --global --add gra git rebase --abort
 abbr --global --add grb git rebase
+abbr --global --add grbo git rebase --onto
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
+abbr --global --add grdhu git range-diff origin/develop HEAD @{upstream}
 abbr --global --add grduh git range-diff origin/develop @{upstream} HEAD
+abbr --global --add grdmhu git range-diff origin/master HEAD @{upstream}
 abbr --global --add grdmuh git range-diff origin/master @{upstream} HEAD
 abbr --global --add gre git restore
 abbr --global --add gref git reflog
@@ -72,6 +77,7 @@ abbr --global --add grs git rebase --skip
 abbr --global --add grv git remote --verbose
 abbr --global --add gs git show
 abbr --global --add gsc git switch --create
+abbr --global --add gsfc git switch --force-create
 abbr --global --add gsl git stash list
 abbr --global --add gss git stash show -p
 abbr --global --add gst git status
