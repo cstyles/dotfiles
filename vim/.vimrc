@@ -97,8 +97,6 @@ let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
 
-let g:git_messenger_no_default_mappings = v:true
-
 if has("termguicolors")
   set termguicolors
 end
