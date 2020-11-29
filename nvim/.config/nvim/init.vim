@@ -9,7 +9,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'godlygeek/tabular'
 Plug 'neomake/neomake'
 
-Plug 'cstyles/oceanic-next'
+Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
