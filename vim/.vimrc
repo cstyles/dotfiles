@@ -84,6 +84,7 @@ endif
 filetype plugin indent on
 
 source ~/.vim/keymaps.vim
+source ~/.vim/colors.vim
 
 " Use rg (ripgrep) in place of grep
 let &grepprg = "rg -i --vimgrep --color=auto"
