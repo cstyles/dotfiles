@@ -10,14 +10,20 @@ Plug 'godlygeek/tabular'
 Plug 'neomake/neomake'
 
 Plug 'mhartington/oceanic-next'
+Plug 'tssm/fairyfloss.vim'
+Plug 'Rigellute/rigel'
+Plug 'dracula/vim'
 Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
 
 Plug 'rhysd/git-messenger.vim'
+
+Plug 'justinmk/vim-sneak'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
