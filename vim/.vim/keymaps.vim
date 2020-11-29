@@ -94,7 +94,7 @@ xnoremap D "+d
 nnoremap <M-D> "+D
 
 " Paste such that we replace the rest of the line
-nnoremap <M-r> v$<Left>p
+nnoremap <M-r> "_Dp
 
 inoremap <M-BS> <C-w>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
