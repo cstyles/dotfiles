@@ -108,6 +108,8 @@ let &t_ZR="\e[23m"
 
 set runtimepath+=/usr/local/opt/fzf
 
+let $MINITEST_REPORTER="DefaultReporter"
+
 if has("gui_macvim")
   set mouse=a
   set relativenumber
