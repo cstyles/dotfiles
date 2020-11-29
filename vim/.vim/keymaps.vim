@@ -1,11 +1,5 @@
 nnoremap <Space> :
 
-" Turn off arrow keys to force me to use jkil
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
 " Use jkil (QWERTY) / neui (Colemak) to navigate
 nnoremap n h|xnoremap n h
 nnoremap N K|xnoremap N K
