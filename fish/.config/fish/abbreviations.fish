@@ -1,3 +1,4 @@
+abbr --global --add c cargo
 abbr --global --add g git
 abbr --global --add v vim
 abbr --global --add n nvim
@@ -17,6 +18,7 @@ abbr --global --add gabr git absorb --verbose --and-rebase
 abbr --global --add gap git add --patch
 # hmmm...
 abbr --global --add gb git branch
+abbr --global --add gbf git branch --force
 abbr --global --add gbl git blame
 abbr --global --add gbr git branch
 abbr --global --add gbrm git branch --move
@@ -45,10 +47,12 @@ abbr --global --add glpr git log --patch --reverse
 abbr --global --add glprd git log --patch --reverse develop..
 abbr --global --add glprm git log --patch --reverse master..
 abbr --global --add glprod git log --patch --reverse origin/develop..
+abbr --global --add glprom git log --patch --reverse origin/master..
 abbr --global --add glpru git log --patch --reverse @{upstream}..
 abbr --global --add glu git log @{upstream}
 abbr --global --add gm git merge
 abbr --global --add gma git merge --abort
+abbr --global --add gmb git merge-base
 abbr --global --add gp git push
 abbr --global --add gpl git pull
 abbr --global --add gpu git push --set-upstream origin HEAD
@@ -72,8 +76,11 @@ abbr --global --add grh git reset --hard
 abbr --global --add grhu git reset --hard @{upstream}
 abbr --global --add gri git rebase --interactive
 abbr --global --add grid git rebase --interactive develop
+abbr --global --add grim git rebase --interactive master
 abbr --global --add griod git rebase --interactive origin/develop
+abbr --global --add griom git rebase --interactive origin/master
 abbr --global --add grs git rebase --skip
+abbr --global --add gru git rebase --interactive @{upstream}
 abbr --global --add grv git remote --verbose
 abbr --global --add gs git show
 abbr --global --add gsc git switch --create
