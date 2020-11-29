@@ -112,8 +112,7 @@ augroup terminal_mapping
   autocmd TermOpen * setlocal nonumber norelativenumber
 augroup END
 
-nnoremap <silent><expr> gd exists('g:coc_status') ? ":call CocActionAsync('jumpDefinition')<CR>" : "gd"
-
 call neomake#configure#automake('nrw', 500)
 
 runtime git-messenger.vim
+runtime coc.vim
