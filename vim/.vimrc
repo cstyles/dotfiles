@@ -124,6 +124,11 @@ augroup spell
   autocmd FileType gitcommit,markdown,text setlocal spell
 augroup END
 
+augroup cson
+  autocmd!
+  autocmd BufRead,BufNewFile *.cson setf coffee
+augroup END
+
 function! s:vmux()
   let l:uuid = "vmux-" . system('uuidgen')
   execute "edit term://tmux new-session -A -s " . l:uuid
