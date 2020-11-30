@@ -34,6 +34,7 @@ set relativenumber
 set mouse=a
 set inccommand=nosplit
 set autoread
+set signcolumn=yes:2
 
 " WHen running git-commit from inside an nvim terminal, open a new buffer in
 " the host nvim instead of opening a nested nvim process
@@ -109,7 +110,7 @@ augroup terminal_mapping
   autocmd TermClose term://* call nvim_input('<CR>')
   autocmd TermEnter * setlocal scrolloff=0
   autocmd TermLeave * setlocal scrolloff=3
-  autocmd TermOpen * setlocal nonumber norelativenumber
+  autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=auto
 augroup END
 
 call neomake#configure#automake('nrw', 500)
