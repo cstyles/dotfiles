@@ -23,6 +23,8 @@ set __fish_git_prompt_color_branch yellow
 
 set fish_emoji_width 2
 
+set --global --export LESS FRis
+
 # Abbreviations
 source (dirname (status --current-filename))/abbreviations.fish
 
