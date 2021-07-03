@@ -10,9 +10,6 @@ Plug 'godlygeek/tabular'
 Plug 'neomake/neomake'
 
 Plug 'mhartington/oceanic-next'
-Plug 'tssm/fairyfloss.vim'
-Plug 'Rigellute/rigel'
-Plug 'dracula/vim'
 Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
