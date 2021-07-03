@@ -28,6 +28,7 @@
     commitGraph = true
 [interactive]
   diffFilter = delta --color-only
+  singleKey = true
 [delta]
   theme = Sublime Snazzy
 [rebase]
