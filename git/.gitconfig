@@ -25,6 +25,7 @@
     quotepath = false
     editor = nvim
     pager = "delta --max-line-length=1024 | less -X"
+    commitGraph = true
 [interactive]
   diffFilter = delta --color-only
 [delta]
