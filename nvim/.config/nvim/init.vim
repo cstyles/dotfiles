@@ -105,6 +105,7 @@ nnoremap <M-S-Tab> gT|tnoremap <M-S-Tab> <C-\><C-n>gT
 nnoremap <M-}> gt|tnoremap <M-}> <C-\><C-n>gt
 nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
 nnoremap <silent> <M-w> :quit<CR>
+nnoremap <silent> <M-W> :quit!<CR>
 
 nnoremap <silent> <Leader>s :split \| :terminal<CR>
 nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>
