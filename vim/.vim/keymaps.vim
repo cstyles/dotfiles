@@ -68,6 +68,7 @@ nmap <silent> <Leader>` ysiW`
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>B :Git blame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
+nnoremap <silent> <Leader>e :split \| :enew<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
 " nnoremap <silent> <Leader>g ???
 nnoremap <silent> <Leader>G :GBrowse<CR>|xnoremap <silent> <Leader>G :GBrowse<CR>
@@ -99,6 +100,13 @@ nnoremap <M-D> "+D
 " Paste such that we replace the rest of the line
 nnoremap <M-r> "_Dp
 
+nnoremap <silent> <M-e> :move +1<CR>
+nnoremap <silent> <M-u> :move -2<CR>
+
+nnoremap Q qq
+
+nnoremap gJ ddpkJ
+
 inoremap <M-BS> <C-w>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
 inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
@@ -109,6 +117,11 @@ imap <c-x><c-x> <plug>(fzf-complete-path)
 
 xnoremap <Tab> >gv
 xnoremap <S-Tab> <gv
+
+" Copy current filename to the systeme clipboard (relative to pwd)
+nnoremap <silent> gn :let @+=expand("%")<CR>
+" Copy current filename to the systeme clipboard (absolute path)
+nnoremap <silent> gN :let @+=expand("%:p")<CR>
 
 nnoremap <C-]> g<C-]>
 
