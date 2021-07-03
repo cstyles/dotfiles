@@ -123,6 +123,11 @@ nnoremap Q qq
 
 nnoremap gJ ddpkJ
 
+nnoremap zk nzz
+nnoremap zn nzz
+nnoremap zK Nzz
+nnoremap zN Nzz
+
 inoremap <M-BS> <C-w>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
 inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
