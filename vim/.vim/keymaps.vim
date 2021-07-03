@@ -1,4 +1,11 @@
 nnoremap <Space> :
+" nnoremap <BS> ???
+" nnoremap <CR> ???
+" nnoremap <Del> ???
+" nnoremap - ???
+" nnoremap + ???
+" nnoremap X ???
+" nnoremap U ???
 
 " Use jkil (QWERTY) / neui (Colemak) to navigate
 nnoremap n h|xnoremap n h
@@ -61,6 +68,13 @@ nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
 nnoremap <silent> <C-g> :GFiles<CR>|xnoremap <silent> <C-g> :GFiles<CR>
+" nnoremap <silent> <C-h> ???
+" nnoremap <silent> <C-p> ???
+" nnoremap <silent> <C-s> ???
+" nnoremap <silent> <C-z> ???
+"
+" nnoremap <silent> gb
+" nnoremap <silent> z???
 
 tnoremap <C-w><C-w> <C-w>w
 
