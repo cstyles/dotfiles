@@ -84,6 +84,15 @@ tnoremap <C-r>' <C-\><C-n>p:startinsert<CR>
 
 nnoremap <M-Tab> gt
 nnoremap <M-C-Y> gT
+nnoremap <silent> <M-1> :tabfirst<CR>
+nnoremap <M-2> 2gt
+nnoremap <M-3> 3gt
+nnoremap <M-4> 4gt
+nnoremap <M-5> 5gt
+nnoremap <M-6> 6gt
+nnoremap <M-7> 7gt
+nnoremap <M-8> 8gt
+nnoremap <silent> <M-9> :tablast<CR>
 
 nnoremap <silent> <M-t> :tabnew<CR>
 nnoremap <M-Tab> gt|tnoremap <M-Tab> <C-\><C-n>gt
