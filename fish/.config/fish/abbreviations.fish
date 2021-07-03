@@ -109,6 +109,7 @@ abbr --global --add gsfc git switch --force-create
 abbr --global --add gsl git stash list
 abbr --global --add gsh git show
 abbr --global --add gss git stash show -p
+abbr --global --add gst git stash
 abbr --global --add gsw git switch
 abbr --global --add gswd git show --word-diff
 abbr --global --add gwd git diff --word-diff
