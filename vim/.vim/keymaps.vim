@@ -60,6 +60,8 @@ nnoremap <silent> <C-k> :vimgrep // %<CR>:below copen<CR>
 nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
+nnoremap <silent> <C-g> :GFiles<CR>|xnoremap <silent> <C-g> :GFiles<CR>
+
 tnoremap <C-w><C-w> <C-w>w
 
 nmap <silent> <Leader>` ysiW`
@@ -67,9 +69,10 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>B :Gblame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
+" nnoremap <silent> <Leader>g ???
+nnoremap <silent> <Leader>G :GBrowse<CR>|xnoremap <silent> <Leader>G :GBrowse<CR>
 nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
-nnoremap <silent> <Leader>g :GFiles<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
