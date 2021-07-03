@@ -5,7 +5,7 @@ function fish_prompt --description 'Write out the prompt'
         case root toor
             set prompt_symbol '#'
         case '*'
-            set prompt_symbol '$'
+            set prompt_symbol '❯'
     end
 
     set git_prompt (__fish_git_prompt)
