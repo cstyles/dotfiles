@@ -82,6 +82,9 @@ tnoremap <C-w><C--> <C-\><C-n>0:startinsert<CR>
 tnoremap <C-r>" <C-\><C-n>p:startinsert<CR>
 tnoremap <C-r>' <C-\><C-n>p:startinsert<CR>
 
+tnoremap <silent> <C-r><C-r> <C-r>
+tnoremap <silent> <C-r>r <C-r>
+
 nnoremap <M-Tab> gt
 nnoremap <M-C-Y> gT
 nnoremap <silent> <M-1> :tabfirst<CR>
