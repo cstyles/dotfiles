@@ -95,7 +95,6 @@ nnoremap <silent> <Leader>t :tabnew<CR>:GFiles<CR>
 nnoremap <silent> <Leader>T :Tags<CR>
 nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
 
-" TODO: Figure out what the hell I'm trying to do here
 nnoremap Y y$
 xnoremap Y "+y
 
