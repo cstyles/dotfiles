@@ -94,6 +94,8 @@ let mapleader = "\\"
 
 let g:python_highlight_space_errors = 0
 
+let g:vim_markdown_new_list_item_indent = 0
+
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
