@@ -103,12 +103,12 @@ abbr --global --add grm git rm
 abbr --global --add grs git rebase --skip
 abbr --global --add gru git rebase --interactive @{upstream}
 abbr --global --add grv git remote --verbose
-abbr --global --add gs git show
+abbr --global --add gs git status
 abbr --global --add gsc git switch --create
 abbr --global --add gsfc git switch --force-create
 abbr --global --add gsl git stash list
+abbr --global --add gsh git show
 abbr --global --add gss git stash show -p
-abbr --global --add gst git status
 abbr --global --add gsw git switch
 abbr --global --add gswd git show --word-diff
 abbr --global --add gwd git diff --word-diff
