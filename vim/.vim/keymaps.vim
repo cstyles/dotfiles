@@ -66,7 +66,7 @@ tnoremap <C-w><C-w> <C-w>w
 
 nmap <silent> <Leader>` ysiW`
 nnoremap <silent> <Leader>b :Buffers<CR>
-nnoremap <silent> <Leader>B :Gblame<CR>
+nnoremap <silent> <Leader>B :Git blame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
 " nnoremap <silent> <Leader>g ???
