@@ -88,6 +88,7 @@ nnoremap <silent> <Leader>f :FZF<CR>
 nnoremap <silent> <Leader>G :GBrowse<CR>|xnoremap <silent> <Leader>G :GBrowse<CR>
 nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
+nnoremap <silent> <Leader>l :BLines<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
