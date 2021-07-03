@@ -99,6 +99,8 @@ nnoremap <M-D> "+D
 
 " Paste such that we replace the rest of the line
 nnoremap <M-r> "_Dp
+" Paste (using the system clipboard) such that we replace the rest of the line
+nnoremap <M-R> "_D"+p
 
 nnoremap <silent> <M-e> :move +1<CR>
 nnoremap <silent> <M-u> :move -2<CR>
