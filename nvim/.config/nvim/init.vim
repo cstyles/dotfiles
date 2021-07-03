@@ -21,6 +21,7 @@ Plug 'honza/vim-snippets'
 Plug 'rhysd/git-messenger.vim'
 
 Plug 'justinmk/vim-sneak'
+Plug 'haya14busa/vim-asterisk'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
@@ -101,6 +102,15 @@ nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>
 
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
+
+map *  <Plug>(asterisk-z*)
+map #  <Plug>(asterisk-z#)
+map g* <Plug>(asterisk-gz*)
+map g# <Plug>(asterisk-gz#)
+map z*  <Plug>(asterisk-*)
+map z#  <Plug>(asterisk-#)
+map zg* <Plug>(asterisk-g*)
+map zg# <Plug>(asterisk-g#)
 
 augroup terminal_mapping
   autocmd!
