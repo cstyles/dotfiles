@@ -123,7 +123,11 @@ nnoremap <silent> gn :let @+=expand("%")<CR>
 " Copy current filename to the systeme clipboard (absolute path)
 nnoremap <silent> gN :let @+=expand("%:p")<CR>
 
+" Make <C-]> (:tag) act like g<C-]> (:tjump) and vice versa
 nnoremap <C-]> g<C-]>
+nnoremap g<C-]> <C-]>
+" Search for tag under cursor using FZF
+nnoremap <silent> z] yiw:Tags<CR><C-\><C-n>p:startinsert<CR>
 
 " Allow pasting from register without having to hit Shift
 cnoremap <C-r>' <C-r>"
