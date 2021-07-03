@@ -7,6 +7,7 @@ abbr --global --add be bundle exec
 
 abbr --global --add rgh rg --hidden
 abbr --global --add dushcsh 'du -shc * | sort -h'
+abbr --global --add ltr 'exa --long --sort=modified'
 
 abbr --global --add cddot cd ~/dev/dotfiles
 

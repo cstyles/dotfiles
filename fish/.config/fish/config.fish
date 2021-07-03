@@ -32,8 +32,6 @@ source (dirname (status --current-filename))/abbreviations.fish
 set --append fish_complete_path /usr/local/share/fish/vendor_completions.d # macOS / Homebrew
 set --append fish_complete_path /usr/share/fish/vendor_completions.d # arch / pacman
 
-alias ltr="exa --long --sort=modified"
-
 # Bindings:
 bind \er __fish_grep_pipe
 bind \ew __fish_wc_pipe # NOTE: M-w is already used to run `whatis` on a keyword
