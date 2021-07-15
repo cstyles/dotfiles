@@ -37,7 +37,7 @@ set cmdheight=2
 
 " WHen running git-commit from inside an nvim terminal, open a new buffer in
 " the host nvim instead of opening a nested nvim process
-let $GIT_EDITOR = $DOTFILES . '/nvr.sh'
+let $GIT_EDITOR = 'nvr'
 
 augroup git_nvr
   autocmd!
