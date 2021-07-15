@@ -1,28 +1,7 @@
 #!/usr/bin/env bash
 
-MAX_TRIES=10
 # CTAGS_CMD=~/dev/ctags/ctags # universal-ctags
 CTAGS_CMD='ctags'
-
-generate_tags() {
-  $CTAGS_CMD -L <(git ls-files) -f .tags >/dev/null 2>&1
-  rm .tags.lock
-}
-
-acquire_lock() {
-  i=0
-  while [ $i -lt $MAX_TRIES ] && [ -f .tags.lock ]; do
-    sleep 1
-    i=$((i+1))
-  done
-
-  if [ $i -eq $MAX_TRIES ]; then
-    echo "Couldn't acquire .tags.lock"
-    exit 1
-  fi
-
-  touch .tags.lock
-}
 
 main() {
   # Skip if currently rebasing
@@ -30,8 +9,7 @@ main() {
     exit 0
   fi
 
-  acquire_lock
-  generate_tags
+  lckdo -W 10 .tags.lock $CTAGS_CMD -L <(git ls-files) -f .tags >/dev/null 2>&1
 }
 
 main &
