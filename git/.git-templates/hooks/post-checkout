@@ -5,7 +5,7 @@ MAX_TRIES=10
 CTAGS_CMD='ctags'
 
 generate_tags() {
-  git ls-files | $CTAGS_CMD -L - -f .tags >/dev/null 2>&1
+  $CTAGS_CMD -L <(git ls-files) -f .tags >/dev/null 2>&1
   rm .tags.lock
 }
 
