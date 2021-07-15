@@ -5,9 +5,7 @@ CTAGS_CMD='ctags'
 
 main() {
   # Skip if currently rebasing
-  if [ -d .git/rebase-merge ]; then
-    exit 0
-  fi
+  test -d .git/rebase-merge && exit 0
 
   lckdo -W 10 .tags.lock $CTAGS_CMD -L <(git ls-files) -f .tags >/dev/null 2>&1
 }
