@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 
 MAX_TRIES=10
+# CTAGS_CMD=~/dev/ctags/ctags # universal-ctags
+CTAGS_CMD='ctags'
 
 generate_tags() {
-  git ls-files | ctags -L - -f .tags >/dev/null 2>&1
+  git ls-files | $CTAGS_CMD -L - -f .tags >/dev/null 2>&1
   rm .tags.lock
 }
 
