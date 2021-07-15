@@ -3,3 +3,4 @@
 *.swo
 .tags
 .tags.lock
+.vim/
