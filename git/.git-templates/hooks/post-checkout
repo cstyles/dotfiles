@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 MAX_TRIES=10
 # CTAGS_CMD=~/dev/ctags/ctags # universal-ctags
