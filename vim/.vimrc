@@ -90,8 +90,6 @@ source ~/.vim/colors.vim
 let &grepprg = "rg -i --vimgrep --color=auto"
 let &grepformat = "%f:%l:%c:%m," . &grepformat
 
-let mapleader = "\\"
-
 let g:python_highlight_space_errors = 0
 
 let g:vim_markdown_new_list_item_indent = 0
@@ -112,25 +110,9 @@ set runtimepath+=/usr/local/opt/fzf
 
 let $MINITEST_REPORTER="DefaultReporter"
 
-if has("gui_macvim")
-  set mouse=a
-  set relativenumber
-  tnoremap <M-BS> <C-w>.
-  tnoremap <M-Left> <Esc>b
-  tnoremap <M-Right> <Esc>f
-  nnoremap <M-Tab> gt
-  nnoremap <M-S-Tab> gT
-  set macmeta
-endif
-
 augroup spell
   autocmd!
   autocmd FileType gitcommit,markdown,text setlocal spell
-augroup END
-
-augroup cson
-  autocmd!
-  autocmd BufRead,BufNewFile *.cson setf coffee
 augroup END
 
 function! s:vmux()
