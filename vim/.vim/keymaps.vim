@@ -93,6 +93,7 @@ nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>t :tabnew<CR>:GFiles<CR>
+nnoremap <silent> <Leader>R :Rails<CR>
 nnoremap <silent> <Leader>T :Tags<CR>
 nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
 
