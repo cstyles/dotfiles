@@ -127,9 +127,9 @@ imap <c-x><c-x> <plug>(fzf-complete-path)
 xnoremap <Tab> >gv
 xnoremap <S-Tab> <gv
 
-" Copy current filename to the systeme clipboard (relative to pwd)
+" Copy current filename to the system clipboard (relative to pwd)
 nnoremap <silent> gn :let @+=expand("%")<CR>
-" Copy current filename to the systeme clipboard (absolute path)
+" Copy current filename to the system clipboard (absolute path)
 nnoremap <silent> gN :let @+=expand("%:p")<CR>
 
 " Make <C-]> (:tag) act like g<C-]> (:tjump) and vice versa
