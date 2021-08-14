@@ -1,11 +1,4 @@
 nnoremap <Space> :
-" nnoremap <BS> ???
-" nnoremap <CR> ???
-" nnoremap <Del> ???
-" nnoremap - ???
-" nnoremap + ???
-" nnoremap X ???
-" nnoremap U ???
 
 " Use jkil (QWERTY) / neui (Colemak) to navigate
 nnoremap n h|xnoremap n h
@@ -68,13 +61,6 @@ nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
 nnoremap <silent> <C-g> :GFiles<CR>|xnoremap <silent> <C-g> :GFiles<CR>
-" nnoremap <silent> <C-h> ???
-" nnoremap <silent> <C-p> ???
-" nnoremap <silent> <C-s> ???
-" nnoremap <silent> <C-z> ???
-"
-" nnoremap <silent> gb
-" nnoremap <silent> z???
 
 tnoremap <C-w><C-w> <C-w>w
 
@@ -219,3 +205,41 @@ endfunction
 
 " Show highlight rule for word under cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+" Possible keymaps:
+
+" nnoremap <BS>
+" nnoremap <CR>
+" nnoremap <Del>
+" nnoremap -
+" nnoremap +
+" nnoremap X
+" nnoremap U
+
+" nnoremap <silent> <C-h>
+" nnoremap <silent> <C-p>
+" nnoremap <silent> <C-s>
+" nnoremap <silent> <C-z>
+"
+" nnoremap <silent> ga
+" nnoremap <silent> gb
+" nnoremap <silent> gp
+" nnoremap <silent> gP
+" nnoremap <silent> gL
+" nnoremap <silent> gN
+" nnoremap <silent> g[
+"
+" nnoremap <silent> zB
+" nnoremap <silent> zD
+" nnoremap <silent> zf
+" nnoremap <silent> zI
+" nnoremap <silent> zJ
+" nnoremap <silent> zK
+" nnoremap <silent> zq
+" nnoremap <silent> zQ
+" nnoremap <silent> zS
+" nnoremap <silent> zT
+" nnoremap <silent> zU
+" nnoremap <silent> zV
+" nnoremap <silent> zY
+" nnoremap <silent> zZ (dangerous!)
