@@ -22,8 +22,8 @@ function __fish_rg_iglob_test
         end
 
         commandline --append --current-job -- "$filter"
-
-        # Go to end of line
-        commandline --cursor 999999
     end
+
+    # Go to end of line
+    commandline --cursor 999999
 end
