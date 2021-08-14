@@ -172,8 +172,8 @@ augroup markdown_mapping
 augroup END
 
 function! MarkdownMapping()
-  nnoremap e gj
-  nnoremap u gk
+    nnoremap e gj
+    nnoremap u gk
 endfunction
 
 command! -bar -range Shoulda call Shoulda()
