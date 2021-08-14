@@ -35,10 +35,6 @@ set autoread
 set signcolumn=yes:2
 set cmdheight=2
 
-" WHen running git-commit from inside an nvim terminal, open a new buffer in
-" the host nvim instead of opening a nested nvim process
-let $GIT_EDITOR = 'nvr'
-
 augroup git_nvr
   autocmd!
   autocmd FileType gitcommit,gitrebase,gitconfig setlocal bufhidden=delete
