@@ -12,6 +12,7 @@ abbr --global --add bil bundle install --local
 abbr --global --add rgh rg --hidden
 abbr --global --add rgc rg --color=always
 abbr --global --add rgs rg --sort=path
+abbr --global --add rgsw rg --sort=path --word-regexp
 abbr --global --add rgw rg --word-regexp
 
 abbr --global --add dushcsh 'du -shc * | sort -h'
@@ -22,8 +23,8 @@ abbr --global --add cddot cd ~/dev/dotfiles
 # git:
 abbr --global --add ga git add
 abbr --global --add gab git absorb
-abbr --global --add gabn git absorb --verbose --dry-run
-abbr --global --add gabr git absorb --verbose --and-rebase
+abbr --global --add gabn git absorb --dry-run
+abbr --global --add gabr git absorb --and-rebase
 abbr --global --add gap git add --patch
 # hmmm...
 abbr --global --add gb git branch
@@ -54,7 +55,8 @@ abbr --global --add gfa git fetch --all
 abbr --global --add gg git graph
 abbr --global --add gl git log
 abbr --global --add glo git log --oneline
-abbr --global --add glod git log --oneline origin/develop
+abbr --global --add glod git log origin/develop
+abbr --global --add glom git log origin/master
 abbr --global --add glrod git log --reverse origin/develop..
 abbr --global --add glp git log --patch
 abbr --global --add glpg git log --patch -G
@@ -100,7 +102,7 @@ abbr --global --add grim git rebase --interactive master
 abbr --global --add griod git rebase --interactive origin/develop
 abbr --global --add griom git rebase --interactive origin/master
 abbr --global --add grm git rm
-abbr --global --add grs git rebase --skip
+abbr --global --add grs git reset --soft
 abbr --global --add gru git rebase --interactive @{upstream}
 abbr --global --add grv git remote --verbose
 abbr --global --add gs git status
@@ -124,6 +126,8 @@ abbr --global --add cc cargo check
 abbr --global --add ccl cargo clippy
 abbr --global --add ce cargo expand
 abbr --global --add cf cargo fix
+abbr --global --add ci cargo install --path .
+abbr --global --add cm cargo make
 abbr --global --add cn cargo new
 abbr --global --add cr cargo run
 abbr --global --add crr cargo run --release
