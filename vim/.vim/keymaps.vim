@@ -84,7 +84,7 @@ nnoremap <silent> <Leader>B :Git blame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
 nnoremap <silent> <Leader>e :split \| :enew<CR>
 nnoremap <silent> <Leader>f :FZF<CR>
-" nnoremap <silent> <Leader>g ???
+nnoremap <silent> <Leader>g :Rg <C-r><C-w><CR>
 nnoremap <silent> <Leader>G :GBrowse<CR>|xnoremap <silent> <Leader>G :GBrowse<CR>
 nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
