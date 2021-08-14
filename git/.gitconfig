@@ -47,6 +47,8 @@
 [init]
     defaultBranch = main
     templateDir = ~/.git-templates
+[pull]
+    ff = only
 
 [color "status"]
     untracked = red
