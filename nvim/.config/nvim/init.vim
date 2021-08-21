@@ -1,14 +1,11 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'cstyles/vim-repeat'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-
-Plug 'radenling/vim-dispatch-neovim'
 
 Plug 'godlygeek/tabular'
 Plug 'neomake/neomake'
