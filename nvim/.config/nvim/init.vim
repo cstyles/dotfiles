@@ -27,6 +27,7 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'haya14busa/vim-asterisk'
 Plug 'machakann/vim-swap'
+Plug 'kassio/neoterm'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
@@ -143,7 +144,7 @@ function! Shoulda()
     endif
 
     " TODO: use `bundle exec ruby -Itest` if rails isn't available
-    " Dispatch will expand the % into the current buffer's filename
+    " neoerm will expand the % into the current buffer's filename
     let l:command = 'bin/rails test % -n '
     let l:shoulda_line = getline(l:line_number)
 
@@ -157,7 +158,11 @@ function! Shoulda()
         let l:command .= '"/' . l:test_name . '/"'
     endif
 
-    noautocmd execute 'Dispatch' l:command
+    if len(g:neoterm.instances) == 0
+      botright vsplit
+    endif
+
+    noautocmd execute 'T' l:command
 endfunction
 
 call neomake#configure#automake('nrw', 500)
