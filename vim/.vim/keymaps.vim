@@ -183,33 +183,6 @@ let g:swap#keymappings['i'] = ['swap_next']
 let g:swap#keymappings['u'] = ['swap_prev']
 let g:swap#keymappings['e'] = ['swap_next']
 
-command! -bar -range Shoulda call Shoulda()
-
-function! Shoulda()
-    let l:line_number = search('^\s*\(should\|context\)\>', 'bnW')
-    if l:line_number == 0
-        echoerr 'No test found'
-        return
-    endif
-
-    " TODO: use `bundle exec ruby -Itest` if rails isn't available
-    " Dispatch will expand the % into the current buffer's filename
-    let l:command = 'bin/rails test % -n '
-    let l:shoulda_line = getline(l:line_number)
-
-    " Try looking for a test name/context with single quotes
-    let l:test_name = matchstr(l:shoulda_line, "\\(should\\|context\\)\\s*'\\zs[^']\\+")
-    if !empty(l:test_name)
-        let l:command .= "'/" . l:test_name . "/'"
-    else
-        " If that fails, try looking for double quotes
-        let l:test_name = matchstr(l:shoulda_line, '\(should\|context\)\s*"\zs[^"]\+')
-        let l:command .= '"/' . l:test_name . '/"'
-    endif
-
-    noautocmd execute 'Dispatch' l:command
-endfunction
-
 " This annoys the hell out of me and I never use it anyway
 imap <C-a> <Nop>
 
