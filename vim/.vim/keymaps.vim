@@ -177,6 +177,12 @@ function! MarkdownMapping()
     nnoremap u gk
 endfunction
 
+let g:swap#keymappings = g:swap#key_layout_discreet
+let g:swap#keymappings['n'] = ['swap_prev']
+let g:swap#keymappings['i'] = ['swap_next']
+let g:swap#keymappings['u'] = ['swap_prev']
+let g:swap#keymappings['e'] = ['swap_next']
+
 command! -bar -range Shoulda call Shoulda()
 
 function! Shoulda()

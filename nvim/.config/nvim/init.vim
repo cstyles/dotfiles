@@ -26,6 +26,7 @@ Plug 'rhysd/git-messenger.vim'
 
 Plug 'justinmk/vim-sneak'
 Plug 'haya14busa/vim-asterisk'
+Plug 'machakann/vim-swap'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
