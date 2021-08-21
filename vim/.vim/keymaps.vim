@@ -106,7 +106,7 @@ nnoremap <M-R> "_D"+p
 nnoremap <silent> <M-e> :move +1<CR>
 nnoremap <silent> <M-u> :move -2<CR>
 
-nnoremap Q qq
+nnoremap Q @@
 
 " Reverse join (i.e., join by prepending the next line to the current line)
 nnoremap gJ ddpkJ
