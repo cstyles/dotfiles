@@ -48,10 +48,10 @@ nnoremap <C-w><C-h> <C-w>i|tnoremap <C-w><C-h> <C-w>i
 nnoremap <C-w><C-j> <C-w>e|tnoremap <C-w><C-j> <C-w>e
 nnoremap <C-w><C-k> <C-w>n|tnoremap <C-w><C-k> <C-w>n
 nnoremap <C-w><C-l> <C-w>u|tnoremap <C-w><C-l> <C-w>u
-tnoremap <C-w>H <C-w>I " not anything by default, use for custom function
-tnoremap <C-w>J <C-w>E " not anything by default, use for custom function
-tnoremap <C-w>K <C-w>N
-tnoremap <C-w>L <C-w>U " not anything by default, use for custom function
+" tnoremap <C-w>H <C-w>I " not anything by default, use for custom function
+" tnoremap <C-w>J <C-w>E " not anything by default, use for custom function
+" tnoremap <C-w>K <C-w>N
+" tnoremap <C-w>L <C-w>U " not anything by default, use for custom function
 
 nnoremap <silent> <C-n> :nohlsearch<CR>
 xnoremap <silent> <C-n> :<C-u>nohlsearch<CR>gv
