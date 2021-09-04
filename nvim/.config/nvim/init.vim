@@ -134,32 +134,32 @@ augroup END
 command! -bar -range Shoulda call Shoulda()
 
 function! Shoulda()
-    let l:line_number = search('^\s*\(should\|context\)\>', 'bnW')
+  let l:line_number = search('^\s*\(should\|context\)\>', 'bnW')
 
-    " TODO: use `bundle exec ruby -Itest` if rails isn't available
-    let l:test_file = expand("%")
-    let l:command = 'bin/rails test ' . l:test_file
+  " TODO: use `bundle exec ruby -Itest` if rails isn't available
+  let l:test_file = expand("%")
+  let l:command = 'bin/rails test ' . l:test_file
 
-    if l:line_number != 0
-      let l:command .= ' -n '
-      let l:shoulda_line = getline(l:line_number)
+  if l:line_number != 0
+    let l:command .= ' -n '
+    let l:shoulda_line = getline(l:line_number)
 
-      " Try looking for a test name/context with single quotes
-      let l:test_name = matchstr(l:shoulda_line, "\\(should\\|context\\)\\s*'\\zs[^']\\+")
-      if !empty(l:test_name)
-          let l:command .= "'/" . l:test_name . "/'"
-      else
-          " If that fails, try looking for double quotes
-          let l:test_name = matchstr(l:shoulda_line, '\(should\|context\)\s*"\zs[^"]\+')
-          let l:command .= '"/' . l:test_name . '/"'
-      endif
+    " Try looking for a test name/context with single quotes
+    let l:test_name = matchstr(l:shoulda_line, "\\(should\\|context\\)\\s*'\\zs[^']\\+")
+    if !empty(l:test_name)
+      let l:command .= "'/" . l:test_name . "/'"
+    else
+      " If that fails, try looking for double quotes
+      let l:test_name = matchstr(l:shoulda_line, '\(should\|context\)\s*"\zs[^"]\+')
+      let l:command .= '"/' . l:test_name . '/"'
     endif
+  endif
 
-    if len(g:neoterm.instances) == 0
-      botright vsplit
-    endif
+  if len(g:neoterm.instances) == 0
+    botright vsplit
+  endif
 
-    noautocmd execute 'T' l:command
+  noautocmd execute 'T' l:command
 endfunction
 
 call neomake#configure#automake('nrw', 500)
