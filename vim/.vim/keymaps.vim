@@ -104,7 +104,9 @@ nnoremap <M-r> "_Dp
 nnoremap <M-R> "_D"+p
 
 nnoremap <silent> <M-e> :move +1<CR>
+xnoremap <silent> <M-e> :move +1<CR>gv
 nnoremap <silent> <M-u> :move -2<CR>
+xnoremap <silent> <M-u> :move -2<CR>gv
 
 nnoremap Q @@
 
