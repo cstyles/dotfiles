@@ -74,6 +74,8 @@ nnoremap <silent> <Leader>g :Rg <C-r><C-w><CR>
 nnoremap <silent> <Leader>G :GBrowse<CR>|xnoremap <silent> <Leader>G :GBrowse<CR>
 nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
+" Reverse join (i.e., join by prepending the next line to the current line)
+nnoremap <Leader>j ddpkJ
 nnoremap <silent> <Leader>l :BLines<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
@@ -109,9 +111,6 @@ nnoremap <silent> <M-u> :move -2<CR>
 xnoremap <silent> <M-u> :move -2<CR>gv
 
 nnoremap Q @@
-
-" Reverse join (i.e., join by prepending the next line to the current line)
-nnoremap gJ ddpkJ
 
 nnoremap zk nzz
 nnoremap zn nzz
