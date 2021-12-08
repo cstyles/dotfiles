@@ -105,10 +105,10 @@ nnoremap <M-r> "_Dp
 " Paste (using the system clipboard) such that we replace the rest of the line
 nnoremap <M-R> "_D"+p
 
-nnoremap <silent> <M-e> :move +1<CR>
-xnoremap <silent> <M-e> :move +1<CR>gv
-nnoremap <silent> <M-u> :move -2<CR>
-xnoremap <silent> <M-u> :move -2<CR>gv
+nmap <M-e> ]e
+xmap <M-e> ]egv
+nmap <M-u> [e
+xmap <M-u> [egv
 
 nnoremap Q @@
 
