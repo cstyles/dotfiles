@@ -124,6 +124,19 @@ endfunction
 
 command! -nargs=0 Vmux :call s:vmux()
 
+augroup vimStartup
+  au!
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid, when inside an event handler
+  " (happens when dropping a file on gvim) and for a commit message (it's
+  " likely a different one than last time) or a rebase todo.
+  autocmd BufReadPost *
+    \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit' && &ft !~# 'gitrebase'
+    \ |   exe "normal! g`\""
+    \ | endif
+augroup END
+
 augroup ruby
   autocmd!
   autocmd FileType ruby setlocal iskeyword+=?,!
