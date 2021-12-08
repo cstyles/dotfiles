@@ -29,6 +29,9 @@ set --global --export LESS FRis
 # Abbreviations
 source (dirname (status --current-filename))/abbreviations.fish
 
+zoxide init fish | source
+set -gx _ZO_FZF_OPTS -1 -0
+
 # Vendor-provided completions
 set --append fish_complete_path /usr/local/share/fish/vendor_completions.d # macOS / Homebrew
 set --append fish_complete_path /usr/share/fish/vendor_completions.d # arch / pacman
