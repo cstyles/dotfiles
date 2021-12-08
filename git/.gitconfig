@@ -72,3 +72,6 @@
 	whitespace = red reverse
 [absorb]
   maxStack = 20
+[status]
+    short = true
+    branch = true
