@@ -23,8 +23,16 @@ Plug 'rhysd/git-messenger.vim'
 
 Plug 'justinmk/vim-sneak'
 Plug 'haya14busa/vim-asterisk'
-Plug 'machakann/vim-swap'
+
+Plug 'AndrewRadev/sideways.vim'
+Plug 'tek/vim-fieldtrip'
+Plug 'kana/vim-submode'
+
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kassio/neoterm'
+
+Plug 'andymass/vim-matchup'
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
