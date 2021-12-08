@@ -174,3 +174,18 @@ call neomake#configure#automake('nrw', 500)
 
 runtime git-messenger.vim
 runtime coc.vim
+
+nnoremap <silent> g> :SidewaysRight<CR>
+nnoremap <silent> g< :SidewaysLeft<CR>
+omap aa <Plug>SidewaysArgumentTextobjA
+xmap aa <Plug>SidewaysArgumentTextobjA
+omap ia <Plug>SidewaysArgumentTextobjI
+xmap ia <Plug>SidewaysArgumentTextobjI
+
+nmap <leader>I <Plug>SidewaysArgumentInsertFirst
+nmap <leader>A <Plug>SidewaysArgumentAppendLast
+
+let g:fieldtrip_start_map = 'gs'
+let g:fieldtrip_left = 'n'
+let g:fieldtrip_right = 'i'
+let g:submode_timeout = v:false
