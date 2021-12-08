@@ -53,7 +53,6 @@ set splitbelow          " Focus on bottom window after splitting horizontally
 set splitright          " Focus on right window after splitting vertically
 set cursorline          " Highlight the line that the cursor is on
 set lazyredraw          " Don't redraw screen in the middle of executing macros
-set undofile            " Persist undo across sessions
 set foldcolumn=auto     " Show folds in sidebar
 
 " Autocomplete using current and other buffers, current+included files, and tags
