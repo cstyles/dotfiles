@@ -123,3 +123,8 @@ function! s:vmux()
 endfunction
 
 command! -nargs=0 Vmux :call s:vmux()
+
+augroup ruby
+  autocmd!
+  autocmd FileType ruby setlocal iskeyword+=?,!
+augroup END
