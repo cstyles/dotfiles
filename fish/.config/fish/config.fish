@@ -47,3 +47,10 @@ bind \e8 __fish_dot_star
 bind \e\* __fish_star
 
 bind \ck fzf-git-branch-widget-larose
+
+# 'T' on Colemak is where 'F' is on QWERTY
+bind \ct accept-autosuggestion
+bind \et forward-word
+bind \ef forward-bigword
+bind \ek backward-bigword
+bind \e, history-token-search-forward
