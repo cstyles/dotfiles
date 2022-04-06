@@ -171,6 +171,8 @@ function! Shoulda()
   noautocmd execute 'T' l:command
 endfunction
 
+let g:neoterm_automap_keys = '<C-h>'
+
 call neomake#configure#automake('nrw', 500)
 
 runtime git-messenger.vim
