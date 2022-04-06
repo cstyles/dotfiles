@@ -114,8 +114,8 @@ nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
 nnoremap <silent> <M-w> :quit<CR>
 nnoremap <silent> <M-W> :quit!<CR>
 
-nnoremap <silent> <Leader>s :split \| :terminal<CR>
-nnoremap <silent> <Leader>v :botright vsplit \| :terminal<CR>
+nnoremap <silent> <Leader>s :split \| :Tnew<CR>
+nnoremap <silent> <Leader>v :botright vsplit \| :Tnew<CR>
 
 nnoremap <silent> <Leader>S :split \| Vmux<CR>
 nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>
