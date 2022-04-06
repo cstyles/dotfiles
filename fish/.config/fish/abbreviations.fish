@@ -60,6 +60,7 @@ abbr --global --add glod git log origin/develop
 abbr --global --add glom git log origin/master
 abbr --global --add glou git log --oneline @{upstream}
 abbr --global --add glrod git log --reverse origin/develop..
+abbr --global --add glrom git log --reverse origin/master..
 abbr --global --add glp git log --patch
 abbr --global --add glpg git log --patch -G
 abbr --global --add glpr git log --patch --reverse
@@ -100,6 +101,7 @@ abbr --global --add gresp git restore --staged --patch
 abbr --global --add grev git revert
 abbr --global --add grh git reset --hard
 abbr --global --add grhh git reset --hard HEAD
+abbr --global --add grhp git reset --hard HEAD^ # p = parent
 abbr --global --add grhu git reset --hard @{upstream}
 abbr --global --add gri git rebase --interactive
 abbr --global --add grid git rebase --interactive develop
@@ -108,19 +110,24 @@ abbr --global --add griod git rebase --interactive origin/develop
 abbr --global --add griom git rebase --interactive origin/master
 abbr --global --add grm git rm
 abbr --global --add grs git reset --soft
+abbr --global --add grsp git reset --soft HEAD^
 abbr --global --add gru git rebase --interactive @{upstream}
 abbr --global --add grv git remote --verbose
 abbr --global --add gs git status
 abbr --global --add gsc git switch --create
 abbr --global --add gsd git switch --detach
+abbr --global --add gsdp git switch --detach HEAD^ # p = parent
+abbr --global --add gsdu git switch --detach @{upstream}
 abbr --global --add gsfc git switch --force-create
 abbr --global --add gsl git stash list
 abbr --global --add gsh git show
+abbr --global --add gshu git show @{upstream}
 abbr --global --add gsp git split
 abbr --global --add gss git stash show -p
 abbr --global --add gst git stash
+abbr --global --add gsts git stash --staged
 abbr --global --add gsw git switch
-abbr --global --add gswd git show --word-diff
+abbr --global --add gswd git switch --detach
 abbr --global --add gwd git diff --word-diff
 abbr --global --add gwdc git diff --word-diff --cached
 abbr --global --add gwt git worktree
