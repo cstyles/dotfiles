@@ -22,7 +22,7 @@ set incsearch           " Show results of search while typing
 set history=1000        " Number of lines of command line history to keep
 set showcmd             " Display incomplete commands
 set wildmenu            " Display completion matches in a status line
-set wildmode=longest,full
+set wildmode=longest:full,list:full
 set wildignore+=*.pyc,*.swp
 
 set display=lastline    " Display as much as possible of the last line
