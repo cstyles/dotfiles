@@ -38,7 +38,7 @@ nnoremap <C-w><C-e> <C-w>j|tnoremap <C-w><C-e> <C-w>j
 nnoremap <C-w><C-u> <C-w>k|tnoremap <C-w><C-u> <C-w>k
 nnoremap <C-w><C-i> <C-w>l|tnoremap <C-w><C-i> <C-w>l
 
-tnoremap <C-w>[ <C-w>N " Enter scrollback for terminal
+tnoremap <C-w>[ <C-w>N
 
 nnoremap <C-w>h <C-w>i|tnoremap <C-w>h <C-w>i
 nnoremap <C-w>j <C-w>e|tnoremap <C-w>j <C-w>e
@@ -65,6 +65,7 @@ nnoremap <silent> <C-g> :GFiles<CR>|xnoremap <silent> <C-g> :GFiles<CR>
 tnoremap <C-w><C-w> <C-w>w
 
 nmap <silent> <Leader>` ysiW`
+xmap <silent> <Leader>` S`
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>B :Git blame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
@@ -77,6 +78,7 @@ nnoremap <silent> <Leader>H :Helptags<CR>
 " Reverse join (i.e., join by prepending the next line to the current line)
 nnoremap <Leader>j ddpkJ
 nnoremap <silent> <Leader>l :BLines<CR>
+nnoremap <silent> <Leader>M :Maps<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>

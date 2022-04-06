@@ -78,11 +78,13 @@ tnoremap <C-w>v <C-\><C-n><C-w>v|tnoremap <C-w><C-v> <C-\><C-n><C-w>v
 tnoremap <silent> <C-w>= <C-\><C-n><C-w>=:startinsert<CR>|tnoremap <C-w><C-=> <C-\><C-n><C-w>=:startinsert<CR>
 tnoremap <silent> <C-w>_ <C-\><C-n><C-w>_:startinsert<CR>|tnoremap <C-w><C-_> <C-\><C-n><C-w>_:startinsert<CR>
 tnoremap <silent> <C-w><bar> <C-\><C-n><C-w><bar>:startinsert<CR>
+tnoremap <silent> <C-w><C-\> <C-\><C-n><C-w><bar>:startinsert<CR>
 
 tnoremap <C-w>w <C-\><C-n><C-w><C-w>|tnoremap <C-w><C-w> <C-\><C-n><C-w><C-w>
 tnoremap <C-w>. <C-w>
 
-tnoremap <silent> <C-n> <C-\><C-n>:nohlsearch<CR>:startinsert<CR>
+tnoremap <silent> <C-r>n <C-\><C-n>:nohlsearch<CR>:startinsert<CR>
+tnoremap <silent> <C-r><C-n> <C-\><C-n>:nohlsearch<CR>:startinsert<CR>
 tnoremap <silent> <C-w><C--> <C-\><C-n>0:startinsert<CR>
 
 " Paste the contents of the yank register without leaving terminal mode
@@ -122,6 +124,8 @@ nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>
 
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
+
+tnoremap w[ <C-\><C-n>
 
 map *  <Plug>(asterisk-z*)
 map #  <Plug>(asterisk-z#)
