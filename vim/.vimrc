@@ -124,6 +124,9 @@ endfunction
 
 command! -nargs=0 Vmux :call s:vmux()
 
+" Open .vimrc in a split buffer
+command! Vimrc :split $MYVIMRC
+
 augroup vimStartup
   au!
 
