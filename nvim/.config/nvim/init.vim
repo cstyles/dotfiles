@@ -119,9 +119,6 @@ nnoremap <silent> <M-W> :quit!<CR>
 nnoremap <silent> <Leader>s :split \| :Tnew<CR>
 nnoremap <silent> <Leader>v :botright vsplit \| :Tnew<CR>
 
-nnoremap <silent> <Leader>S :split \| Vmux<CR>
-nnoremap <silent> <Leader>V :botright vsplit \| Vmux<CR>
-
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
 
