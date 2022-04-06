@@ -132,8 +132,10 @@ xnoremap <S-Tab> <gv
 
 " Copy current filename to the system clipboard (relative to pwd)
 nnoremap <silent> gn :let @+=expand("%")<CR>
+nnoremap <silent> <M-f> :let @+=expand("%")<CR>
 " Copy current filename to the system clipboard (absolute path)
 nnoremap <silent> gN :let @+=expand("%:p")<CR>
+nnoremap <silent> <M-F> :let @+=expand("%:p")<CR>
 
 " Make <C-]> (:tag) act like g<C-]> (:tjump) and vice versa
 nnoremap <C-]> g<C-]>
