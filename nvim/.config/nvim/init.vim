@@ -33,6 +33,7 @@ Plug 'kassio/neoterm'
 
 Plug 'andymass/vim-matchup'
 Plug 'machakann/vim-highlightedyank'
+Plug 'farmergreg/vim-lastplace'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
