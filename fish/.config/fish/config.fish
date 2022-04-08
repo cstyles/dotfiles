@@ -29,7 +29,10 @@ set --global --export LESS FRis
 # Abbreviations
 source (dirname (status --current-filename))/abbreviations.fish
 
-zoxide init fish | source
+if status --is-interactive
+  zoxide init fish | source
+end
+
 set -gx _ZO_FZF_OPTS -1 -0
 
 # Vendor-provided completions
