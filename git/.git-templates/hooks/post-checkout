@@ -10,4 +10,4 @@ main() {
   lckdo -W 10 .tags.lock $CTAGS_CMD -L <(git ls-files) -f .tags >/dev/null 2>&1
 }
 
-main &
+main >/dev/null 2>/dev/null &
