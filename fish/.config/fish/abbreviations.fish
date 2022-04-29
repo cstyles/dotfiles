@@ -2,6 +2,7 @@ abbr --global --add c cargo
 abbr --global --add g git
 abbr --global --add v vim
 abbr --global --add n nvr
+abbr --global --add ns nvim-just-term
 abbr --global --add nt nvim-term
 abbr --global --add lesss less -S
 
