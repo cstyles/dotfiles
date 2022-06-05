@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# CTAGS_CMD=~/dev/ctags/ctags # universal-ctags
 CTAGS_CMD='ctags'
 
 main() {
