@@ -147,6 +147,9 @@ nnoremap <silent> z] yiw:Tags<CR><C-\><C-n>p:startinsert<CR>
 cnoremap <C-r>' <C-r>"
 inoremap <C-r>' <C-r>"
 
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 command! -bar -bang Q quit<bang>
 command! -bar -bang Qa quitall<bang>
 command! -bar -bang -nargs=? W write<bang> <args>
