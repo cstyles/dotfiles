@@ -56,7 +56,7 @@ nnoremap <C-w><C-l> <C-w>u|tnoremap <C-w><C-l> <C-w>u
 nnoremap <silent> <C-n> :nohlsearch<CR>
 xnoremap <silent> <C-n> :<C-u>nohlsearch<CR>gv
 nnoremap <silent> <C-q> :call setqflist([])<Bar>:bufdo vimgrepadd // %<CR>:below copen<CR>
-nnoremap <silent> <C-k> :vimgrep // %<CR>:below copen<CR>
+nnoremap <silent> <C-k> :lvimgrep // %<CR>:below lopen<CR>
 nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
