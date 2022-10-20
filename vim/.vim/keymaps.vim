@@ -60,7 +60,7 @@ nnoremap <silent> <C-k> :lvimgrep // %<CR>:below lopen<CR>
 nnoremap <silent> <C-j> :write !diff % -<CR>
 nnoremap <silent> <C-c> :%s///gn<CR>
 
-nnoremap <silent> <C-g> :GFiles<CR>|xnoremap <silent> <C-g> :GFiles<CR>
+nnoremap <silent> <C-g> :GFiles<CR>
 
 tnoremap <C-w><C-w> <C-w>w
 
