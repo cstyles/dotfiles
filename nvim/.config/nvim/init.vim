@@ -8,7 +8,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 Plug 'godlygeek/tabular'
-Plug 'neomake/neomake'
 
 Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
@@ -16,7 +15,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 
 Plug 'rhysd/git-messenger.vim'
@@ -175,10 +173,7 @@ endfunction
 
 let g:neoterm_automap_keys = '<C-h>'
 
-call neomake#configure#automake('nrw', 500)
-
 runtime git-messenger.vim
-runtime coc.vim
 
 nnoremap <silent> g> :SidewaysRight<CR>
 nnoremap <silent> g< :SidewaysLeft<CR>
