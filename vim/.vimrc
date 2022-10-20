@@ -32,9 +32,9 @@ set scrolloff=3         " Show some lines of context around the cursor
 set sidescrolloff=10    " [nowrap] Leave some space to the sides of the cursor
 set sidescroll=10       " [nowrap] Scroll sideways in chunks
 
-set tabstop=4           " Tabs = 4 spaces wide
-set softtabstop=4       " Tabs = 4 spaces wide + delete spaces like tabs
-set shiftwidth=4        " Tabs = 4 spaces (for <<, >>, etc.)
+set tabstop=2           " Tabs = 2 spaces wide
+set softtabstop=2       " Tabs = 2 spaces wide + delete spaces like tabs
+set shiftwidth=2        " Tabs = 2 spaces (for <<, >>, etc.)
 set expandtab           " Tab inserts spaces instead of tabs
 set autoindent          " Copy indent from current line
 set magic
