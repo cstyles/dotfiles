@@ -32,6 +32,14 @@ Plug 'kassio/neoterm'
 Plug 'andymass/vim-matchup'
 Plug 'machakann/vim-highlightedyank'
 Plug 'farmergreg/vim-lastplace'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
@@ -189,3 +197,17 @@ let g:fieldtrip_start_map = 'gs'
 let g:fieldtrip_left = 'n'
 let g:fieldtrip_right = 'i'
 let g:submode_timeout = v:false
+
+runtime cmp.lua
+runtime lsp.lua
+
+" vim-vsnip settings
+" Expand or jump
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+
+" Jump forward or backward
+imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
