@@ -118,6 +118,7 @@ nnoremap <silent> <M-w> :quit<CR>
 nnoremap <silent> <M-W> :quit!<CR>
 
 nnoremap <silent> <Leader>s :split \| :Tnew<CR>
+nnoremap <silent> <Leader>S :Tnew<CR>
 nnoremap <silent> <Leader>v :botright vsplit \| :Tnew<CR>
 
 cnoremap <M-BS> <C-w>
