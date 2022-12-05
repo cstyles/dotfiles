@@ -5,6 +5,7 @@ abbr --global --add n nvr
 abbr --global --add ns nvim-just-term
 abbr --global --add nt nvim-term
 abbr --global --add lesss less -S
+abbr --global --add dc docker-compose
 
 abbr --global --add b bundle
 abbr --global --add be bundle exec
@@ -30,7 +31,9 @@ abbr --global --add gabr git absorb --and-rebase
 abbr --global --add gap git add --patch
 abbr --global --add gb git branch
 abbr --global --add gbd git branch -d
+abbr --global --add gbD git branch -D
 abbr --global --add gbf git branch --force
+abbr --global --add gbfm git branch --force main main@{upstream}
 abbr --global --add gbi git bisect
 abbr --global --add gbl git blame
 abbr --global --add gbm git branch --move
@@ -50,12 +53,14 @@ abbr --global --add gd git diff
 abbr --global --add gdc git diff --cached
 abbr --global --add gdhu git diff HEAD @{upstream}
 abbr --global --add gdod git diff origin/develop
+abbr --global --add gdmb git diff \(git merge-base origin/main HEAD\) HEAD
 abbr --global --add gdom git diff origin/main
 abbr --global --add gduh git diff @{upstream} HEAD
 abbr --global --add gf git fetch
 abbr --global --add gfa git fetch --all
 abbr --global --add gg git graph
 abbr --global --add gl git log
+abbr --global --add glg git log --grep
 abbr --global --add glo git log --oneline
 abbr --global --add glod git log origin/develop
 abbr --global --add glom git log origin/main
@@ -81,6 +86,7 @@ abbr --global --add gpd git push origin --delete
 abbr --global --add gpf git push --force-with-lease
 abbr --global --add gpl git pull
 abbr --global --add gpu git push --set-upstream origin HEAD
+abbr --global --add gpuc git push --set-upstream cstyles HEAD
 abbr --global --add gr git reset
 abbr --global --add gra git rebase --abort
 abbr --global --add grb git rebase
@@ -89,10 +95,8 @@ abbr --global --add grbod git rebase origin/develop
 abbr --global --add grbom git rebase origin/main
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
-abbr --global --add grdhu git range-diff origin/develop HEAD @{upstream}
-abbr --global --add grduh git range-diff origin/develop @{upstream} HEAD
-abbr --global --add grdmhu git range-diff origin/main HEAD @{upstream}
-abbr --global --add grdmuh git range-diff origin/main @{upstream} HEAD
+abbr --global --add grdhu git range-diff origin/main HEAD @{upstream}
+abbr --global --add grduh git range-diff origin/main @{upstream} HEAD
 abbr --global --add gre git restore
 abbr --global --add gref git reflog
 abbr --global --add grem git remote
@@ -110,6 +114,7 @@ abbr --global --add grim git rebase --interactive main
 abbr --global --add griod git rebase --interactive origin/develop
 abbr --global --add griom git rebase --interactive origin/main
 abbr --global --add grm git rm
+abbr --global --add grp git reset HEAD^
 abbr --global --add grs git reset --soft
 abbr --global --add grsp git reset --soft HEAD^
 abbr --global --add gru git rebase --interactive @{upstream}
@@ -122,6 +127,7 @@ abbr --global --add gsdu git switch --detach @{upstream}
 abbr --global --add gsfc git switch --force-create
 abbr --global --add gsl git stash list
 abbr --global --add gsh git show
+abbr --global --add gshn git show --name-only
 abbr --global --add gshu git show @{upstream}
 abbr --global --add gsp git split
 abbr --global --add gss git stash show -p
@@ -139,6 +145,7 @@ abbr --global --add cb cargo build
 abbr --global --add cbr cargo build --release
 abbr --global --add cc cargo check
 abbr --global --add ccl cargo clippy
+abbr --global --add cct cargo check --tests
 abbr --global --add ce cargo expand
 abbr --global --add cf cargo fix
 abbr --global --add ci cargo install --path .
