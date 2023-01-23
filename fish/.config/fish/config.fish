@@ -57,6 +57,7 @@ bind \et forward-word
 bind \ef forward-bigword
 bind \ek backward-bigword
 bind \eu backward-kill-bigword
+bind \ej __insert_previous_command
 bind \e, history-token-search-forward
 
 complete nvr --wraps nvim
