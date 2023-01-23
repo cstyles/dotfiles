@@ -19,8 +19,8 @@ Plug 'honza/vim-snippets'
 
 Plug 'rhysd/git-messenger.vim'
 
-Plug 'justinmk/vim-sneak'
 Plug 'haya14busa/vim-asterisk'
+Plug 'ggandor/leap.nvim'
 
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tek/vim-fieldtrip'
@@ -41,6 +41,8 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/vim-vsnip'
 call plug#end()
+
+lua require('leap').add_default_mappings()
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
