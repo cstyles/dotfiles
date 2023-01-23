@@ -54,6 +54,7 @@ set inccommand=nosplit
 set autoread
 set signcolumn=yes:2
 set cmdheight=2
+set foldcolumn=auto     " Show folds in sidebar
 
 augroup git_nvr
   autocmd!
