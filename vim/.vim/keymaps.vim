@@ -148,7 +148,9 @@ nnoremap <silent> z] yiw:Tags<CR><C-\><C-n>p:startinsert<CR>
 
 " Allow pasting from register without having to hit Shift
 cnoremap <C-r>' <C-r>"
+cnoremap <C-r><C-'> <C-r>"
 inoremap <C-r>' <C-r>"
+inoremap <C-r><C-'> <C-r>"
 
 cnoremap <expr> <C-p> pumvisible() ? "<C-p>" : "<Up>"
 cnoremap <expr> <C-n> pumvisible() ? "<C-n>" : "<Down>"
