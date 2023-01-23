@@ -63,6 +63,7 @@ nnoremap <silent> <C-c> :%s///gn<CR>
 nnoremap <silent> <C-g> :GFiles<CR>
 
 tnoremap <C-w><C-w> <C-w>w
+nmap <C-w>gd <C-w>sgd
 
 nmap <silent> <Leader>` ysiW`
 xmap <silent> <Leader>` S`
@@ -77,6 +78,7 @@ nnoremap <silent> <Leader>h :History:<CR>
 nnoremap <silent> <Leader>H :Helptags<CR>
 " Reverse join (i.e., join by prepending the next line to the current line)
 nnoremap <Leader>j ddpkJ
+nnoremap zJ ddpkJ
 nnoremap <silent> <Leader>l :BLines<CR>
 nnoremap <silent> <Leader>M :Maps<CR>
 nnoremap <silent> <Leader>p :Neomake<CR>
@@ -120,6 +122,7 @@ nnoremap zK Nzz
 nnoremap zN Nzz
 
 inoremap <M-BS> <C-w>
+inoremap <M-u> <C-o>dB<C-o>x
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
 inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
 inoremap <S-Tab> <C-x><C-f>
