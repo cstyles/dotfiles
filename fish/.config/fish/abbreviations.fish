@@ -65,6 +65,7 @@ abbr --global --add glo git log --oneline
 abbr --global --add glod git log origin/develop
 abbr --global --add glom git log origin/main
 abbr --global --add glou git log --oneline @{upstream}
+abbr --global --add glrm git log --reverse main..
 abbr --global --add glrod git log --reverse origin/develop..
 abbr --global --add glrom git log --reverse origin/main..
 abbr --global --add glp git log --patch
@@ -128,6 +129,7 @@ abbr --global --add gsfc git switch --force-create
 abbr --global --add gsl git stash list
 abbr --global --add gsh git show
 abbr --global --add gshn git show --name-only
+abbr --global --add gshp git show HEAD^ # p = parent
 abbr --global --add gshu git show @{upstream}
 abbr --global --add gsp git split
 abbr --global --add gss git stash show -p
@@ -147,7 +149,7 @@ abbr --global --add cc cargo check
 abbr --global --add ccl cargo clippy
 abbr --global --add cct cargo check --tests
 abbr --global --add ce cargo expand
-abbr --global --add cf cargo fix
+abbr --global --add cf cargo fmt
 abbr --global --add ci cargo install --path .
 abbr --global --add cm cargo make
 abbr --global --add cn cargo new
