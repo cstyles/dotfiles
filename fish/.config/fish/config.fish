@@ -56,6 +56,7 @@ bind \ct accept-autosuggestion
 bind \et forward-word
 bind \ef forward-bigword
 bind \ek backward-bigword
+bind \eu backward-kill-bigword
 bind \e, history-token-search-forward
 
 complete nvr --wraps nvim
