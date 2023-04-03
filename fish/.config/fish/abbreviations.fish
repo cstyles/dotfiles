@@ -148,6 +148,35 @@ abbr --global --add gwd git diff --word-diff
 abbr --global --add gwdc git diff --word-diff --cached
 abbr --global --add gwt git worktree
 
+abbr --add H --position=anywhere --function=__abbr_git_head
+abbr --add P --position=anywhere --function=__abbr_git_parent
+abbr --add git_upstream --regex='.*@[uU]$' --position=anywhere --function=__abbr_git_upstream
+
+function __abbr_git
+  # Only replace the abbreviation if we're inside a git command
+  if commandline --current-process | string match --quiet --regex '^git '
+    echo $argv[1]
+  else
+    return 1
+  end
+end
+
+function __abbr_git_head
+  __abbr_git HEAD
+end
+
+function __abbr_git_parent
+  __abbr_git HEAD^
+end
+
+function __abbr_git_upstream
+  set output (
+    set current_token (commandline --current-process --tokenize)[-1];
+    string replace --regex '@[uU]' @{upstream} "$current_token"
+  )
+  __abbr_git "$output"
+end
+
 # cargo:
 abbr --global --add ca cargo add
 abbr --global --add cb cargo build
