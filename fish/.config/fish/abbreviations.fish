@@ -56,20 +56,25 @@ abbr --global --add gdod git diff origin/develop
 abbr --global --add gdmb git diff \(git merge-base origin/main HEAD\) HEAD
 abbr --global --add gdom git diff origin/main
 abbr --global --add gduh git diff @{upstream} HEAD
+abbr --global --add gdw git diff --ignore-all-space
 abbr --global --add gf git fetch
 abbr --global --add gfa git fetch --all
 abbr --global --add gg git graph
+abbr --global --add ggo git gone
+abbr --global --add ggp git gone prune
 abbr --global --add gl git log
 abbr --global --add glg git log --grep
 abbr --global --add glo git log --oneline
 abbr --global --add glod git log origin/develop
 abbr --global --add glom git log origin/main
+abbr --global --add gloom git log --oneline origin/main
 abbr --global --add glou git log --oneline @{upstream}
 abbr --global --add glrm git log --reverse main..
 abbr --global --add glrod git log --reverse origin/develop..
 abbr --global --add glrom git log --reverse origin/main..
 abbr --global --add glp git log --patch
 abbr --global --add glpg git log --patch -G
+abbr --global --add glpom git log --patch origin/main
 abbr --global --add glpr git log --patch --reverse
 abbr --global --add glprd git log --patch --reverse develop..
 abbr --global --add glprm git log --patch --reverse main..
@@ -114,6 +119,7 @@ abbr --global --add grid git rebase --interactive develop
 abbr --global --add grim git rebase --interactive main
 abbr --global --add griod git rebase --interactive origin/develop
 abbr --global --add griom git rebase --interactive origin/main
+abbr --global --add grir git rebase --interactive --root
 abbr --global --add grm git rm
 abbr --global --add grp git reset HEAD^
 abbr --global --add grs git reset --soft
@@ -131,6 +137,7 @@ abbr --global --add gsh git show
 abbr --global --add gshn git show --name-only
 abbr --global --add gshp git show HEAD^ # p = parent
 abbr --global --add gshu git show @{upstream}
+abbr --global --add gshw git show --ignore-all-space
 abbr --global --add gsp git split
 abbr --global --add gss git stash show -p
 abbr --global --add gst git stash
