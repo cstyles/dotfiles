@@ -122,8 +122,8 @@ nnoremap <M-Tab> gt|tnoremap <M-Tab> <C-\><C-n>gt
 " Meta-Shift-Tab
 nnoremap <M-C-Y> gT|tnoremap <M-C-Y> <C-\><C-n>gT
 nnoremap <M-S-Tab> gT|tnoremap <M-S-Tab> <C-\><C-n>gT
-nnoremap <M-}> gt|tnoremap <M-}> <C-\><C-n>gt
-nnoremap <M-{> gT|tnoremap <M-{> <C-\><C-n>gT
+nnoremap <silent> <M-}> :tabmove +1<CR>|tnoremap <silent> <M-}> <C-\><C-n>:tabmove +1<CR>
+nnoremap <silent> <M-{> :tabmove -1<CR>|tnoremap <silent> <M-{> <C-\><C-n>:tabmove -1<CR>
 nnoremap <silent> <M-w> :quit<CR>
 nnoremap <silent> <M-W> :quit!<CR>
 
@@ -194,8 +194,10 @@ xmap aa <Plug>SidewaysArgumentTextobjA
 omap ia <Plug>SidewaysArgumentTextobjI
 xmap ia <Plug>SidewaysArgumentTextobjI
 
-nmap <leader>I <Plug>SidewaysArgumentInsertFirst
-nmap <leader>A <Plug>SidewaysArgumentAppendLast
+nmap <Leader>i <Plug>SidewaysArgumentInsertBefore
+nmap <Leader>a <Plug>SidewaysArgumentAppendAfter
+nmap <Leader>I <Plug>SidewaysArgumentInsertFirst
+nmap <Leader>A <Plug>SidewaysArgumentAppendLast
 
 let g:fieldtrip_start_map = 'gs'
 let g:fieldtrip_left = 'n'
@@ -215,3 +217,9 @@ imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab
 smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
 imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
 smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+
+" Hack to fix `errorformat` for Rust files (rust.vim clobbers the setting)
+augroup rust_errorformat
+  autocmd!
+  autocmd FileType rust setlocal errorformat+=%f:%l:%m
+augroup END
