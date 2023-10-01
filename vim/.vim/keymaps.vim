@@ -64,6 +64,10 @@ nnoremap <silent> <C-g> :GFiles<CR>
 
 tnoremap <C-w><C-w> <C-w>w
 nmap <C-w>gd <C-w>sgd
+nmap <C-w>gt <C-w>sgt
+nmap zgd gdzz
+nmap <C-w>gr <C-w>sgr
+nmap <C-w>gt <C-w>sgt
 
 nmap <silent> <Leader>` ysiW`
 xmap <silent> <Leader>` S`
@@ -123,6 +127,7 @@ nnoremap zN Nzz
 
 inoremap <M-BS> <C-w>
 inoremap <M-u> <C-o>dB<C-o>x
+cnoremap <M-u> <C-f>dBa<C-c>
 inoremap <M-Left> <C-o>B|xnoremap <M-Left> B
 inoremap <M-Right> <C-o>W|xnoremap <M-Right> W
 inoremap <S-Tab> <C-x><C-f>
@@ -165,7 +170,7 @@ command! Cw below cw
 " Fix keymaps for netrw (File Explorer)
 augroup netrw_mapping
     autocmd!
-    autocmd filetype netrw call NetrwMapping()
+    autocmd FileType netrw call NetrwMapping()
 augroup END
 
 function! NetrwMapping()
@@ -182,12 +187,34 @@ endfunction
 
 augroup markdown_mapping
     autocmd!
-    autocmd filetype markdown call MarkdownMapping()
+    autocmd FileType markdown call MarkdownMapping()
 augroup END
 
 function! MarkdownMapping()
     nnoremap e gj
     nnoremap u gk
+
+    " Create new item below at greater indentation level
+    nnoremap <silent> <Leader>t o<C-t>- [ ]<Space>
+
+    " Create new item below at lesser indentation level
+    nnoremap <silent> <Leader>d o<C-d>- [ ]<Space>
+
+    " Create new item below at the same indentation level
+    nnoremap <silent> <Leader>n o- [ ]<Space>
+
+    " Mark the current item as done
+    nnoremap <silent> <Plug>mark_done m'^lllrx`':call repeat#set("\<Plug>mark_done", -1)<CR>
+
+    " Mark the current item as in-progress
+    nnoremap <silent> <Plug>mark_in_progress m'^lllr~`':call repeat#set("\<Plug>mark_in_progress", -1)<CR>
+
+    " Mark the current item as un-started
+    nnoremap <silent> <Plug>mark_unstarted m'^lllr<Space>`':call repeat#set("\<Plug>mark_unstarted", -1)<CR>
+
+    nnoremap <silent> <Leader>x <Plug>mark_done
+    nnoremap <silent> <Leader>~ <Plug>mark_in_progress
+    nnoremap <silent> <Leader><Space> <Plug>mark_unstarted
 endfunction
 
 " This annoys the hell out of me and I never use it anyway
