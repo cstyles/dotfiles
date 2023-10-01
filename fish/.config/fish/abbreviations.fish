@@ -21,7 +21,7 @@ abbr --global --add rgsw rg --sort=path --word-regexp
 abbr --global --add rgw rg --word-regexp
 
 abbr --global --add dushcsh 'du -shc * | sort -h'
-abbr --global --add ltr 'exa --long --sort=modified'
+abbr --global --add ltr 'eza --long --sort=modified'
 
 # git:
 abbr --global --add ga git add
