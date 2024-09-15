@@ -5,16 +5,17 @@ lspconfig.rust_analyzer.setup({
   capabilities = capabilities,
   settings = {
     ['rust-analyzer'] = {
+      cmd = "~/.cargo/bin/rust-analyzer",
       checkOnSave = {
         enable = true, -- TODO
         command = 'clippy',
-        allFeatures = true, -- TODO
-      }
+        allFeatures = false, -- TODO
+      },
     },
   },
 })
 
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
   capabilities = capabilities,
 })
 
@@ -22,32 +23,52 @@ lspconfig.gopls.setup({
   capabilities = capabilities,
 })
 
-lspconfig.solargraph.setup({
+lspconfig.ruby_lsp.setup({
   capabilities = capabilities,
 })
 
 lspconfig.ocamllsp.setup({
   capabilities = capabilities,
+  formattingProvider = "ocamlformat",
 })
 
-lspconfig.lua_ls.setup({
+lspconfig.sourcekit.setup{}
+
+lspconfig.serve_d.setup({
   capabilities = capabilities,
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { 'vim' }, -- ignore "Undefined global 'vim'" warnings
-      },
-      telemetry = {
-        enable = false
-      },
-    },
-  },
+  cmd = {"/Users/cstyles/dev/serve-d/serve-d"},
 })
+
+lspconfig.hls.setup({
+  capabilities = capabilities,
+  single_file_support = true,
+})
+
+lspconfig.metals.setup({
+  capabilities = capabilities,
+})
+
+lspconfig.clojure_lsp.setup({
+  capabilities = capabilities,
+})
+
+lspconfig.dartls.setup{
+  capabilities = capabilities,
+}
+
+lspconfig.pyright.setup{
+  capabilities = capabilities,
+}
+
+lspconfig.zls.setup{
+  capabilities = capabilities,
+}
 
 local function format_async()
   vim.lsp.buf.format({ async = true })
 end
 
+-- TODO: only map these after `LspAttach`
 vim.keymap.set('n', 'ga', vim.lsp.buf.code_action)
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
 vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition)
@@ -60,8 +81,13 @@ vim.keymap.set('n', 'go', vim.lsp.buf.rename)
 vim.keymap.set('n', '<Leader>F', format_async)
 vim.keymap.set('n', 'gr', vim.lsp.buf.references)
 -- vim.keymap.set('n', 'ge', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', 'cq', vim.diagnostic.setqflist)
+vim.keymap.set('n', 'gw', vim.diagnostic.open_float) -- ???
 
 vim.keymap.set('n', '<M-l>', vim.lsp.buf.document_symbol) -- Lists all symbols in the current buffer in the quickfix window.
+
+vim.diagnostic.enable()
+vim.diagnostic.config({
+  virtual_text = true,
+  wrap = true
+})

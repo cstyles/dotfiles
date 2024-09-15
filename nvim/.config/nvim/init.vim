@@ -11,6 +11,10 @@ Plug 'godlygeek/tabular'
 
 Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
+Plug 'inko-lang/inko.vim'
+Plug 'ChrisWellsWood/roc.vim'
+Plug 'Nymphium/vim-koka'
+Plug 'wbbradley/vim-rune'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

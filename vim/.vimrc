@@ -123,3 +123,29 @@ augroup ruby
   autocmd!
   autocmd FileType ruby setlocal iskeyword+=?,!
 augroup END
+
+augroup markdown
+  autocmd!
+  autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
+augroup go
+  autocmd!
+  autocmd FileType go setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+augroup END
+
+augroup swift
+  autocmd!
+  autocmd FileType swift setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
+augroup rune
+  autocmd!
+  autocmd BufNewFile,BufRead *.rn setfiletype rune
+  autocmd FileType rune lua vim.lsp.start({ cmd = { "rune", "language-server" } })
+augroup END
+
+augroup csv
+  autocmd!
+  autocmd FileType csv nnoremap <Space> :
+augroup END
