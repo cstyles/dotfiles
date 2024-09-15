@@ -5,6 +5,7 @@ return {
   enable_scroll_bar = true,
   font = wezterm.font('Hack Nerd Font'),
   font_size = 14.0,
+  quote_dropped_files = "Posix",
 
   keys = {
     { key='k', mods='CMD', action=wezterm.action{ClearScrollback='ScrollbackAndViewport'} },
