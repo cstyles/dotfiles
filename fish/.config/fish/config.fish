@@ -1,4 +1,4 @@
-set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin $HOME/dev/scripts
+set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin $HOME/dev/scripts /opt/homebrew/bin /opt/homebrew/sbin /opt/homebrew/opt/git/share/git-core/contrib/git-jump
 set -gx EDITOR nvr
 set -gx GIT_EDITOR nvr
 set -gx PAGER "less"
