@@ -1,0 +1,1 @@
+complete nvr --wraps nvim

@@ -39,6 +39,9 @@ set -gx _ZO_FZF_OPTS -1 -0
 set --append fish_complete_path /usr/local/share/fish/vendor_completions.d # macOS / Homebrew
 set --append fish_complete_path /usr/share/fish/vendor_completions.d # arch / pacman
 
+# Extensions to existing completions
+source (dirname (status --current-filename))/completions.fish
+
 # Bindings:
 bind \er __fish_grep_pipe
 bind \ew __fish_wc_pipe # NOTE: M-w is already used to run `whatis` on a keyword
@@ -59,5 +62,3 @@ bind \ek backward-bigword
 bind \eu backward-kill-bigword
 bind \ej __insert_previous_command
 bind \e, history-token-search-forward
-
-complete nvr --wraps nvim
