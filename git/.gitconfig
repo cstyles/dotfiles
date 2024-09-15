@@ -33,6 +33,7 @@
   theme = Sublime Snazzy
 [rebase]
     autosquash = true
+    autostash = true
     updateRefs = true
 [blame]
     coloring = repeatedLines
