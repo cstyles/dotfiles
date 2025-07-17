@@ -64,6 +64,8 @@ lspconfig.zls.setup{
   capabilities = capabilities,
 }
 
+lspconfig.lua_ls.setup{}
+
 local function format_async()
   vim.lsp.buf.format({ async = true })
 end
