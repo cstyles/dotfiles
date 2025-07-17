@@ -46,8 +46,7 @@ set mouse=              " Disable mouse
 set nojoinspaces        " Don't add extra spaces when joining lines ending in '.'
 set breakindent         " Wrapped lines will maintain indentation
 let &showbreak = "> "
-set nottimeout
-set ttimeoutlen=100      " How long to wait after ESC to determine if standalone
+set ttimeoutlen=0       " How long to wait after ESC to determine if standalone
 set dictionary=/usr/share/dict/words
 set splitbelow          " Focus on bottom window after splitting horizontally
 set splitright          " Focus on right window after splitting vertically
