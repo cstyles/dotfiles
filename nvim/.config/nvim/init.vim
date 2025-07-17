@@ -46,7 +46,20 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 
-lua require('leap').add_default_mappings()
+lua <<LEAP
+  require('leap').add_default_mappings()
+
+  -- Default safe_labels but with 'f' instead of 'n' and 'l' instead of 'u'
+  -- Oh the joys of using Colemak
+  local labels = require('leap').opts.safe_labels
+  for i = 1, #labels do
+    if labels[i] == "n" then
+      labels[i] = "f"
+    elseif labels[i] == "u" then
+      labels[i] = "l"
+    end
+  end
+LEAP
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
