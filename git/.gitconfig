@@ -50,6 +50,7 @@
     ; renameLimit = 9999
     colorMoved = plain
     ; colorMovedWS = allow-indentation-change
+    orderFile = ~/.config/git/orderfile
     algorithm = histogram
 [init]
     defaultBranch = main
