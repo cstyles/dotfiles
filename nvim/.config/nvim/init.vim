@@ -147,6 +147,7 @@ nnoremap <silent> <M-W> :quit!<CR>
 nnoremap <silent> <Leader>s :split \| :Tnew<CR>
 nnoremap <silent> <Leader>S :Tnew<CR>
 nnoremap <silent> <Leader>v :botright vsplit \| :Tnew<CR>
+nnoremap <silent> <Leader>x :Texec exit<CR>
 
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
@@ -234,6 +235,11 @@ imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab
 smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
 imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
 smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+
+" Select the next/previous line.
+" Or (when selecting multiple lines) move the selection down/up one line.
+xnoremap <silent> <M-S-e> jojo
+xnoremap <silent> <M-S-u> koko
 
 " Hack to fix `errorformat` for Rust files (rust.vim clobbers the setting)
 augroup rust_errorformat
