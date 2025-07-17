@@ -17,10 +17,14 @@
     rebase = false
 [push]
     default = simple
+    autoSetupRemote = true
+    followTags = true
 [color]
     ui = auto
 [fetch]
     prune = true
+    pruneTags = true
+    all = true
 [core]
     quotepath = false
     editor = nvim
@@ -44,8 +48,9 @@
     mnemonicPrefix = true
     wordRegex = "[^[:space:],=<>]+"
     ; renameLimit = 9999
-    colorMoved = default
+    colorMoved = plain
     ; colorMovedWS = allow-indentation-change
+    algorithm = histogram
 [init]
     defaultBranch = main
     templateDir = ~/.git-templates
@@ -74,6 +79,15 @@
 	whitespace = red reverse
 [absorb]
   maxStack = 20
+  oneFixupPerCommit = true
 [status]
     short = true
     branch = true
+[branch]
+    sort = -committerdate
+[tag]
+    sort = version:refname
+[rerere]
+    enabled = true
+[merge]
+    conflictstyle = zdiff3
