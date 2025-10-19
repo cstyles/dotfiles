@@ -1,7 +1,6 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local lspconfig = require('lspconfig')
 
-lspconfig.rust_analyzer.setup({
+vim.lsp.config('rust_analyzer', {
   capabilities = capabilities,
   settings = {
     ['rust-analyzer'] = {
@@ -15,56 +14,7 @@ lspconfig.rust_analyzer.setup({
   },
 })
 
-lspconfig.ts_ls.setup({
-  capabilities = capabilities,
-})
-
-lspconfig.gopls.setup({
-  capabilities = capabilities,
-})
-
-lspconfig.ruby_lsp.setup({
-  capabilities = capabilities,
-})
-
-lspconfig.ocamllsp.setup({
-  capabilities = capabilities,
-  formattingProvider = "ocamlformat",
-})
-
-lspconfig.sourcekit.setup{}
-
-lspconfig.serve_d.setup({
-  capabilities = capabilities,
-  cmd = {"/Users/cstyles/dev/serve-d/serve-d"},
-})
-
-lspconfig.hls.setup({
-  capabilities = capabilities,
-  single_file_support = true,
-})
-
-lspconfig.metals.setup({
-  capabilities = capabilities,
-})
-
-lspconfig.clojure_lsp.setup({
-  capabilities = capabilities,
-})
-
-lspconfig.dartls.setup{
-  capabilities = capabilities,
-}
-
-lspconfig.pyright.setup{
-  capabilities = capabilities,
-}
-
-lspconfig.zls.setup{
-  capabilities = capabilities,
-}
-
-lspconfig.lua_ls.setup{}
+vim.lsp.enable({'rust_analyzer', 'ts_ls', 'gopls', 'ruby_lsp', 'ocamllsp', 'lua_ls'})
 
 local function format_async()
   vim.lsp.buf.format({ async = true })
