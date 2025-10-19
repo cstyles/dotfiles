@@ -69,11 +69,11 @@ abbr --global --add gdcn git diff --cached --name-only
 abbr --global --add gdcw git diff --cached --ignore-all-space
 abbr --global --add gdhu git diff HEAD @{upstream}
 abbr --global --add gdm git diff main
-abbr --global --add gdmb git diff \(git merge-base origin/main HEAD\) HEAD
-abbr --global --add gdmbu git diff \(git merge-base origin/main HEAD\) @{upstream}
+abbr --global --add gdmb git diff \(git merge-base origin HEAD\) HEAD
+abbr --global --add gdmbu git diff \(git merge-base origin HEAD\) @{upstream}
 abbr --global --add gdn git diff --name-only
-abbr --global --add gdom git diff origin/main
-abbr --global --add gdomn git diff origin/main --name-only
+abbr --global --add gdo git diff origin
+abbr --global --add gdon git diff origin --name-only
 abbr --global --add gds git diff --staged
 abbr --global --add gdsn git diff --staged --name-only
 abbr --global --add gdsst git diff --staged --stat
@@ -100,24 +100,24 @@ abbr --global --add gln git log --name-only
 abbr --global --add glo git log --oneline
 abbr --global --add glog git log --oneline --graph
 abbr --global --add glom git log origin/main
-abbr --global --add gloom git log --oneline origin/main
+abbr --global --add gloo git log --oneline origin
 abbr --global --add glou git log --oneline @{upstream}
 abbr --global --add glr git log --reverse
 abbr --global --add glrhu git log --reverse ..@{upstream}
 abbr --global --add glrm git log --reverse main..
-abbr --global --add glro git log --reverse --oneline
+abbr --global --add glro git log --reverse origin..
 abbr --global --add glrom git log --reverse origin/main..
-abbr --global --add glroom git log --reverse --oneline origin/main..
+abbr --global --add glroo git log --reverse --oneline origin..
 abbr --global --add glp git log --patch
 abbr --global --add glpfd git log --patch --full-diff --no-follow
 abbr --global --add glpfp git log --patch --first-parent
 abbr --global --add glpg git log --patch -G
 abbr --global --add glpm git log --patch main
-abbr --global --add glpom git log --patch origin/main
+abbr --global --add glpo git log --patch origin
 abbr --global --add glpr git log --patch --reverse
 abbr --global --add glprhu git log --patch --reverse ..@{upstream}
 abbr --global --add glprm git log --patch --reverse main..
-abbr --global --add glprom git log --patch --reverse origin/main..
+abbr --global --add glpro git log --patch --reverse origin..
 abbr --global --add glpru git log --patch --reverse @{upstream}..
 abbr --global --add glpruh git log --patch --reverse @{upstream}..HEAD
 abbr --global --add glps git log --patch -S
@@ -130,8 +130,8 @@ abbr --global --add glu git log @{upstream}
 abbr --global --add gm git merge
 abbr --global --add gma git merge --abort
 abbr --global --add gmb git merge-base
-abbr --global --add gmbom git merge-base origin/main HEAD
-abbr --global --add gmbu git merge-base origin/main @{upstream}
+abbr --global --add gmbo git merge-base origin HEAD
+abbr --global --add gmbu git merge-base origin @{upstream}
 abbr --global --add gme git meld
 abbr --global --add gmes git meld snipe
 abbr --global --add gmv git mv
@@ -144,7 +144,7 @@ abbr --global --add gpuc git push --set-upstream cstyles HEAD
 abbr --global --add gr git reset
 abbr --global --add gra git rebase --abort
 abbr --global --add grb git rebase
-abbr --global --add grbmb git rebase \(git merge-base origin/main HEAD\)
+abbr --global --add grbmb git rebase \(git merge-base origin HEAD\)
 abbr --global --add grbm git rebase main
 abbr --global --add grbo git rebase --onto
 abbr --global --add grbom git rebase origin/main
@@ -152,9 +152,9 @@ abbr --global --add grbs git rebase --skip
 abbr --global --add grbsh git rebase --show-current-patch
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
-abbr --global --add grdhu git range-diff origin/main HEAD @{upstream}
-abbr --global --add grdom git range-diff origin/main
-abbr --global --add grduh git range-diff origin/main @{upstream} HEAD
+abbr --global --add grdhu git range-diff origin HEAD @{upstream}
+abbr --global --add grdo git range-diff origin
+abbr --global --add grduh git range-diff origin @{upstream} HEAD
 abbr --global --add gre git restore
 abbr --global --add gref git reflog
 abbr --global --add grem git remote
@@ -173,8 +173,8 @@ abbr --global --add grhpp git reset --hard HEAD^^ # p = parent
 abbr --global --add grhu git reset --hard @{upstream}
 abbr --global --add gri git rebase --interactive
 abbr --global --add grim git rebase --interactive main
-abbr --global --add grimb git rebase --interactive \(git merge-base origin/main HEAD\)
-abbr --global --add griom git rebase --interactive origin/main
+abbr --global --add grimb git rebase --interactive \(git merge-base origin HEAD\)
+abbr --global --add grio git rebase --interactive origin
 abbr --global --add grir git rebase --interactive --root
 abbr --global --add grm git rm
 abbr --global --add grp git reset HEAD^
