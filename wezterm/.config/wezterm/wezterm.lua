@@ -4,7 +4,7 @@ return {
   color_scheme = 'Dracula',
   enable_scroll_bar = true,
   font = wezterm.font('Hack Nerd Font'),
-  font_size = 14.0,
+  font_size = 13.0,
   quote_dropped_files = "Posix",
 
   keys = {
