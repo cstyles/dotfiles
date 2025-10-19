@@ -49,14 +49,19 @@ call plug#end()
 lua <<LEAP
   require('leap').add_default_mappings()
 
-  -- Default safe_labels but with 'f' instead of 'n' and 'l' instead of 'u'
-  -- Oh the joys of using Colemak
+  -- Default safe_labels but with 'l' instead of 'u'
   local labels = require('leap').opts.safe_labels
   for i = 1, #labels do
-    if labels[i] == "n" then
-      labels[i] = "f"
-    elseif labels[i] == "u" then
+    if labels[i] == "u" then
       labels[i] = "l"
+    end
+  end
+
+  -- 'f' is in safe_labels by default so just remove 'n' instead of mapping
+  for i = 1, #labels do
+    if labels[i] == "n" then
+      table.remove(labels, i)
+      break
     end
   end
 LEAP
