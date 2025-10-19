@@ -243,14 +243,7 @@ function __abbr_git_origin_main
 end
 
 function __abbr_git_upstream
-  set output (
-  # FIXME: This breaks if you're putting @u after a token that isn't at the end of the line.
-  # e.g., typing here ----------V
-  # git range-diff origin branch@u HEAD
-    set current_token (commandline --current-process --tokenize)[-1];
-    string replace --regex '@[uU]' @{upstream} -- "$current_token"
-  )
-  __abbr_git "$output"
+  __abbr_git (string replace --regex '@[uU]' @{upstream} -- "$argv[1]")
 end
 
 # cargo:
