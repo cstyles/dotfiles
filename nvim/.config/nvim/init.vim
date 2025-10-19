@@ -207,6 +207,7 @@ function! Shoulda()
 endfunction
 
 let g:neoterm_automap_keys = '<C-h>'
+autocmd VimEnter * Tmap 
 
 runtime git-messenger.vim
 
