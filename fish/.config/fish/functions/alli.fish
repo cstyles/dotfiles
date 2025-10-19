@@ -1,3 +1,3 @@
 function alli
-  ssh alli -t screen -dR main
+  ssh alli -t tmux new -ADs main
 end

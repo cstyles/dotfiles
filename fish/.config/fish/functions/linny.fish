@@ -1,3 +1,3 @@
 function linny
-  ssh linny -t screen -dR main
+  ssh linny -t tmux new -ADs main
 end

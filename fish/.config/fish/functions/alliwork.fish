@@ -1,3 +1,3 @@
 function alliwork
-  ssh alliwork -t screen -dR main
+  ssh alliwork -t tmux new -ADs main
 end
