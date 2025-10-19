@@ -46,6 +46,7 @@ abbr --global --add gbfm git branch --force main main@{upstream}
 abbr --global --add gbi git bisect
 abbr --global --add gbl git blame
 abbr --global --add gbm git branch --move
+abbr --global --add gbsh git branch --show-current
 abbr --global --add gbsu git branch --set-upstream-to origin/\(git rev-parse --abbrev-ref HEAD\)
 abbr --global --add gbv git branch --verbose
 abbr --global --add gca git commit --amend
@@ -55,6 +56,7 @@ abbr --global --add gcf git commit --fixup
 abbr --global --add gcfg git config
 abbr --global --add gcfp git commit --fixup HEAD^
 abbr --global --add gci git commit
+abbr --global --add gcib git commit-branch
 abbr --global --add gcip git commit --patch
 abbr --global --add gcl git clone
 abbr --global --add gcle git clean
@@ -74,6 +76,7 @@ abbr --global --add gdom git diff origin/main
 abbr --global --add gdomn git diff origin/main --name-only
 abbr --global --add gds git diff --staged
 abbr --global --add gdsn git diff --staged --name-only
+abbr --global --add gdsst git diff --staged --stat
 abbr --global --add gdst git diff --stat
 abbr --global --add gdsw git diff --staged --ignore-all-space
 abbr --global --add gduh git diff @{upstream} HEAD
@@ -117,10 +120,12 @@ abbr --global --add glprm git log --patch --reverse main..
 abbr --global --add glprom git log --patch --reverse origin/main..
 abbr --global --add glpru git log --patch --reverse @{upstream}..
 abbr --global --add glpruh git log --patch --reverse @{upstream}..HEAD
+abbr --global --add glps git log --patch -S
 abbr --global --add glpu git log --patch @{upstream}
 abbr --global --add glpw git log --patch --ignore-all-space
 abbr --global --add glru git log --reverse @{upstream}..
 abbr --global --add gls git ls-files
+abbr --global --add glst git log --stat
 abbr --global --add glu git log @{upstream}
 abbr --global --add gm git merge
 abbr --global --add gma git merge --abort
@@ -144,6 +149,7 @@ abbr --global --add grbm git rebase main
 abbr --global --add grbo git rebase --onto
 abbr --global --add grbom git rebase origin/main
 abbr --global --add grbs git rebase --skip
+abbr --global --add grbsh git rebase --show-current-patch
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
 abbr --global --add grdhu git range-diff origin/main HEAD @{upstream}
@@ -155,6 +161,7 @@ abbr --global --add grem git remote
 abbr --global --add grep git restore --patch
 abbr --global --add gres git restore --staged
 abbr --global --add gresp git restore --staged --patch
+abbr --global --add gressp git restore --source=HEAD^ --patch
 abbr --global --add grest git restack
 abbr --global --add gresw git restore --staged --worktree
 abbr --global --add greswp git restore --staged --worktree --patch
@@ -250,10 +257,12 @@ end
 abbr --global --add ca cargo add
 abbr --global --add cb cargo build
 abbr --global --add cbr cargo build --release
+abbr --global --add cbt cargo build --timings
 abbr --global --add cc cargo check
 abbr --global --add ccat cargo check --all-targets
 abbr --global --add ccl cargo clippy
 abbr --global --add cclat cargo clippy --all-targets
+abbr --global --add ccle cargo clean
 abbr --global --add cclt cargo clippy --tests
 abbr --global --add cct cargo check --tests
 abbr --global --add ce cargo expand
