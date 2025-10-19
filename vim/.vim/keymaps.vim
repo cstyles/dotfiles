@@ -70,8 +70,17 @@ nmap zgd gdzz
 nmap <C-w>gr <C-w>sgr
 nmap <C-w>gt <C-w>sgt
 
+function ToggleOption(option)
+  if &formatoptions =~# a:option
+    exec "setlocal formatoptions-=".a:option
+  else
+    exec "setlocal formatoptions+=".a:option
+  endif
+endfunction
+
 nmap <silent> <Leader>` ysiW`
 xmap <silent> <Leader>` S`
+nnoremap <silent> <Leader>a :call ToggleOption('a')<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>B :Git blame<CR>
 nnoremap <silent> <Leader>c :cclose<CR>
