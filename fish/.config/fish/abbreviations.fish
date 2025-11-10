@@ -18,6 +18,9 @@ abbr --global --add bil bundle install --local
 abbr --global --add bu bundle update
 abbr --global --add buc bundle update --conservative
 
+abbr --global --add rgbs rgb --sort=path
+abbr --global --add rgbw rgb --word-regexp
+abbr --global --add rgbsw rgb --sort=path --word-regexp
 abbr --global --add rgc rg --color=always
 abbr --global --add rgh rg --hidden
 abbr --global --add rgs rg --sort=path
@@ -74,6 +77,7 @@ abbr --global --add gdmbu git diff \(git merge-base origin HEAD\) @{upstream}
 abbr --global --add gdn git diff --name-only
 abbr --global --add gdo git diff origin
 abbr --global --add gdon git diff origin --name-only
+abbr --global --add gdost git diff origin --stat
 abbr --global --add gds git diff --staged
 abbr --global --add gdsn git diff --staged --name-only
 abbr --global --add gdsst git diff --staged --stat
@@ -256,6 +260,7 @@ end
 # cargo:
 abbr --global --add ca cargo add
 abbr --global --add cb cargo build
+abbr --global --add cbat cargo build --all-targets
 abbr --global --add cbr cargo build --release
 abbr --global --add cbt cargo build --timings
 abbr --global --add cc cargo check
