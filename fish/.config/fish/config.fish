@@ -62,3 +62,4 @@ bind \ek backward-bigword
 bind \eu backward-kill-bigword
 bind \ej __insert_previous_command
 bind \e, history-token-search-forward
+bind \eq __insert_vimgrep
