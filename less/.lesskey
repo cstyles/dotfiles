@@ -1,3 +1,5 @@
 #line-edit
 ^p up
 ^n down
+^a home
+^e end
