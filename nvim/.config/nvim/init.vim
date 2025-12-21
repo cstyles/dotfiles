@@ -229,7 +229,10 @@ let g:fieldtrip_right = 'i'
 let g:submode_timeout = v:false
 
 runtime cmp.lua
-runtime lsp.lua
+
+if empty($NOLS)
+  runtime lsp.lua
+endif
 
 " vim-vsnip settings
 " Expand or jump
