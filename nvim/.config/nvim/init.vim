@@ -47,7 +47,7 @@ Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 
 lua <<LEAP
-  require('leap').add_default_mappings()
+  vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
 
   -- Default safe_labels but with 'l' instead of 'u'
   local labels = require('leap').opts.safe_labels
