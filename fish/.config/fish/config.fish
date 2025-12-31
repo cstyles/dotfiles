@@ -1,6 +1,6 @@
 set -l FISH_DIR (dirname (status --current-filename))
 
-set -gx fish_user_paths $HOME/.cargo/bin $HOME/dev/scripts
+set -gx fish_user_paths "$HOME/.cargo/bin" "$HOME/dev/scripts"
 
 switch (uname -s)
 case Darwin
@@ -12,8 +12,8 @@ end
 set -gx EDITOR nvr
 set -gx GIT_EDITOR nvr
 set -gx PAGER "less"
-set -gx HOMEBREW_EDITOR $EDITOR
-set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+set -gx HOMEBREW_EDITOR "$EDITOR"
+set -gx RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
 set -gx fish_grep rg
 set -gx DOTFILES (git -C (dirname (realpath (status --current-filename))) rev-parse --show-toplevel)
 
