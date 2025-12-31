@@ -1,3 +1,5 @@
+set -l FISH_DIR (dirname (status --current-filename))
+
 set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin $HOME/dev/scripts /opt/homebrew/bin /opt/homebrew/sbin /opt/homebrew/opt/git/share/git-core/contrib/git-jump
 set -gx EDITOR nvr
 set -gx GIT_EDITOR nvr
@@ -26,8 +28,7 @@ set fish_emoji_width 2
 
 set --global --export LESS FRis
 
-# Abbreviations
-source (dirname (status --current-filename))/abbreviations.fish
+source "$FISH_DIR/abbreviations.fish"
 
 if status --is-interactive
   zoxide init fish | source
@@ -40,7 +41,7 @@ set --append fish_complete_path /usr/local/share/fish/vendor_completions.d # mac
 set --append fish_complete_path /usr/share/fish/vendor_completions.d # arch / pacman
 
 # Extensions to existing completions
-source (dirname (status --current-filename))/completions.fish
+source "$FISH_DIR/completions.fish"
 
 # Bindings:
 bind \er __fish_grep_pipe
