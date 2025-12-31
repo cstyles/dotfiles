@@ -1,6 +1,6 @@
 set -l FISH_DIR (dirname (status --current-filename))
 
-set -gx fish_user_paths $HOME/.cargo/bin $HOME/.rbenv/shims ./node_modules/.bin $HOME/dev/scripts
+set -gx fish_user_paths $HOME/.cargo/bin $HOME/dev/scripts
 
 switch (uname -s)
 case Darwin
