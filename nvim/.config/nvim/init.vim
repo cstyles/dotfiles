@@ -31,7 +31,6 @@ Plug 'tek/vim-fieldtrip'
 Plug 'kana/vim-submode'
 
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'kassio/neoterm'
 
 Plug 'andymass/vim-matchup'
 Plug 'machakann/vim-highlightedyank'
@@ -149,10 +148,9 @@ nnoremap <silent> <M-{> :tabmove -1<CR>|tnoremap <silent> <M-{> <C-\><C-n>:tabmo
 nnoremap <silent> <M-w> :quit<CR>
 nnoremap <silent> <M-W> :quit!<CR>
 
-nnoremap <silent> <Leader>s :split \| :Tnew<CR>
-nnoremap <silent> <Leader>S :Tnew<CR>
-nnoremap <silent> <Leader>v :botright vsplit \| :Tnew<CR>
-nnoremap <silent> <Leader>x :Texec exit<CR>
+nnoremap <silent> <Leader>s :split \| terminal<CR>
+nnoremap <silent> <Leader>S :terminal<CR>
+nnoremap <silent> <Leader>v :botright vsplit \| terminal<CR>
 
 cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
@@ -206,9 +204,6 @@ function! Shoulda()
   noautocmd execute 'T' l:command
 endfunction
 
-let g:neoterm_automap_keys = '<C-h>'
-autocmd VimEnter * Tmap 
-
 runtime git-messenger.vim
 
 nnoremap <silent> g> :SidewaysRight<CR>
@@ -229,6 +224,7 @@ let g:fieldtrip_right = 'i'
 let g:submode_timeout = v:false
 
 runtime cmp.lua
+runtime terminal.lua
 
 if empty($NOLS)
   runtime lsp.lua
