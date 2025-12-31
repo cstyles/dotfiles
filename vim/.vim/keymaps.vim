@@ -95,13 +95,21 @@ nnoremap <Leader>j ddpkJ
 nnoremap zJ ddpkJ
 nnoremap <silent> <Leader>l :BLines<CR>
 nnoremap <silent> <Leader>M :Maps<CR>
-nnoremap <silent> <Leader>p :Neomake<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>R :Rails<CR>
 nnoremap <silent> <Leader>t :Shoulda<CR>
 nnoremap <silent> <Leader>T :Tags<CR>
-nnoremap <silent> <Leader>u :UndotreeToggle<CR>:UndotreeFocus<CR>
+
+" nnoremap <silent> <Leader>k :unused<CR>
+" nnoremap <silent> <Leader>m :unused<CR>
+" nnoremap <silent> <Leader>o :unused<CR>
+" nnoremap <silent> <Leader>p :unused<CR>
+" nnoremap <silent> <Leader>u :unused<CR>
+" nnoremap <silent> <Leader>w :unused<CR>
+" nnoremap <silent> <Leader>x :unused<CR>
+" nnoremap <silent> <Leader>y :unused<CR>
+" nnoremap <silent> <Leader>z :unused<CR>
 
 nnoremap Y y$
 xnoremap Y "+y
