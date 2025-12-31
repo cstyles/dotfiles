@@ -123,10 +123,10 @@ nnoremap <M-r> "_Dp
 " Paste (using the system clipboard) such that we replace the rest of the line
 nnoremap <M-R> "_D"+p
 
-nmap <M-e> ]e
-xmap <M-e> ]egv
-nmap <M-u> [e
-xmap <M-u> [egv
+nmap <M-e> ]e|nmap <M-Down> ]e
+xmap <M-e> ]egv|xmap <M-Down> ]egv
+nmap <M-u> [e|nmap <M-Up> [e
+xmap <M-u> [egv|xmap <M-Up> [egv
 
 nnoremap Q @@
 
