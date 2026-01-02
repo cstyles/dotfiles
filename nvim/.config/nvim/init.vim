@@ -48,21 +48,11 @@ call plug#end()
 lua <<LEAP
   vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)')
 
-  -- Default safe_labels but with 'l' instead of 'u'
+  -- Default safe_labels but with remappings due to Colemak 'l' instead of 'u'
   local labels = require('leap').opts.safe_labels
-  for i = 1, #labels do
-    if labels[i] == "u" then
-      labels[i] = "l"
-    end
-  end
-
-  -- 'f' is in safe_labels by default so just remove 'n' instead of mapping
-  for i = 1, #labels do
-    if labels[i] == "n" then
-      table.remove(labels, i)
-      break
-    end
-  end
+  local labels = string.gsub(labels, 'u', 'l')
+  local labels = string.gsub(labels, 'n', 'k')
+  require('leap').opts.safe_labels = labels
 LEAP
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
