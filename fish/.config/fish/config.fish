@@ -1,4 +1,4 @@
-set -l FISH_DIR (dirname (status --current-filename))
+set -l FISH_DIR (path dirname (status --current-filename))
 
 set -gx fish_user_paths "$HOME/.cargo/bin" "$HOME/dev/scripts"
 
@@ -15,7 +15,7 @@ set -gx PAGER "less"
 set -gx HOMEBREW_EDITOR "$EDITOR"
 set -gx RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
 set -gx fish_grep rg
-set -gx DOTFILES (git -C (dirname (realpath (status --current-filename))) rev-parse --show-toplevel)
+set -gx DOTFILES (git -C (path dirname (realpath (status --current-filename))) rev-parse --show-toplevel)
 
 # Shorten parent directories in prompt
 set -gx fish_prompt_pwd_dir_length 10
