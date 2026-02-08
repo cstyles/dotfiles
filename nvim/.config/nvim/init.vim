@@ -24,7 +24,7 @@ Plug 'honza/vim-snippets'
 Plug 'rhysd/git-messenger.vim'
 
 Plug 'haya14busa/vim-asterisk'
-Plug 'ggandor/leap.nvim'
+Plug 'https://codeberg.org/andyg/leap.nvim'
 
 Plug 'AndrewRadev/sideways.vim'
 Plug 'tek/vim-fieldtrip'
