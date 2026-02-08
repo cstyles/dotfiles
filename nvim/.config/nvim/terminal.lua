@@ -25,10 +25,6 @@ vim.api.nvim_create_autocmd('TermClose', {
         table.remove(terminal_buffers, i)
       end
     end
-
-    for i, v in ipairs(terminal_buffers) do
-      print(string.format('%d: %s', i, v))
-    end
   end
 })
 
