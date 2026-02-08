@@ -1,6 +1,6 @@
 set -l FISH_DIR (path dirname (status --current-filename))
 
-set -gx fish_user_paths "$HOME/.cargo/bin" "$HOME/dev/scripts"
+set -gx fish_user_paths "$HOME/.cargo/bin" "$HOME/dev/scripts" "$HOME/.local/bin"
 
 switch (uname -s)
 case Darwin
