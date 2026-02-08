@@ -70,6 +70,8 @@ nmap zgd gdzz
 nmap <C-w>gr <C-w>sgr
 nmap <C-w>gt <C-w>sgt
 
+nnoremap <silent> <C-w>t <C-w>T:tabmove -1<CR>
+
 function ToggleOption(option)
   if &formatoptions =~# a:option
     exec "setlocal formatoptions-=".a:option
