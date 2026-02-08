@@ -10,6 +10,7 @@ abbr --global --add nt nvim-term
 abbr --global --add lesss less -S
 abbr --global --add dc docker compose
 abbr --global --add wi wezterm imgcat
+abbr --global --add m 'mise activate fish | source'
 
 abbr --global --add b bundle
 abbr --global --add be bundle exec
@@ -100,6 +101,7 @@ abbr --global --add gl git log
 abbr --global --add glfp git log --first-parent
 abbr --global --add glg git log --grep
 abbr --global --add glG git log -G
+abbr --global --add glm git log main
 abbr --global --add gln git log --name-only
 abbr --global --add glo git log --oneline
 abbr --global --add glog git log --oneline --graph
@@ -208,6 +210,7 @@ abbr --global --add gsnp git snipe HEAD^ # p = parent
 abbr --global --add gsp git split
 abbr --global --add gss git stash show -p
 abbr --global --add gst git stash
+abbr --global --add gstd git stash drop
 abbr --global --add gstp git stash --patch
 abbr --global --add gsts git stash --staged
 abbr --global --add gsub git submodule
@@ -217,11 +220,11 @@ abbr --global --add gwd git diff --word-diff
 abbr --global --add gwdc git diff --word-diff --cached
 abbr --global --add gwt git worktree
 
-abbr --add H --position=anywhere --function=__abbr_git_head
-abbr --add P --position=anywhere --function=__abbr_git_parent
-abbr --add PP --position=anywhere --function=__abbr_git_parent_parent
-abbr --add O --position=anywhere --function=__abbr_git_origin
-abbr --add OM --position=anywhere --function=__abbr_git_origin_main
+abbr --add h --position=anywhere --function=__abbr_git_head
+abbr --add p --position=anywhere --function=__abbr_git_parent
+abbr --add pp --position=anywhere --function=__abbr_git_parent_parent
+abbr --add o --position=anywhere --function=__abbr_git_origin
+abbr --add om --position=anywhere --function=__abbr_git_origin_main
 abbr --add git_upstream --regex='.*@[uU]$' --position=anywhere --function=__abbr_git_upstream
 
 function __abbr_git
