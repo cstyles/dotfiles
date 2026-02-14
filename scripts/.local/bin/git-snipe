@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# Fixup a past commit as quickly as possible.
+
+if [ -z "$1" ]; then
+  # If there is no argument, let git-absorb figure out which commit to fixup.
+  git -c sequence.editor=true absorb --and-rebase
+else
+  # If there is an argument, target that commit specifically.
+  REF=$(git rev-parse "$1")
+  git commit --fixup "$REF"
+  git -c sequence.editor=true rebase --interactive --autosquash "$REF^"
+fi
