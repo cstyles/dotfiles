@@ -9,6 +9,8 @@ case Linux
   source "$FISH_DIR/linux.fish"
 end
 
+source "$FISH_DIR/secrets.fish"
+
 set -gx EDITOR nvr
 set -gx GIT_EDITOR nvr
 set -gx PAGER "less"

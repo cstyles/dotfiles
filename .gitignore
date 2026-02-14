@@ -1,2 +1,3 @@
 !.vim/
 vim/.vim/plugged/
+fish/.config/fish/secrets.fish
