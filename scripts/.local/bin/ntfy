@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Ping ntfy to send me a desktop notification.
+
+set -e
+
+if [[ "$1" =~ '--topic=' ]]; then
+  TOPIC="${1#--topic=}"
+  shift
+else
+  TOPIC=ping
+fi
+
+if [ -z "$1" ]; then
+  DATA='ping!'
+else
+  DATA="$1"
+fi
+
+curl -sS -X POST --data "$DATA" "$NTFY/$TOPIC" 1>/dev/null
