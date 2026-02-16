@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# AKA `git-fuck-my-shit-up`
+# Adds to the index all modified files that are currently tracked and amends
+# the previous commit to include those changes.
+# If `snipe` is passed as an argument, melds into the best commit it can find.
+
+set -e
+
+git add --update
+
+if [ "$1" = "snipe" ]; then
+  git snipe
+else
+  git commit --amend --no-edit
+fi
