@@ -155,7 +155,7 @@ abbr --global --add grbm git rebase main
 abbr --global --add grbo git rebase --onto
 abbr --global --add grbom git rebase origin/main
 abbr --global --add grbs git rebase --skip
-abbr --global --add grbsh git rebase --show-current-patch
+abbr --global --add grbsh git show REBASE_HEAD
 abbr --global --add grc git rebase --continue
 abbr --global --add grd git range-diff
 abbr --global --add grdhu git range-diff origin HEAD @{upstream}
