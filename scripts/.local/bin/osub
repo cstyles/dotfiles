@@ -6,4 +6,5 @@
 #
 # Writes lines matching `i` to `i.log` and prints the output of `wc`
 
-eval "tee >($*)"
+mapfile -t commands < <(printf '>(%s) ' "$@")
+eval "tee ${commands[*]}"
