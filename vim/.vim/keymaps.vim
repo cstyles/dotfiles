@@ -90,7 +90,7 @@ nnoremap <silent> <Leader>M :Maps<CR>
 nnoremap <silent> <Leader>q gwap
 nnoremap <silent> <Leader>r :edit!<CR>
 nnoremap <silent> <Leader>R :Rails<CR>
-nnoremap <silent> <Leader>t :Shoulda<CR>
+nnoremap <silent> <Leader>t :tabnew<CR>
 nnoremap <silent> <Leader>T :Tags<CR>
 
 " nnoremap <silent> <Leader>k :unused<CR>
