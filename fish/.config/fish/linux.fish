@@ -1,3 +1,5 @@
+set --append fish_user_paths /usr/share/git/git-jump
+
 # Make alt in Linux behave like in macOS
 bind alt-backspace backward-kill-word
 bind alt-delete kill-word
