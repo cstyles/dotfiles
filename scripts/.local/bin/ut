@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Print a Unix timestamp in a human-friendly format.
+
+if [ -z "$1" ]; then
+  echo Please specify a timestamp. 1>&2
+  exit 1
+fi
+
+case "$(uname -s)" in
+  Darwin) DATE="gdate";;
+  Linux) DATE="date";;
+  *) echo "Unrecognized OS: $(uname -s)"; exit 1
+esac
+
+"$DATE" -d "@$1"
