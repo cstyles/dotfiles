@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Emulate process substitution. From a `fish` shell:
+#
+# $ echo -e "hi\nhello" | osub 'rg i > i.log' | wc
+#
+# Writes lines matching `i` to `i.log` and prints the output of `wc`
+
+eval "tee >($*)"
