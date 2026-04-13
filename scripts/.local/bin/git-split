@@ -12,10 +12,12 @@ unstaged_changes_exist() {
   ! git diff --quiet
 }
 
-if [ -f .git/split_in_progress ]; then
-  read -r head < .git/split_in_progress
+GIT_DIR=$(git root)/.git
+
+if [ -f "$GIT_DIR/split_in_progress" ]; then
+  read -r head < "$GIT_DIR/split_in_progress"
 else
-  head=$(git rev-parse HEAD | tee .git/split_in_progress)
+  head=$(git rev-parse HEAD | tee "$GIT_DIR/split_in_progress")
   mapfile -t added_files < <(git diff-tree --name-only --no-commit-id --diff-filter=A HEAD)
 
   git reset HEAD^ --quiet
@@ -30,4 +32,4 @@ while unstaged_changes_exist; do
   git commit --patch --reedit-message "$head" || exit 1
 done
 
-rm -f .git/split_in_progress
+rm -f "$GIT_DIR/split_in_progress"
