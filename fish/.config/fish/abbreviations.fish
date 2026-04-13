@@ -208,6 +208,7 @@ abbr --global --add gshw git show --ignore-all-space
 abbr --global --add gsn git snipe
 abbr --global --add gsnp git snipe HEAD^ # p = parent
 abbr --global --add gsp git split
+abbr --global --add gspa git split --abort
 abbr --global --add gss git stash show -p
 abbr --global --add gst git stash
 abbr --global --add gstd git stash drop
