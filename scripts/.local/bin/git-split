@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # USAGE:
 # Just run `git split` with HEAD pointed to the commit you want to split.
@@ -16,13 +16,12 @@ if [ -f .git/split_in_progress ]; then
   read -r head < .git/split_in_progress
 else
   head=$(git rev-parse HEAD | tee .git/split_in_progress)
-  added_files=$(git diff-tree --name-only --no-commit-id --diff-filter=A HEAD)
+  mapfile -t added_files < <(git diff-tree --name-only --no-commit-id --diff-filter=A HEAD)
 
   git reset HEAD^ --quiet
 
   # Added files will be ignored by --patch unless we explicitly mention them
-  # shellcheck disable=SC2086
-  git add --intent-to-add $added_files
+  git add --intent-to-add "${added_files[@]}"
 fi
 
 while unstaged_changes_exist; do
