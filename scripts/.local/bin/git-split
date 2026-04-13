@@ -8,6 +8,14 @@
 
 set -e
 
+# If passed a commitish argument, split that commit
+if [ -n "$1" ]; then
+  SEQ="sd -n1 '^' 'break\n'" # insert "break" before first `pick` command
+  git -c sequence.editor="$SEQ" rebase --interactive "$1"
+  git-split
+  exec git rebase --continue
+fi
+
 unstaged_changes_exist() {
   ! git diff --quiet
 }
