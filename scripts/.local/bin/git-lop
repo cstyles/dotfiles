@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+# Move a single-commit branch on top of main.
+# Useful when you're developing on top of another branch but you realize that
+# you need to move your current change to a new branch that should go out first.
+
+set -e
+
+if [ -z "$1" ]; then
+  ONTO=origin
+else
+  ONTO="$1"
+fi
+
+exec git rebase --onto "$ONTO" HEAD^
