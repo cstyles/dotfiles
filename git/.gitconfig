@@ -11,7 +11,7 @@
     graph = log --graph --oneline --decorate --all
     graphme = log --graph --oneline --decorate
     root = rev-parse --show-toplevel
-    diverge = !git log --oneline --graph @{upstream} HEAD ^$(git merge-base @{upstream} HEAD)^
+    diverge = log --oneline --graph --boundary @{upstream}...HEAD
 [log]
     date = local
     follow = true
