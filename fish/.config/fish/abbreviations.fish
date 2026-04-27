@@ -11,6 +11,7 @@ abbr --global --add lesss less -S
 abbr --global --add dc docker compose
 abbr --global --add wi wezterm imgcat
 abbr --global --add m 'mise activate fish | source'
+abbr --global --add ms mergiraf solve --keep-backup=false
 
 abbr --global --add b bundle
 abbr --global --add be bundle exec
@@ -72,6 +73,7 @@ abbr --global --add gdc git diff --cached
 abbr --global --add gdcn git diff --cached --name-only
 abbr --global --add gdcw git diff --cached --ignore-all-space
 abbr --global --add gdhu git diff HEAD @{upstream}
+abbr --global --add gdi git diverge
 abbr --global --add gdm git diff main
 abbr --global --add gdmb git diff \(git merge-base origin HEAD\) HEAD
 abbr --global --add gdmbu git diff \(git merge-base origin HEAD\) @{upstream}
@@ -88,6 +90,7 @@ abbr --global --add gduh git diff @{upstream} HEAD
 abbr --global --add gdw git diff --ignore-all-space
 abbr --global --add gf git fetch
 abbr --global --add gfa git fetch --all
+abbr --global --add gfo git fetch origin
 abbr --global --add gg git graph
 abbr --global --add ggo git gone
 abbr --global --add ggp git gone prune
@@ -224,6 +227,7 @@ abbr --global --add gwt git worktree
 abbr --add h --position=anywhere --function=__abbr_git_head
 abbr --add p --position=anywhere --function=__abbr_git_parent
 abbr --add pp --position=anywhere --function=__abbr_git_parent_parent
+abbr --add m --position=anywhere --function=__abbr_git_main
 abbr --add o --position=anywhere --function=__abbr_git_origin
 abbr --add om --position=anywhere --function=__abbr_git_origin_main
 abbr --add git_upstream --regex='.*@[uU]$' --position=anywhere --function=__abbr_git_upstream
@@ -247,6 +251,10 @@ end
 
 function __abbr_git_parent_parent
   __abbr_git HEAD^^
+end
+
+function __abbr_git_main
+  __abbr_git main
 end
 
 function __abbr_git_origin
