@@ -224,50 +224,13 @@ abbr --global --add gwd git diff --word-diff
 abbr --global --add gwdc git diff --word-diff --cached
 abbr --global --add gwt git worktree
 
-abbr --add h --position=anywhere --function=__abbr_git_head
-abbr --add p --position=anywhere --function=__abbr_git_parent
-abbr --add pp --position=anywhere --function=__abbr_git_parent_parent
-abbr --add m --position=anywhere --function=__abbr_git_main
-abbr --add o --position=anywhere --function=__abbr_git_origin
-abbr --add om --position=anywhere --function=__abbr_git_origin_main
-abbr --add git_upstream --regex='.*@[uU]$' --position=anywhere --function=__abbr_git_upstream
-
-function __abbr_git
-  # Only replace the abbreviation if we're inside a git command
-  if commandline --current-process | string match --quiet --regex '^git '
-    echo $argv[1]
-  else
-    return 1
-  end
-end
-
-function __abbr_git_head
-  __abbr_git HEAD
-end
-
-function __abbr_git_parent
-  __abbr_git HEAD^
-end
-
-function __abbr_git_parent_parent
-  __abbr_git HEAD^^
-end
-
-function __abbr_git_main
-  __abbr_git main
-end
-
-function __abbr_git_origin
-  __abbr_git origin
-end
-
-function __abbr_git_origin_main
-  __abbr_git origin/main
-end
-
-function __abbr_git_upstream
-  __abbr_git (string replace --regex '@[uU]' @{upstream} -- "$argv[1]")
-end
+abbr --add --command=git h HEAD
+abbr --add --command=git p HEAD^
+abbr --add --command=git pp HEAD^^
+abbr --add --command=git m main
+abbr --add --command=git o origin
+abbr --add --command=git om origin/main
+abbr --add --command=git u @{upstream}
 
 # cargo:
 abbr --global --add ca cargo add
