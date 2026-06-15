@@ -146,6 +146,7 @@ cnoremap <M-BS> <C-w>
 nnoremap <M-BS> dbx
 
 tnoremap w[ <C-\><C-n>
+tnoremap w' <C-\><C-n>
 
 map *  <Plug>(asterisk-z*)
 map #  <Plug>(asterisk-z#)
