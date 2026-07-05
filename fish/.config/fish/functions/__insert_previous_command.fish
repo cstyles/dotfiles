@@ -20,6 +20,6 @@ function __insert_previous_command
         commandline --cursor 0
     else
         # Go to end of line
-        commandline --cursor 999999
+        commandline -f end-of-line
     end
 end

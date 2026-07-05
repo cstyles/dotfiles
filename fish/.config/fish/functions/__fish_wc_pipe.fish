@@ -14,6 +14,6 @@ function __fish_wc_pipe
         commandline --append --current-job "| wc -l "
 
         # Go to end of line
-        commandline --cursor 999999
+        commandline -f end-of-line
     end
 end

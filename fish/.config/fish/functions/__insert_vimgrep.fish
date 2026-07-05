@@ -14,6 +14,6 @@ function __insert_vimgrep
         commandline --append --current-job -- "--vimgrep > qf "
 
         # Go to end of line
-        commandline --cursor 999999
+        commandline -f end-of-line
     end
 end

@@ -25,5 +25,5 @@ function __fish_rg_iglob_test
     end
 
     # Go to end of line
-    commandline --cursor 999999
+    commandline -f end-of-line
 end
