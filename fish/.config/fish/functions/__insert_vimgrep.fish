@@ -5,7 +5,7 @@ function __insert_vimgrep
     end
 
     # Only edit the command if we haven't already
-    if commandline -j | string match -q -r -v -- "--vimgrep > qf*\$"
+    if commandline -j | string match -q -r -v -- "--vimgrep > qf *\$"
         # Add a space unless there's already one at the end of the line
         if commandline -j | string match -q -r -v " \$"
             commandline --append --current-job " "
