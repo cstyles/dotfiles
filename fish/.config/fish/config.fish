@@ -50,23 +50,23 @@ set -gx _ZO_FZF_OPTS -1 -0
 source "$FISH_DIR/completions.fish"
 
 # Bindings:
-bind \er __fish_grep_pipe
-bind \ew __fish_wc_pipe # NOTE: M-w is already used to run `whatis` on a keyword
-bind \cg fzf-git-widget
-bind \cb fzf-git-branch-widget
-bind \eg __fish_git_status_current_token
-bind \ei __fish_rg_iglob_test
-bind \e8 __fish_dot_star
-bind \e\* __fish_star
+bind alt-r __fish_grep_pipe
+bind alt-w __fish_wc_pipe # NOTE: M-w is already used to run `whatis` on a keyword
+bind ctrl-g fzf-git-widget
+bind ctrl-b fzf-git-branch-widget
+bind alt-g __fish_git_status_current_token
+bind alt-i __fish_rg_iglob_test
+bind alt-8 __fish_dot_star
+bind 'alt-*' __fish_star
 
-bind \ck fzf-git-branch-widget-larose
+bind ctrl-k fzf-git-branch-widget-larose
 
 # 'T' on Colemak is where 'F' is on QWERTY
-bind \ct accept-autosuggestion
-bind \et forward-word
-bind \ef forward-bigword
-bind \ek backward-bigword
-bind \eu backward-kill-bigword
-bind \ej __insert_previous_command
-bind \e, history-token-search-forward
-bind \eq __insert_vimgrep
+bind ctrl-t accept-autosuggestion
+bind alt-t forward-word
+bind alt-f forward-bigword
+bind alt-k backward-bigword
+bind alt-u backward-kill-bigword
+bind alt-j __insert_previous_command
+bind alt-comma history-token-search-forward
+bind alt-q __insert_vimgrep
