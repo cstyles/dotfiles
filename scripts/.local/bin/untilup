@@ -20,7 +20,7 @@ fi
 # Don't run ntfy if we CTRL-C out of `watch`
 trap 'exit' INT
 
-watch --interval 1 --chgexit --exec ping -c1 -W1 -- "$HOST" 1>/dev/null
+watch --interval 0 --chgexit --exec ping -c1 -W1 -- "$HOST" 1>/dev/null
 
 if [ "$NOTIFY" = 'true' ]; then
   exec ntfy "$HOST is up!"
