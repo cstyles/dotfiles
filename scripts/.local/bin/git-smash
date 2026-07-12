@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+# "Smash" the current commit into its parent.
+
+if ! git diff-index --quiet HEAD; then
+  echo 'Workdir is dirty. Commit changes first.' >&2
+  exit 1
+fi
+
+git reset --soft HEAD^
+exec git commit --amend --no-edit "$@"
