@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 if [ -z "$1" ]; then
   echo Please specify a PID.
@@ -11,4 +11,6 @@ case "$(uname -s)" in
   *) echo "Unrecognized OS: $(uname -s)"; exit 1
 esac
 
-"$TAIL" -f "--pid=$1" /dev/null
+mapfile -t ARGS < <(printf -- '--pid=%s\n' "$@")
+
+exec "$TAIL" -f "${ARGS[@]}" /dev/null
