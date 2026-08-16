@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "$1" ]; then
-  echo Please specify a PID.
-  exit 1
+  exit 0
 fi
 
 case "$(uname -s)" in
